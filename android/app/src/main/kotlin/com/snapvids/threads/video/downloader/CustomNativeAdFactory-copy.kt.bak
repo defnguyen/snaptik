@@ -1,0 +1,47 @@
+package com.snaptik.tiktok.downloader
+
+import android.content.Context
+import android.view.LayoutInflater
+import android.widget.Button
+import android.widget.ImageView
+import android.widget.TextView
+import com.google.android.gms.ads.nativead.NativeAd
+import com.google.android.gms.ads.nativead.NativeAdView
+import io.flutter.plugins.googlemobileads.GoogleMobileAdsPlugin.NativeAdFactory
+
+class CustomNativeAdFactory(private val context: Context) : NativeAdFactory {
+    override fun createNativeAd(
+        nativeAd: NativeAd,
+        customOptions: MutableMap<String, Any>?
+    ): NativeAdView {
+        val adView = LayoutInflater.from(context)
+            .inflate(R.layout.native_ad_layout, null) as NativeAdView
+
+        // Set the headline
+        val headlineView = adView.findViewById<TextView>(R.id.ad_headline)
+        headlineView.text = nativeAd.headline
+        adView.headlineView = headlineView
+
+        // Set the body
+        val bodyView = adView.findViewById<TextView>(R.id.ad_body)
+        bodyView.text = nativeAd.body
+        adView.bodyView = bodyView
+
+        // Set the icon
+        val iconView = adView.findViewById<ImageView>(R.id.ad_app_icon)
+        nativeAd.icon?.let { icon ->
+            iconView.setImageDrawable(icon.drawable)
+        }
+        adView.iconView = iconView
+
+        // Set the call to action
+        val ctaView = adView.findViewById<Button>(R.id.ad_call_to_action)
+        ctaView.text = nativeAd.callToAction
+        adView.callToActionView = ctaView
+
+        // Register the ad view
+        adView.setNativeAd(nativeAd)
+
+        return adView
+    }
+}
