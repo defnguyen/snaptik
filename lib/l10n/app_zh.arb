@@ -170,5 +170,11 @@
     "noAuthorsYet": "暂无作者",
     "downloadSomethingFirst": "先下载一些内容，即可在此查看作者",
     "authorVideos": "{author} 的视频",
-    "noVideosFromAuthor": "此作者暂无视频"
+    "noVideosFromAuthor": "此作者暂无视频",
+    "errorLoadingLibrary": "加载库时出错：{error}",
+    "downloadedMediaWillAppearHere": "您下载的媒体文件将出现在这里。",
+    "noPhotosDownloadedYet": "还没有下载任何照片。",
+    "noVideosDownloadedYet": "还没有下载任何视频。",
+    "noAudioDownloadedYet": "还没有下载任何音乐。",
+    "somethingWentWrong": "出现了问题。"
 }

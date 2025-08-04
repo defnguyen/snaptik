@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:snaptik/config/app_constants.dart';
+import 'package:snaptik/config/app_themes.dart';
 import 'package:snaptik/core/blocs/premium/premium_cubit.dart';
 import 'package:snaptik/core/services/ad_service.dart';
 import 'package:snaptik/core/widgets/app_lifecycle_reactor.dart';
@@ -40,7 +41,8 @@ class _SplashScreenState extends State<SplashScreen> {
       adService.showAppOpenAd(onAdDismissed: _navigateToHome);
     } else {
       if (!isPremium) {
-        print("SplashScreen: AppOpenAd not available or user is premium. Trying to load one for next time.");
+        print(
+            "SplashScreen: AppOpenAd not available or user is premium. Trying to load one for next time.");
         adService.loadAppOpenAd();
       }
       _navigateToHome();
@@ -66,7 +68,9 @@ class _SplashScreenState extends State<SplashScreen> {
       return true; // Basic check for startup
     }
     if (url.contains('instagram.com')) {
-      return url.contains('/p/') || url.contains('/reel/') || url.contains('/tv/');
+      return url.contains('/p/') ||
+          url.contains('/reel/') ||
+          url.contains('/tv/');
     }
     return false;
   }
@@ -89,7 +93,7 @@ class _SplashScreenState extends State<SplashScreen> {
   void _navigateToHome() {
     if (mounted) {
       final isPremium = context.read<PremiumCubit>().state.isPremium;
-      
+
       if (!isPremium) {
         // Show subscription screen first for non-premium users
         Navigator.of(context).pushReplacement(
@@ -123,7 +127,9 @@ class _SplashScreenState extends State<SplashScreen> {
               style: Theme.of(context).textTheme.headlineSmall,
             ),
             const SizedBox(height: 30),
-            const CircularProgressIndicator(),
+            const CircularProgressIndicator(
+              color: AppThemes.primaryColor,
+            ),
           ],
         ),
       ),

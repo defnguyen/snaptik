@@ -170,5 +170,11 @@
     "noAuthorsYet": "Inga författare än",
     "downloadSomethingFirst": "Ladda ner lite innehåll först för att se författare här",
     "authorVideos": "Videor av {author}",
-    "noVideosFromAuthor": "Inga videor från den här författaren än"
+    "noVideosFromAuthor": "Inga videor från den här författaren än",
+    "errorLoadingLibrary": "Fel vid laddning av bibliotek: {error}",
+    "downloadedMediaWillAppearHere": "Din nedladdade media kommer att visas här.",
+    "noPhotosDownloadedYet": "Inga foton nedladdade ännu.",
+    "noVideosDownloadedYet": "Inga videor nedladdade ännu.",
+    "noAudioDownloadedYet": "Ingen musik nedladdad ännu.",
+    "somethingWentWrong": "Något gick fel."
 }

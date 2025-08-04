@@ -170,5 +170,11 @@
     "noAuthorsYet": "अभी तक कोई लेखक नहीं",
     "downloadSomethingFirst": "यहां लेखकों को देखने के लिए पहले कुछ कंटेंट डाउनलोड करें",
     "authorVideos": "{author} के वीडियो",
-    "noVideosFromAuthor": "इस लेखक से अभी तक कोई वीडियो नहीं"
+    "noVideosFromAuthor": "इस लेखक से अभी तक कोई वीडियो नहीं",
+    "errorLoadingLibrary": "लाइब्रेरी लोड करने में त्रुटि: {error}",
+    "downloadedMediaWillAppearHere": "आपकी डाउनलोड की गई मीडिया यहाँ दिखाई देगी।",
+    "noPhotosDownloadedYet": "अभी तक कोई फोटो डाउनलोड नहीं किया गया।",
+    "noVideosDownloadedYet": "अभी तक कोई वीडियो डाउनलोड नहीं किया गया।",
+    "noAudioDownloadedYet": "अभी तक कोई संगीत डाउनलोड नहीं किया गया।",
+    "somethingWentWrong": "कुछ गलत हुआ।"
 }

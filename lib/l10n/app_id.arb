@@ -170,5 +170,11 @@
     "noAuthorsYet": "Belum ada penulis",
     "downloadSomethingFirst": "Unduh beberapa konten untuk melihat penulis di sini",
     "authorVideos": "Video oleh {author}",
-    "noVideosFromAuthor": "Belum ada video dari penulis ini"
+    "noVideosFromAuthor": "Belum ada video dari penulis ini",
+    "errorLoadingLibrary": "Error memuat pustaka: {error}",
+    "downloadedMediaWillAppearHere": "Media yang diunduh akan muncul di sini.",
+    "noPhotosDownloadedYet": "Belum ada foto yang diunduh.",
+    "noVideosDownloadedYet": "Belum ada video yang diunduh.",
+    "noAudioDownloadedYet": "Belum ada musik yang diunduh.",
+    "somethingWentWrong": "Terjadi kesalahan."
 }

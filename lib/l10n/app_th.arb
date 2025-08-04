@@ -170,5 +170,11 @@
     "noAuthorsYet": "ยังไม่มีผู้สร้าง",
     "downloadSomethingFirst": "ดาวน์โหลดเนื้อหาบางอย่างก่อนเพื่อดูผู้สร้างที่นี่",
     "authorVideos": "วิดีโอโดย {author}",
-    "noVideosFromAuthor": "ยังไม่มีวิดีโอจากผู้สร้างนี้"
+    "noVideosFromAuthor": "ยังไม่มีวิดีโอจากผู้สร้างนี้",
+    "errorLoadingLibrary": "เกิดข้อผิดพลาดในการโหลดไลบรารี: {error}",
+    "downloadedMediaWillAppearHere": "สื่อที่ดาวน์โหลดจะปรากฏที่นี่",
+    "noPhotosDownloadedYet": "ยังไม่มีรูปภาพที่ดาวน์โหลด",
+    "noVideosDownloadedYet": "ยังไม่มีวิดีโอที่ดาวน์โหลด",
+    "noAudioDownloadedYet": "ยังไม่มีเพลงที่ดาวน์โหลด",
+    "somethingWentWrong": "เกิดข้อผิดพลาด"
 }

@@ -450,4 +450,24 @@ class AppLocalizationsCs extends AppLocalizations {
 
   @override
   String get noVideosFromAuthor => 'Zatím žádná videa od tohoto autora';
+
+  @override
+  String errorLoadingLibrary(Object error) {
+    return 'Chyba při načítání knihovny: $error';
+  }
+
+  @override
+  String get downloadedMediaWillAppearHere => 'Zde se zobrazí vaše stažená média.';
+
+  @override
+  String get noPhotosDownloadedYet => 'Zatím nejsou staženy žádné fotky.';
+
+  @override
+  String get noVideosDownloadedYet => 'Zatím nejsou stažena žádná videa.';
+
+  @override
+  String get noAudioDownloadedYet => 'Zatím není stažena žádná hudba.';
+
+  @override
+  String get somethingWentWrong => 'Něco se pokazilo.';
 }

@@ -185,6 +185,14 @@ class _SettingsTabState extends State<SettingsTab> {
         context, MaterialPageRoute(builder: (_) => const ContactScreen()));
   }
 
+  void _launchUrl(String url) async {
+    if (await canLaunchUrl(Uri.parse(url))) {
+      await launchUrl(Uri.parse(url), mode: LaunchMode.externalApplication);
+    } else {
+      print("Could not launch URL: $url");
+    }
+  }
+
   @override
   Widget build(BuildContext context) {
     final l10n = AppLocalizations.of(context)!;
@@ -201,261 +209,242 @@ class _SettingsTabState extends State<SettingsTab> {
                 content: Text(l10n.settingsRestoreSuccess),
                 backgroundColor: Colors.green),
           );
-        } else if (state is PremiumOperationFailure) {
-          // If a failure occurs *after* the user likely tapped restore, show restore error.
-          // This is heuristic. A dedicated RestoreFailedState would be better.
-          // Let's check if the error message contains 'restore' as a hint.
-          if (state.error.toLowerCase().contains("restore")) {
-            ScaffoldMessenger.of(context).showSnackBar(
-              SnackBar(
-                  content: Text(l10n.settingsRestoreError),
-                  backgroundColor: Colors.orange),
-            );
-          }
-          // Note: Purchase failures are handled primarily by the modal listener now.
-          // This listener might still catch general purchase errors if they happen outside the modal flow.
         }
-        // Purchase success/failure is handled by the modal's listener now
       },
       child: Scaffold(
-        // Use Scaffold only if SettingsTab needs its own AppBar, otherwise remove
-        // appBar: AppBar(title: Text(l10n.settingsTab)), // Example if needed
+        appBar: null,
         body: ListView(
-          padding: const EdgeInsets.symmetric(
-              vertical: AppConstants.defaultPadding /
-                  2), // Reduced top/bottom padding
+          padding: const EdgeInsets.all(16),
           children: [
-            // --- Premium Section (Shows status or upgrade button) ---
-            BlocBuilder<PremiumCubit, PremiumState>(
-              builder: (context, premiumState) {
-                if (premiumState.isPremium) {
-                  return ListTile(
-                    leading: const Icon(Icons.workspace_premium,
-                        color: Colors.amber),
-                    title: Text(l10n.premiumUser),
-                    subtitle: const Text(
-                        "Ads removed, unlimited downloads."), // Localize
-                  );
-                } else {
-                  // Show simplified Upgrade Button/Tile here
-                  return _buildPremiumSection(
-                      context, l10n); // Use new button method
-                }
-              },
-            ),
-
-            const Divider(),
-
-            // --- General Settings ---
-            _buildSectionHeader(context, l10n.settingsGeneralSection),
-            _buildLanguageSetting(context, l10n, currentLocale),
-            _buildThemeSetting(context, l10n, currentTheme),
-
-
-
-            const Divider(),
-
-            // --- Account/Purchase Section ---
-            _buildSectionHeader(context, l10n.settingsAccountSection),
-            // Restore button is always relevant if using RC
-            _buildRestoreSetting(context, l10n),
-
-            const Divider(),
-
-            // --- Support & Feedback ---
-            _buildSectionHeader(context, l10n.settingsSupportSection),
-            ListTile(
-              leading: const Icon(Icons.info_outline),
-              title: Text(l10n.settingsAbout),
-              subtitle:
-                  _appVersion.isNotEmpty ? Text("Version $_appVersion") : null,
-              onTap: _navigateToAbout,
-            ),
-            ListTile(
-              leading: const Icon(Icons.contact_mail_outlined),
-              title: Text(l10n.settingsContact),
-              onTap: _navigateToContact,
-            ),
-            ListTile(
-              leading: const Icon(Icons.star_outline),
-              title: Text(l10n.settingsRateApp),
-              onTap: _rateApp,
-            ),
-            ListTile(
-              leading: const Icon(Icons.share_outlined),
-              title: Text(l10n.settingsShareApp),
-              onTap: _shareApp,
-            ),
-            const SizedBox(height: 20), // Add padding at the bottom
+            // Account Section
+            _buildSectionTitle(l10n.settingsAccountSection),
+            _buildInfoCard(context, l10n, l10n.settingsRestorePurchase, Icons.restore, AppThemes.primaryColor, _restorePremium),
+            
+            const SizedBox(height: 20),
+            
+            // Language Section
+            _buildSectionTitle(l10n.settingsLanguage),
+            _buildLanguageCard(context, l10n, currentLocale),
+            
+            const SizedBox(height: 20),
+            
+            // Theme Section
+            _buildSectionTitle(l10n.settingsTheme),
+            _buildThemeCard(context, l10n, currentTheme),
+            
+            const SizedBox(height: 20),
+            
+            // Information Section
+            _buildSectionTitle(l10n.settingsSupportSection),
+            _buildInfoCard(context, l10n, l10n.aboutTitle, Icons.help_outline, AppThemes.primaryColor, _navigateToAbout),
+            _buildInfoCard(context, l10n, l10n.settingsContact, Icons.contact_support_outlined, AppThemes.primaryColor, _navigateToContact),
+            _buildInfoCard(context, l10n, l10n.privacyPolicy, Icons.shield_outlined, AppThemes.primaryColor, () => _launchUrl(AppConstants.privacyPolicyUrl)),
+            _buildInfoCard(context, l10n, l10n.termsOfUse, Icons.description_outlined, AppThemes.primaryColor, () => _launchUrl(AppConstants.termsOfServiceUrl)),
+            
+            const SizedBox(height: 20),
+            
+            // Rate us Section
+            _buildSectionTitle(l10n.settingsRateApp),
+            _buildInfoCard(context, l10n, l10n.settingsShareApp, Icons.share_outlined, AppThemes.primaryColor, _shareApp),
+            
+            const SizedBox(height: 100), // Bottom padding for navigation
           ],
         ),
       ),
     );
   }
 
-  Widget _buildPremiumSection(BuildContext context, AppLocalizations l10n) {
-    return Container(
-      // Add some vertical margin if needed, adjust horizontal as well
-      margin: const EdgeInsets.symmetric(
-          horizontal: AppConstants.defaultPadding / 2, vertical: 8),
-      padding: const EdgeInsets.all(AppConstants.defaultPadding),
-      decoration: BoxDecoration(
-          gradient: LinearGradient(
-            colors: [
-            Color(0xFF1A0F14),
-            Color(0xFF2A0D1B),
-            Color(0xFF3A0B22),
-            ], // Adjust colors as desired
-            begin: Alignment.topCenter,
-            end: Alignment.bottomCenter,
-          ),
-          borderRadius: BorderRadius.circular(AppConstants.defaultRadius),
-          boxShadow: [
-            // Optional subtle shadow
-            BoxShadow(
-              color: Colors.black.withOpacity(0.15),
-              blurRadius: 6,
-              offset: const Offset(0, 3),
-            )
-          ]),
-      child: Column(
-        crossAxisAlignment: CrossAxisAlignment.start,
-        children: [
-          Text(
-            l10n.settingsPremium, // "Upgrade to Premium"
-            style: const TextStyle(
-                fontSize: 18, fontWeight: FontWeight.bold, color: Colors.white),
-          ),
-          const SizedBox(height: 8),
-          Text(
-            l10n.settingsPremiumDescription, // "Remove ads..."
-            style: TextStyle(color: Colors.white.withOpacity(0.9)),
-          ),
-          const SizedBox(height: 16), // More space before button
-          // --- This Button now opens the modal ---
-          ElevatedButton.icon(
-            icon: const Icon(Icons
-                .workspace_premium_outlined), // Keep icon color default or customize
-            // Use a specific text like "View Plans" or keep "Upgrade Now"
-            label: Text(l10n.upgradeNow),
-            //onPressed: _showUpgradeModal,
-            onPressed: _showSubscriptionScreen,
-            style: ElevatedButton.styleFrom(
-              backgroundColor:
-                  AppThemes.primaryColor, // White button stands out on gradient
-              foregroundColor: Colors.white, // Text color matching theme accent
-              iconColor: Colors.white,
-              padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 10),
-              shape: RoundedRectangleBorder(
-                borderRadius: BorderRadius.circular(
-                    AppConstants.defaultRadius * 3), // Pill shape
-              ),
-            ),
-          ),
-          // REMOVE any loading indicator logic that might have been here previously
-        ],
-      ),
-    );
-  }
-
-  Widget _buildSectionHeader(BuildContext context, String title) {
+  Widget _buildSectionTitle(String title) {
     return Padding(
-      padding: const EdgeInsets.only(
-          left: 16.0, right: 16.0, top: 16.0, bottom: 8.0),
+      padding: const EdgeInsets.only(bottom: 12, top: 8),
       child: Text(
-        title.toUpperCase(),
+        title,
         style: TextStyle(
-          color: Theme.of(context).colorScheme.primary,
-          fontWeight: FontWeight.bold,
-          fontSize: 13,
+          fontSize: 16,
+          fontWeight: FontWeight.w600,
+          color: Colors.grey[600],
         ),
       ),
     );
   }
 
-  // Premium Button/Tile for non-premium users
-  Widget _buildPremiumSectionButton(
-      BuildContext context, AppLocalizations l10n) {
-    return ListTile(
-      leading:
-          const Icon(Icons.workspace_premium_outlined, color: Colors.amber),
-      title: Text(l10n.settingsPremium),
-      subtitle: Text(l10n.settingsPremiumDescription),
-      trailing: const Icon(Icons.chevron_right),
-      onTap: _showSubscriptionScreen, // Opens the subscription screen
-      // Optional: Add some visual distinction (e.g., background color)
-      // tileColor: Theme.of(context).colorScheme.secondaryContainer.withOpacity(0.3),
+  Widget _buildTrendsCard(BuildContext context, AppLocalizations l10n) {
+    return Container(
+      margin: const EdgeInsets.only(bottom: 8),
+      padding: const EdgeInsets.all(16),
+      decoration: BoxDecoration(
+        color: Theme.of(context).cardColor,
+        borderRadius: BorderRadius.circular(12),
+        boxShadow: [
+          BoxShadow(
+            color: Colors.black.withOpacity(0.05),
+            blurRadius: 10,
+            offset: const Offset(0, 2),
+          ),
+        ],
+      ),
+      child: Row(
+        children: [
+          Container(
+            padding: const EdgeInsets.all(8),
+            decoration: BoxDecoration(
+              color: AppThemes.primaryColor.withOpacity(0.1),
+              borderRadius: BorderRadius.circular(8),
+            ),
+            child: Icon(Icons.trending_up, color: AppThemes.primaryColor, size: 20),
+          ),
+          const SizedBox(width: 12),
+          Expanded(
+            child: Text(
+              'Trends',
+              style: TextStyle(fontSize: 16, fontWeight: FontWeight.w500),
+            ),
+          ),
+          Icon(Icons.chevron_right, color: Colors.grey[400]),
+        ],
+      ),
     );
   }
 
-  Widget _buildLanguageSetting(
-      BuildContext context, AppLocalizations l10n, Locale currentLocale) {
-    return ListTile(
-      leading: const Icon(Icons.language),
-      title: Text(l10n.settingsLanguage),
-      subtitle: Text(_getLanguageName(currentLocale)),
-      trailing: const Icon(Icons.chevron_right),
-      onTap: () => _showLanguageBottomSheet(context, l10n, currentLocale),
+  Widget _buildLanguageCard(BuildContext context, AppLocalizations l10n, Locale currentLocale) {
+    return Container(
+      padding: const EdgeInsets.all(16),
+      decoration: BoxDecoration(
+        color: Theme.of(context).cardColor,
+        borderRadius: BorderRadius.circular(12),
+        boxShadow: [
+          BoxShadow(
+            color: Colors.black.withOpacity(0.05),
+            blurRadius: 10,
+            offset: const Offset(0, 2),
+          ),
+        ],
+      ),
+      child: InkWell(
+        onTap: () => _showLanguageBottomSheet(context, l10n, currentLocale),
+        child: Row(
+          children: [
+            Container(
+              padding: const EdgeInsets.all(8),
+              decoration: BoxDecoration(
+                color: AppThemes.primaryColor.withOpacity(0.1),
+                borderRadius: BorderRadius.circular(8),
+              ),
+              child: Icon(Icons.language, color: AppThemes.primaryColor, size: 20),
+            ),
+            const SizedBox(width: 12),
+            Expanded(
+              child: Text(
+                _getLanguageName(currentLocale),
+                style: TextStyle(fontSize: 16, fontWeight: FontWeight.w500),
+              ),
+            ),
+            Icon(Icons.chevron_right, color: Colors.grey[400]),
+          ],
+        ),
+      ),
     );
   }
 
-  Widget _buildThemeSetting(
-      BuildContext context, AppLocalizations l10n, ThemeMode currentTheme) {
-    return ListTile(
-      leading: const Icon(Icons.brightness_6_outlined),
-      title: Text(l10n.settingsTheme),
-      subtitle: Text(_getThemeName(currentTheme, l10n)),
-      trailing: const Icon(Icons.chevron_right),
-      onTap: () => _showThemeBottomSheet(context, l10n, currentTheme),
+  Widget _buildThemeCard(BuildContext context, AppLocalizations l10n, ThemeMode currentTheme) {
+    return Container(
+      padding: const EdgeInsets.all(16),
+      decoration: BoxDecoration(
+        color: Theme.of(context).cardColor,
+        borderRadius: BorderRadius.circular(12),
+        boxShadow: [
+          BoxShadow(
+            color: Colors.black.withOpacity(0.05),
+            blurRadius: 10,
+            offset: const Offset(0, 2),
+          ),
+        ],
+      ),
+      child: Row(
+        children: [
+          Container(
+            padding: const EdgeInsets.all(8),
+            decoration: BoxDecoration(
+              color: AppThemes.primaryColor.withOpacity(0.1),
+              borderRadius: BorderRadius.circular(8),
+            ),
+            child: Icon(_getThemeIcon(currentTheme), color: AppThemes.primaryColor, size: 20),
+          ),
+          const SizedBox(width: 12),
+          Expanded(
+            child: Text(
+              _getThemeName(currentTheme, l10n),
+              style: TextStyle(fontSize: 16, fontWeight: FontWeight.w500),
+            ),
+          ),
+          Row(
+            children: [
+              _buildThemeToggle(Icons.light_mode, currentTheme == ThemeMode.light, () => _changeTheme(ThemeMode.light)),
+              const SizedBox(width: 8),
+              _buildThemeToggle(Icons.dark_mode, currentTheme == ThemeMode.dark, () => _changeTheme(ThemeMode.dark)),
+            ],
+          ),
+        ],
+      ),
     );
   }
 
-
-
-  Widget _buildRestoreSetting(BuildContext context, AppLocalizations l10n) {
-    // Removed local loading state, rely on global listener or brief message
-    return ListTile(
-      leading: const Icon(Icons.restore),
-      title: Text(l10n.settingsRestorePurchase),
-      trailing: const Icon(Icons.chevron_right),
-      onTap: _restorePremium,
+  Widget _buildThemeToggle(IconData icon, bool isSelected, VoidCallback onTap) {
+    return GestureDetector(
+      onTap: onTap,
+      child: Container(
+        padding: const EdgeInsets.all(8),
+        decoration: BoxDecoration(
+          color: isSelected ? AppThemes.primaryColor : Colors.grey.withOpacity(0.2),
+          borderRadius: BorderRadius.circular(8),
+        ),
+        child: Icon(
+          icon,
+          color: isSelected ? Colors.white : Colors.grey[600],
+          size: 18,
+        ),
+      ),
     );
   }
 
-  Widget _buildAboutTile(BuildContext context, AppLocalizations l10n) {
-    return ListTile(
-      leading: const Icon(Icons.info_outline),
-      title: Text(l10n.settingsAbout),
-      subtitle: _appVersion.isNotEmpty ? Text("Version $_appVersion") : null,
-      trailing: const Icon(Icons.chevron_right),
-      onTap: _navigateToAbout,
-    );
-  }
-
-  Widget _buildContactTile(BuildContext context, AppLocalizations l10n) {
-    return ListTile(
-      leading: const Icon(Icons.contact_mail_outlined),
-      title: Text(l10n.settingsContact),
-      trailing: const Icon(Icons.chevron_right),
-      onTap: _navigateToContact,
-    );
-  }
-
-  Widget _buildRateTile(BuildContext context, AppLocalizations l10n) {
-    return ListTile(
-      leading: const Icon(Icons.star_outline),
-      title: Text(l10n.settingsRateApp),
-      trailing: const Icon(Icons.chevron_right),
-      onTap: _rateApp,
-    );
-  }
-
-  Widget _buildShareTile(BuildContext context, AppLocalizations l10n) {
-    return ListTile(
-      leading: const Icon(Icons.share_outlined),
-      title: Text(l10n.settingsShareApp),
-      trailing: const Icon(Icons.chevron_right),
-      onTap: _shareApp,
+  Widget _buildInfoCard(BuildContext context, AppLocalizations l10n, String title, IconData icon, Color color, VoidCallback onTap) {
+    return Container(
+      margin: const EdgeInsets.only(bottom: 8),
+      padding: const EdgeInsets.all(16),
+      decoration: BoxDecoration(
+        color: Theme.of(context).cardColor,
+        borderRadius: BorderRadius.circular(12),
+        boxShadow: [
+          BoxShadow(
+            color: Colors.black.withOpacity(0.05),
+            blurRadius: 10,
+            offset: const Offset(0, 2),
+          ),
+        ],
+      ),
+      child: InkWell(
+        onTap: onTap,
+        child: Row(
+          children: [
+            Container(
+              padding: const EdgeInsets.all(8),
+              decoration: BoxDecoration(
+                color: color.withOpacity(0.1),
+                borderRadius: BorderRadius.circular(8),
+              ),
+              child: Icon(icon, color: color, size: 20),
+            ),
+            const SizedBox(width: 12),
+            Expanded(
+              child: Text(
+                title,
+                style: TextStyle(fontSize: 16, fontWeight: FontWeight.w500),
+              ),
+            ),
+            Icon(Icons.chevron_right, color: Colors.grey[400]),
+          ],
+        ),
+      ),
     );
   }
 

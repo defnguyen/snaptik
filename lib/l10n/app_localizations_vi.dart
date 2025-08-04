@@ -450,4 +450,24 @@ class AppLocalizationsVi extends AppLocalizations {
 
   @override
   String get noVideosFromAuthor => 'Chưa có video nào từ tác giả này';
+
+  @override
+  String errorLoadingLibrary(Object error) {
+    return 'Lỗi tải thư viện: $error';
+  }
+
+  @override
+  String get downloadedMediaWillAppearHere => 'Các tệp phương tiện đã tải xuống sẽ xuất hiện ở đây.';
+
+  @override
+  String get noPhotosDownloadedYet => 'Chưa tải xuống ảnh nào.';
+
+  @override
+  String get noVideosDownloadedYet => 'Chưa tải xuống video nào.';
+
+  @override
+  String get noAudioDownloadedYet => 'Chưa tải xuống nhạc nào.';
+
+  @override
+  String get somethingWentWrong => 'Đã xảy ra lỗi.';
 }

@@ -990,6 +990,42 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'No videos from this author yet'**
   String get noVideosFromAuthor;
+
+  /// No description provided for @errorLoadingLibrary.
+  ///
+  /// In en, this message translates to:
+  /// **'Error loading library: {error}'**
+  String errorLoadingLibrary(Object error);
+
+  /// No description provided for @downloadedMediaWillAppearHere.
+  ///
+  /// In en, this message translates to:
+  /// **'Your downloaded media will appear here.'**
+  String get downloadedMediaWillAppearHere;
+
+  /// No description provided for @noPhotosDownloadedYet.
+  ///
+  /// In en, this message translates to:
+  /// **'No photos downloaded yet.'**
+  String get noPhotosDownloadedYet;
+
+  /// No description provided for @noVideosDownloadedYet.
+  ///
+  /// In en, this message translates to:
+  /// **'No videos downloaded yet.'**
+  String get noVideosDownloadedYet;
+
+  /// No description provided for @noAudioDownloadedYet.
+  ///
+  /// In en, this message translates to:
+  /// **'No audio downloaded yet.'**
+  String get noAudioDownloadedYet;
+
+  /// No description provided for @somethingWentWrong.
+  ///
+  /// In en, this message translates to:
+  /// **'Something went wrong.'**
+  String get somethingWentWrong;
 }
 
 class _AppLocalizationsDelegate extends LocalizationsDelegate<AppLocalizations> {

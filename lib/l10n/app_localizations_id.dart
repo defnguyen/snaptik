@@ -450,4 +450,24 @@ class AppLocalizationsId extends AppLocalizations {
 
   @override
   String get noVideosFromAuthor => 'Belum ada video dari penulis ini';
+
+  @override
+  String errorLoadingLibrary(Object error) {
+    return 'Error memuat pustaka: $error';
+  }
+
+  @override
+  String get downloadedMediaWillAppearHere => 'Media yang diunduh akan muncul di sini.';
+
+  @override
+  String get noPhotosDownloadedYet => 'Belum ada foto yang diunduh.';
+
+  @override
+  String get noVideosDownloadedYet => 'Belum ada video yang diunduh.';
+
+  @override
+  String get noAudioDownloadedYet => 'Belum ada musik yang diunduh.';
+
+  @override
+  String get somethingWentWrong => 'Terjadi kesalahan.';
 }

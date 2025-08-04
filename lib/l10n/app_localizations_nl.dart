@@ -450,4 +450,24 @@ class AppLocalizationsNl extends AppLocalizations {
 
   @override
   String get noVideosFromAuthor => 'Nog geen video\'s van deze auteur';
+
+  @override
+  String errorLoadingLibrary(Object error) {
+    return 'Fout bij het laden van bibliotheek: $error';
+  }
+
+  @override
+  String get downloadedMediaWillAppearHere => 'Je gedownloade media verschijnt hier.';
+
+  @override
+  String get noPhotosDownloadedYet => 'Nog geen foto\'s gedownload.';
+
+  @override
+  String get noVideosDownloadedYet => 'Nog geen video\'s gedownload.';
+
+  @override
+  String get noAudioDownloadedYet => 'Nog geen muziek gedownload.';
+
+  @override
+  String get somethingWentWrong => 'Er is iets misgegaan.';
 }

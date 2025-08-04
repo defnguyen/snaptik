@@ -68,27 +68,6 @@ class LibraryTabState extends State<LibraryTab>
   }
 
   void _handleTabSelection() {
-    // Check if the tab controller's index is now pointing to the Library Tab index
-    // AND that the animation is finished (to avoid multiple loads during swipe)
-    // Note: This listener might be too simple if the TabBar/BottomNav interaction is complex.
-    // A more robust way might involve checking visibility or using a different state management approach.
-
-    // Simple Reload: If the Library tab's internal TabController index changes, reload.
-    // This assumes the user is interacting *within* the Library tab's own tabs.
-    // *** A BETTER APPROACH: Reload when the MAIN BottomNav selects the Library Tab ***
-    // This requires modifying HomeScreen to inform LibraryTab or using a shared state/event.
-
-    // --- Let's try a pragmatic approach: Reload if the Bloc state is NOT loading ---
-    // This listener inside LibraryTab is for its *internal* tabs (Photo/Video/Voice).
-    // The real trigger needs to come when the *main* Library tab (BottomNav index 1) is selected.
-
-    // **REVISED STRATEGY:** Use `didChangeDependencies` and `ModalRoute.of(context)?.isCurrent`
-    // This isn't reliable for IndexedStack.
-
-    // **BEST SIMPLE STRATEGY:** Add a listener to the `HomeScreen`'s `BottomNavigationBar` `onTap`
-    // or modify the `_HomeScreenState` to call a reload method on the `LibraryTab`'s state or Bloc.
-
-    // Let's modify HomeScreen to trigger the reload.
   }
 
   // --- Add a method to be called externally to trigger reload ---
@@ -150,6 +129,8 @@ class LibraryTabState extends State<LibraryTab>
         body: BlocBuilder<LibraryBloc, LibraryState>(
           // buildWhen: (previous, current) => previous != current, // Optional optimization
           builder: (context, state) {
+            final l10n = AppLocalizations.of(context)!;
+
             if (state is LibraryLoading && state.allItems.isEmpty) {
               return const LoadingIndicator();
             }
@@ -157,8 +138,8 @@ class LibraryTabState extends State<LibraryTab>
               return Center(
                   child: Padding(
                 padding: const EdgeInsets.all(AppConstants.defaultPadding),
-                child: Text("Error loading library: ${state.message}",
-                    textAlign: TextAlign.center), // Localize
+                child: Text(l10n.errorLoadingLibrary(state.message),
+                    textAlign: TextAlign.center),
               ));
             }
             if (state is LibraryLoaded ||
@@ -171,8 +152,8 @@ class LibraryTabState extends State<LibraryTab>
 
               if (itemsToShow.isEmpty && state is LibraryLoaded) {
                 // Only show empty message if loaded and empty
-                return const Center(
-                    child: Text("Your downloaded media will appear here."));
+                return Center(
+                    child: Text(l10n.downloadedMediaWillAppearHere));
               }
 
               // Separate items for tabs based on the current state's items
@@ -197,8 +178,8 @@ class LibraryTabState extends State<LibraryTab>
                 ],
               );
             }
-            return const Center(
-                child: Text("Something went wrong.")); // Fallback, Localize
+            return Center(
+                child: Text(l10n.somethingWentWrong)); // Fallback, Localize
           },
         ),
       ),
@@ -213,14 +194,14 @@ class LibraryTabState extends State<LibraryTab>
       String emptyMessage;
       switch (typeForEmptyMessage) {
         case MediaType.photo:
-          emptyMessage = "No photos downloaded yet.";
-          break; // Localize all these
+          emptyMessage = l10n.noPhotosDownloadedYet;
+          break;
         case MediaType.video:
-          emptyMessage = "No videos downloaded yet.";
+          emptyMessage = l10n.noVideosDownloadedYet;
           break;
         case MediaType.voice:
         case MediaType.mp3:
-          emptyMessage = "No audio downloaded yet.";
+          emptyMessage = l10n.noAudioDownloadedYet;
           break;
       }
       return Center(child: Text(emptyMessage));

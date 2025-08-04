@@ -170,5 +170,11 @@
     "noAuthorsYet": "Пока нет авторов",
     "downloadSomethingFirst": "Сначала скачайте контент, чтобы увидеть авторов здесь",
     "authorVideos": "Видео {author}",
-    "noVideosFromAuthor": "Пока нет видео от этого автора"
+    "noVideosFromAuthor": "Пока нет видео от этого автора",
+    "errorLoadingLibrary": "Ошибка загрузки библиотеки: {error}",
+    "downloadedMediaWillAppearHere": "Загруженные медиафайлы появятся здесь.",
+    "noPhotosDownloadedYet": "Фотографии пока не загружены.",
+    "noVideosDownloadedYet": "Видео пока не загружены.",
+    "noAudioDownloadedYet": "Музыка пока не загружена.",
+    "somethingWentWrong": "Что-то пошло не так."
 }

@@ -170,5 +170,11 @@
     "noAuthorsYet": "Nog geen auteurs",
     "downloadSomethingFirst": "Download eerst wat inhoud om auteurs hier te zien",
     "authorVideos": "Video's van {author}",
-    "noVideosFromAuthor": "Nog geen video's van deze auteur"
+    "noVideosFromAuthor": "Nog geen video's van deze auteur",
+    "errorLoadingLibrary": "Fout bij het laden van bibliotheek: {error}",
+    "downloadedMediaWillAppearHere": "Je gedownloade media verschijnt hier.",
+    "noPhotosDownloadedYet": "Nog geen foto's gedownload.",
+    "noVideosDownloadedYet": "Nog geen video's gedownload.",
+    "noAudioDownloadedYet": "Nog geen muziek gedownload.",
+    "somethingWentWrong": "Er is iets misgegaan."
 }

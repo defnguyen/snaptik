@@ -170,5 +170,11 @@
     "noAuthorsYet": "Walang mga author pa",
     "downloadSomethingFirst": "Mag-download muna ng content para makita ang mga authors dito",
     "authorVideos": "Mga video ni {author}",
-    "noVideosFromAuthor": "Walang mga video pa mula sa author na ito"
+    "noVideosFromAuthor": "Walang mga video pa mula sa author na ito",
+    "errorLoadingLibrary": "Error sa pag-load ng library: {error}",
+    "downloadedMediaWillAppearHere": "Ang inyong mga na-download na media ay lalabas dito.",
+    "noPhotosDownloadedYet": "Wala pang na-download na mga larawan.",
+    "noVideosDownloadedYet": "Wala pang na-download na mga video.",
+    "noAudioDownloadedYet": "Wala pang na-download na musika.",
+    "somethingWentWrong": "May nangyaring mali."
 }

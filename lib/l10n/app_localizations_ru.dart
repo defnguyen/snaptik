@@ -450,4 +450,24 @@ class AppLocalizationsRu extends AppLocalizations {
 
   @override
   String get noVideosFromAuthor => 'Пока нет видео от этого автора';
+
+  @override
+  String errorLoadingLibrary(Object error) {
+    return 'Ошибка загрузки библиотеки: $error';
+  }
+
+  @override
+  String get downloadedMediaWillAppearHere => 'Загруженные медиафайлы появятся здесь.';
+
+  @override
+  String get noPhotosDownloadedYet => 'Фотографии пока не загружены.';
+
+  @override
+  String get noVideosDownloadedYet => 'Видео пока не загружены.';
+
+  @override
+  String get noAudioDownloadedYet => 'Музыка пока не загружена.';
+
+  @override
+  String get somethingWentWrong => 'Что-то пошло не так.';
 }

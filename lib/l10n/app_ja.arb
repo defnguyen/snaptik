@@ -170,5 +170,11 @@
     "noAuthorsYet": "まだ作者がいません",
     "downloadSomethingFirst": "ここで作者を見るためにコンテンツをダウンロードしてください",
     "authorVideos": "{author}の動画",
-    "noVideosFromAuthor": "この作者からの動画はまだありません"
+    "noVideosFromAuthor": "この作者からの動画はまだありません",
+    "errorLoadingLibrary": "ライブラリの読み込みエラー: {error}",
+    "downloadedMediaWillAppearHere": "ダウンロードしたメディアがここに表示されます。",
+    "noPhotosDownloadedYet": "まだ写真をダウンロードしていません。",
+    "noVideosDownloadedYet": "まだ動画をダウンロードしていません。",
+    "noAudioDownloadedYet": "まだ音楽をダウンロードしていません。",
+    "somethingWentWrong": "問題が発生しました。"
 }

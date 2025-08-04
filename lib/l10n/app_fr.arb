@@ -170,5 +170,11 @@
     "noAuthorsYet": "Aucun auteur pour l'instant",
     "downloadSomethingFirst": "Téléchargez du contenu pour voir les auteurs ici",
     "authorVideos": "Vidéos de {author}",
-    "noVideosFromAuthor": "Aucune vidéo de cet auteur pour l'instant"
+    "noVideosFromAuthor": "Aucune vidéo de cet auteur pour l'instant",
+    "errorLoadingLibrary": "Erreur lors du chargement de la bibliothèque : {error}",
+    "downloadedMediaWillAppearHere": "Vos médias téléchargés apparaîtront ici.",
+    "noPhotosDownloadedYet": "Aucune photo téléchargée pour le moment.",
+    "noVideosDownloadedYet": "Aucune vidéo téléchargée pour le moment.",
+    "noAudioDownloadedYet": "Aucune musique téléchargée pour le moment.",
+    "somethingWentWrong": "Quelque chose s'est mal passé."
 }

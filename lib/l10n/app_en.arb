@@ -170,5 +170,11 @@
     "noAuthorsYet": "No authors yet",
     "downloadSomethingFirst": "Download some content to see authors here",
     "authorVideos": "Videos by {author}",
-    "noVideosFromAuthor": "No videos from this author yet"
+    "noVideosFromAuthor": "No videos from this author yet",
+    "errorLoadingLibrary": "Error loading library: {error}",
+    "downloadedMediaWillAppearHere": "Your downloaded media will appear here.",
+    "noPhotosDownloadedYet": "No photos downloaded yet.",
+    "noVideosDownloadedYet": "No videos downloaded yet.",
+    "noAudioDownloadedYet": "No audio downloaded yet.",
+    "somethingWentWrong": "Something went wrong."
 }

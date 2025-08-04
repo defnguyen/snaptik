@@ -170,5 +170,11 @@
     "noAuthorsYet": "Ainda não há autores",
     "downloadSomethingFirst": "Baixe algum conteúdo primeiro para ver autores aqui",
     "authorVideos": "Vídeos de {author}",
-    "noVideosFromAuthor": "Ainda não há vídeos deste autor"
+    "noVideosFromAuthor": "Ainda não há vídeos deste autor",
+    "errorLoadingLibrary": "Erro ao carregar biblioteca: {error}",
+    "downloadedMediaWillAppearHere": "Sua mídia baixada aparecerá aqui.",
+    "noPhotosDownloadedYet": "Nenhuma foto baixada ainda.",
+    "noVideosDownloadedYet": "Nenhum vídeo baixado ainda.",
+    "noAudioDownloadedYet": "Nenhuma música baixada ainda.",
+    "somethingWentWrong": "Algo deu errado."
 }

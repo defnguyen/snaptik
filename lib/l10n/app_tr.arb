@@ -170,5 +170,11 @@
     "noAuthorsYet": "Henüz yazar yok",
     "downloadSomethingFirst": "Burada yazarları görmek için önce bazı içerikleri indirin",
     "authorVideos": "{author} tarafından videolar",
-    "noVideosFromAuthor": "Bu yazardan henüz video yok"
+    "noVideosFromAuthor": "Bu yazardan henüz video yok",
+    "errorLoadingLibrary": "Kütüphane yükleme hatası: {error}",
+    "downloadedMediaWillAppearHere": "İndirilen medyalarınız burada görünecek.",
+    "noPhotosDownloadedYet": "Henüz indirilmiş fotoğraf yok.",
+    "noVideosDownloadedYet": "Henüz indirilmiş video yok.",
+    "noAudioDownloadedYet": "Henüz indirilmiş müzik yok.",
+    "somethingWentWrong": "Bir şeyler ters gitti."
 }

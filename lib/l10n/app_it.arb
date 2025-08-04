@@ -170,5 +170,11 @@
     "noAuthorsYet": "Nessun autore ancora",
     "downloadSomethingFirst": "Scarica qualche contenuto per vedere gli autori qui",
     "authorVideos": "Video di {author}",
-    "noVideosFromAuthor": "Nessun video da questo autore ancora"
+    "noVideosFromAuthor": "Nessun video da questo autore ancora",
+    "errorLoadingLibrary": "Errore nel caricamento della libreria: {error}",
+    "downloadedMediaWillAppearHere": "I tuoi file multimediali scaricati appariranno qui.",
+    "noPhotosDownloadedYet": "Nessuna foto scaricata ancora.",
+    "noVideosDownloadedYet": "Nessun video scaricato ancora.",
+    "noAudioDownloadedYet": "Nessuna musica scaricata ancora.",
+    "somethingWentWrong": "Qualcosa è andato storto."
 }

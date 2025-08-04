@@ -450,4 +450,24 @@ class AppLocalizationsTr extends AppLocalizations {
 
   @override
   String get noVideosFromAuthor => 'Bu yazardan henüz video yok';
+
+  @override
+  String errorLoadingLibrary(Object error) {
+    return 'Kütüphane yükleme hatası: $error';
+  }
+
+  @override
+  String get downloadedMediaWillAppearHere => 'İndirilen medyalarınız burada görünecek.';
+
+  @override
+  String get noPhotosDownloadedYet => 'Henüz indirilmiş fotoğraf yok.';
+
+  @override
+  String get noVideosDownloadedYet => 'Henüz indirilmiş video yok.';
+
+  @override
+  String get noAudioDownloadedYet => 'Henüz indirilmiş müzik yok.';
+
+  @override
+  String get somethingWentWrong => 'Bir şeyler ters gitti.';
 }

@@ -450,4 +450,24 @@ class AppLocalizationsKo extends AppLocalizations {
 
   @override
   String get noVideosFromAuthor => '이 작성자의 동영상이 아직 없습니다';
+
+  @override
+  String errorLoadingLibrary(Object error) {
+    return '라이브러리 로딩 오류: $error';
+  }
+
+  @override
+  String get downloadedMediaWillAppearHere => '다운로드한 미디어가 여기에 표시됩니다.';
+
+  @override
+  String get noPhotosDownloadedYet => '아직 다운로드한 사진이 없습니다.';
+
+  @override
+  String get noVideosDownloadedYet => '아직 다운로드한 동영상이 없습니다.';
+
+  @override
+  String get noAudioDownloadedYet => '아직 다운로드한 음악이 없습니다.';
+
+  @override
+  String get somethingWentWrong => '문제가 발생했습니다.';
 }

@@ -170,5 +170,11 @@
     "noAuthorsYet": "Zatím žádní autoři",
     "downloadSomethingFirst": "Nejprve si stáhněte nějaký obsah, abyste zde viděli autory",
     "authorVideos": "Videa od {author}",
-    "noVideosFromAuthor": "Zatím žádná videa od tohoto autora"
+    "noVideosFromAuthor": "Zatím žádná videa od tohoto autora",
+    "errorLoadingLibrary": "Chyba při načítání knihovny: {error}",
+    "downloadedMediaWillAppearHere": "Zde se zobrazí vaše stažená média.",
+    "noPhotosDownloadedYet": "Zatím nejsou staženy žádné fotky.",
+    "noVideosDownloadedYet": "Zatím nejsou stažena žádná videa.",
+    "noAudioDownloadedYet": "Zatím není stažena žádná hudba.",
+    "somethingWentWrong": "Něco se pokazilo."
 }

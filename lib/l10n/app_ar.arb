@@ -170,5 +170,11 @@
     "noAuthorsYet": "لا يوجد مؤلفون حتى الآن",
     "downloadSomethingFirst": "حمل بعض المحتوى لرؤية المؤلفين هنا",
     "authorVideos": "فيديوهات {author}",
-    "noVideosFromAuthor": "لا توجد فيديوهات من هذا المؤلف حتى الآن"
+    "noVideosFromAuthor": "لا توجد فيديوهات من هذا المؤلف حتى الآن",
+    "errorLoadingLibrary": "خطأ في تحميل المكتبة: {error}",
+    "downloadedMediaWillAppearHere": "ستظهر الوسائط المحملة هنا.",
+    "noPhotosDownloadedYet": "لم يتم تحميل أي صور بعد.",
+    "noVideosDownloadedYet": "لم يتم تحميل أي فيديوهات بعد.",
+    "noAudioDownloadedYet": "لم يتم تحميل أي موسيقى بعد.",
+    "somethingWentWrong": "حدث خطأ ما."
 }

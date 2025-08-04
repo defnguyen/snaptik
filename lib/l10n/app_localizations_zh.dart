@@ -450,4 +450,24 @@ class AppLocalizationsZh extends AppLocalizations {
 
   @override
   String get noVideosFromAuthor => '此作者暂无视频';
+
+  @override
+  String errorLoadingLibrary(Object error) {
+    return '加载库时出错：$error';
+  }
+
+  @override
+  String get downloadedMediaWillAppearHere => '您下载的媒体文件将出现在这里。';
+
+  @override
+  String get noPhotosDownloadedYet => '还没有下载任何照片。';
+
+  @override
+  String get noVideosDownloadedYet => '还没有下载任何视频。';
+
+  @override
+  String get noAudioDownloadedYet => '还没有下载任何音乐。';
+
+  @override
+  String get somethingWentWrong => '出现了问题。';
 }

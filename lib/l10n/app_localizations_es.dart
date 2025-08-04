@@ -450,4 +450,24 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String get noVideosFromAuthor => 'Aún no hay videos de este autor';
+
+  @override
+  String errorLoadingLibrary(Object error) {
+    return 'Error al cargar la biblioteca: $error';
+  }
+
+  @override
+  String get downloadedMediaWillAppearHere => 'Tus archivos descargados aparecerán aquí.';
+
+  @override
+  String get noPhotosDownloadedYet => 'Aún no has descargado fotos.';
+
+  @override
+  String get noVideosDownloadedYet => 'Aún no has descargado videos.';
+
+  @override
+  String get noAudioDownloadedYet => 'Aún no has descargado música.';
+
+  @override
+  String get somethingWentWrong => 'Algo salió mal.';
 }

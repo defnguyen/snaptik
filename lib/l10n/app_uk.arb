@@ -170,5 +170,11 @@
     "noAuthorsYet": "Поки немає авторів",
     "downloadSomethingFirst": "Спочатку завантажте контент, щоб побачити авторів тут",
     "authorVideos": "Відео від {author}",
-    "noVideosFromAuthor": "Поки немає відео від цього автора"
+    "noVideosFromAuthor": "Поки немає відео від цього автора",
+    "errorLoadingLibrary": "Помилка завантаження бібліотеки: {error}",
+    "downloadedMediaWillAppearHere": "Завантажені медіафайли з'являться тут.",
+    "noPhotosDownloadedYet": "Фото ще не завантажено.",
+    "noVideosDownloadedYet": "Відео ще не завантажено.",
+    "noAudioDownloadedYet": "Музику ще не завантажено.",
+    "somethingWentWrong": "Щось пішло не так."
 }

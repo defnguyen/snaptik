@@ -450,4 +450,24 @@ class AppLocalizationsTh extends AppLocalizations {
 
   @override
   String get noVideosFromAuthor => 'ยังไม่มีวิดีโอจากผู้สร้างนี้';
+
+  @override
+  String errorLoadingLibrary(Object error) {
+    return 'เกิดข้อผิดพลาดในการโหลดไลบรารี: $error';
+  }
+
+  @override
+  String get downloadedMediaWillAppearHere => 'สื่อที่ดาวน์โหลดจะปรากฏที่นี่';
+
+  @override
+  String get noPhotosDownloadedYet => 'ยังไม่มีรูปภาพที่ดาวน์โหลด';
+
+  @override
+  String get noVideosDownloadedYet => 'ยังไม่มีวิดีโอที่ดาวน์โหลด';
+
+  @override
+  String get noAudioDownloadedYet => 'ยังไม่มีเพลงที่ดาวน์โหลด';
+
+  @override
+  String get somethingWentWrong => 'เกิดข้อผิดพลาด';
 }

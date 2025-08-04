@@ -450,4 +450,24 @@ class AppLocalizationsAr extends AppLocalizations {
 
   @override
   String get noVideosFromAuthor => 'لا توجد فيديوهات من هذا المؤلف حتى الآن';
+
+  @override
+  String errorLoadingLibrary(Object error) {
+    return 'خطأ في تحميل المكتبة: $error';
+  }
+
+  @override
+  String get downloadedMediaWillAppearHere => 'ستظهر الوسائط المحملة هنا.';
+
+  @override
+  String get noPhotosDownloadedYet => 'لم يتم تحميل أي صور بعد.';
+
+  @override
+  String get noVideosDownloadedYet => 'لم يتم تحميل أي فيديوهات بعد.';
+
+  @override
+  String get noAudioDownloadedYet => 'لم يتم تحميل أي موسيقى بعد.';
+
+  @override
+  String get somethingWentWrong => 'حدث خطأ ما.';
 }

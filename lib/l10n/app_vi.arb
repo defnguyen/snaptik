@@ -170,5 +170,11 @@
     "noAuthorsYet": "Chưa có tác giả nào",
     "downloadSomethingFirst": "Tải xuống một số nội dung trước để xem tác giả ở đây",
     "authorVideos": "Video của {author}",
-    "noVideosFromAuthor": "Chưa có video nào từ tác giả này"
+    "noVideosFromAuthor": "Chưa có video nào từ tác giả này",
+    "errorLoadingLibrary": "Lỗi tải thư viện: {error}",
+    "downloadedMediaWillAppearHere": "Các tệp phương tiện đã tải xuống sẽ xuất hiện ở đây.",
+    "noPhotosDownloadedYet": "Chưa tải xuống ảnh nào.",
+    "noVideosDownloadedYet": "Chưa tải xuống video nào.",
+    "noAudioDownloadedYet": "Chưa tải xuống nhạc nào.",
+    "somethingWentWrong": "Đã xảy ra lỗi."
 }

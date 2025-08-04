@@ -450,4 +450,24 @@ class AppLocalizationsSv extends AppLocalizations {
 
   @override
   String get noVideosFromAuthor => 'Inga videor från den här författaren än';
+
+  @override
+  String errorLoadingLibrary(Object error) {
+    return 'Fel vid laddning av bibliotek: $error';
+  }
+
+  @override
+  String get downloadedMediaWillAppearHere => 'Din nedladdade media kommer att visas här.';
+
+  @override
+  String get noPhotosDownloadedYet => 'Inga foton nedladdade ännu.';
+
+  @override
+  String get noVideosDownloadedYet => 'Inga videor nedladdade ännu.';
+
+  @override
+  String get noAudioDownloadedYet => 'Ingen musik nedladdad ännu.';
+
+  @override
+  String get somethingWentWrong => 'Något gick fel.';
 }

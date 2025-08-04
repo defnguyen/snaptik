@@ -450,4 +450,24 @@ class AppLocalizationsFil extends AppLocalizations {
 
   @override
   String get noVideosFromAuthor => 'Walang mga video pa mula sa author na ito';
+
+  @override
+  String errorLoadingLibrary(Object error) {
+    return 'Error sa pag-load ng library: $error';
+  }
+
+  @override
+  String get downloadedMediaWillAppearHere => 'Ang inyong mga na-download na media ay lalabas dito.';
+
+  @override
+  String get noPhotosDownloadedYet => 'Wala pang na-download na mga larawan.';
+
+  @override
+  String get noVideosDownloadedYet => 'Wala pang na-download na mga video.';
+
+  @override
+  String get noAudioDownloadedYet => 'Wala pang na-download na musika.';
+
+  @override
+  String get somethingWentWrong => 'May nangyaring mali.';
 }

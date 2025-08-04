@@ -12,7 +12,7 @@ class AppThemes {
     primarySwatch: _createMaterialColor(primaryColor),
     primaryColor: primaryColor,
     visualDensity: VisualDensity.adaptivePlatformDensity,
-    scaffoldBackgroundColor: Colors.grey[100],
+    scaffoldBackgroundColor: Color(0xFFe6e7eb),
     appBarTheme: const AppBarTheme(
       backgroundColor: primaryColor,
       foregroundColor: Colors.white,
@@ -85,7 +85,7 @@ class AppThemes {
     primarySwatch: _createMaterialColor(primaryColor),
     primaryColor: primaryColor,
     visualDensity: VisualDensity.adaptivePlatformDensity,
-    scaffoldBackgroundColor: Colors.black, // Or a very dark grey
+    scaffoldBackgroundColor: Color(0xFF121212), // Keep dark background for dark theme
     appBarTheme: AppBarTheme(
       backgroundColor: Colors.grey[900], // Darker AppBar
       foregroundColor: Colors.white,

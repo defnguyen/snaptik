@@ -450,4 +450,24 @@ class AppLocalizationsJa extends AppLocalizations {
 
   @override
   String get noVideosFromAuthor => 'この作者からの動画はまだありません';
+
+  @override
+  String errorLoadingLibrary(Object error) {
+    return 'ライブラリの読み込みエラー: $error';
+  }
+
+  @override
+  String get downloadedMediaWillAppearHere => 'ダウンロードしたメディアがここに表示されます。';
+
+  @override
+  String get noPhotosDownloadedYet => 'まだ写真をダウンロードしていません。';
+
+  @override
+  String get noVideosDownloadedYet => 'まだ動画をダウンロードしていません。';
+
+  @override
+  String get noAudioDownloadedYet => 'まだ音楽をダウンロードしていません。';
+
+  @override
+  String get somethingWentWrong => '問題が発生しました。';
 }
