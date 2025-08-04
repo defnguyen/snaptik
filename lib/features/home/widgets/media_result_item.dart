@@ -102,15 +102,15 @@ class _MediaResultItemContentState extends State<MediaResultItemContent> {
   Color _getBadgeColor(String quality) {
     switch (quality.toUpperCase()) {
       case 'HD - NO WATERMARK':
-        return Colors.green;
+        return Colors.blue;
       case 'NO WATERMARK':
         return Colors.blue;
       case 'WATERMARK':
         return Colors.orange;
       case 'MUSIC':
-        return Colors.purple;
+        return Colors.blue;
       case 'PHOTO':
-        return Colors.teal;
+        return Colors.blue;
       default:
         return Colors.grey;
     }
@@ -363,6 +363,7 @@ class _MediaResultItemContentState extends State<MediaResultItemContent> {
         minimumSize: const Size(0, 30), // Smaller minimum size
         textStyle: const TextStyle(fontSize: 12),
         disabledBackgroundColor: Colors.grey.shade400,
+        iconColor: Colors.white
       ),
     );
   }

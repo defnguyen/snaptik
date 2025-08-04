@@ -45,6 +45,8 @@ Future<void> main() async {
 
   // Initialize Core Cubits / Blocs
   final themeCubit = ThemeCubit(localStorageService)..loadTheme();
+  // Force dark theme
+  await themeCubit.changeTheme(ThemeMode.dark);
   final localeCubit = LocaleCubit(localStorageService)..loadLocale();
   final downloadLimitCubit = DownloadLimitCubit(localStorageService)
     ..loadLimit();

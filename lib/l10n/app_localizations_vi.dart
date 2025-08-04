@@ -9,7 +9,7 @@ class AppLocalizationsVi extends AppLocalizations {
   AppLocalizationsVi([String locale = 'vi']) : super(locale);
 
   @override
-  String get appTitle => 'Threads Video Downloader';
+  String get appTitle => 'TikTok Downloader';
 
   @override
   String get homeTab => 'Trang chủ';
@@ -30,28 +30,28 @@ class AppLocalizationsVi extends AppLocalizations {
   String get download => 'Tải xuống';
 
   @override
-  String get enterThreadsUrl => 'Nhập URL Threads/Instagram';
+  String get enterTiktokUrl => 'Nhập URL TikTok';
 
   @override
   String get howToUseTitle => 'Cách sử dụng:';
 
   @override
-  String get howToUseStep1 => '1. Mở Threads và tìm bài đăng bạn muốn tải xuống.';
+  String get howToUseStep1 => '1. Mở TikTok và tìm video bạn muốn tải xuống.';
 
   @override
-  String get howToUseStep2 => '2. Nhấn vào biểu tượng \'Chia sẻ\' bên dưới bài đăng.';
+  String get howToUseStep2 => '2. Chạm vào biểu tượng \'Chia sẻ\' ở bên phải video.';
 
   @override
   String get howToUseStep3 => '3. Chọn \'Sao chép liên kết\'.';
 
   @override
-  String get howToUseStep4 => '4. Dán liên kết vào ô nhập liệu ở trên và nhấn \'Tải xuống\'.';
+  String get howToUseStep4 => '4. Dán liên kết vào trường nhập ở trên và chạm \'Tải xuống\'.';
 
   @override
-  String get invalidUrlError => 'Định dạng URL Threads không hợp lệ.';
+  String get invalidUrlError => 'Định dạng URL TikTok không hợp lệ.';
 
   @override
-  String get fetchingMedia => 'Đang tải dữ liệu...';
+  String get fetchingMedia => 'Đang tải media...';
 
   @override
   String get downloadPhoto => 'Tải xuống ảnh';
@@ -60,7 +60,7 @@ class AppLocalizationsVi extends AppLocalizations {
   String get downloadVideo => 'Tải xuống video';
 
   @override
-  String get downloadVoice => 'Tải xuống voice';
+  String get downloadVoice => 'Tải xuống nhạc';
 
   @override
   String get downloadMp3 => 'Tải xuống MP3';
@@ -79,7 +79,7 @@ class AppLocalizationsVi extends AppLocalizations {
 
   @override
   String downloadLimitReachedMessage(Object limit) {
-    return 'Bạn đã đạt đến giới hạn tải xuống ($limit lần). Xem quảng cáo ngắn để nhận thêm 5 lần tải xuống.';
+    return 'Bạn đã đạt giới hạn tải xuống ($limit lần). Xem quảng cáo ngắn để có thêm 5 lần tải xuống.';
   }
 
   @override
@@ -95,7 +95,7 @@ class AppLocalizationsVi extends AppLocalizations {
   String get videosTab => 'Video';
 
   @override
-  String get voiceTab => 'Voice';
+  String get musicTab => 'Nhạc';
 
   @override
   String get view => 'Xem';
@@ -113,7 +113,7 @@ class AppLocalizationsVi extends AppLocalizations {
   String get delete => 'Xóa';
 
   @override
-  String get mediaInfoTitle => 'Thông tin tập tin';
+  String get mediaInfoTitle => 'Thông tin media';
 
   @override
   String get fileName => 'Tên';
@@ -128,7 +128,7 @@ class AppLocalizationsVi extends AppLocalizations {
   String get fileSize => 'Kích thước';
 
   @override
-  String get renameMediaTitle => 'Đổi tên tập tin';
+  String get renameMediaTitle => 'Đổi tên media';
 
   @override
   String get enterNewName => 'Nhập tên mới';
@@ -140,7 +140,7 @@ class AppLocalizationsVi extends AppLocalizations {
   String get deleteConfirmationTitle => 'Xác nhận xóa';
 
   @override
-  String get deleteConfirmationMessage => 'Bạn có chắc chắn muốn xóa tập tin này? Hành động này không thể hoàn tác.';
+  String get deleteConfirmationMessage => 'Bạn có chắc muốn xóa tệp này? Hành động này không thể hoàn tác.';
 
   @override
   String get confirm => 'Xác nhận';
@@ -164,7 +164,7 @@ class AppLocalizationsVi extends AppLocalizations {
   String get settingsClaimMoreDownloads => 'Nhận thêm 5 lần tải xuống';
 
   @override
-  String get settingsClaimSuccess => 'Thành công! Bạn đã có thêm 5 lần tải xuống.';
+  String get settingsClaimSuccess => 'Thành công! Bạn có thêm 5 lần tải xuống.';
 
   @override
   String get settingsClaimError => 'Không thể tải quảng cáo. Vui lòng thử lại sau.';
@@ -173,19 +173,19 @@ class AppLocalizationsVi extends AppLocalizations {
   String get settingsPremium => 'Nâng cấp lên Premium';
 
   @override
-  String get settingsPremiumDescription => 'Xoá hoàn toàn quảng cáo và tải xuống không giới hạn.';
+  String get settingsPremiumDescription => 'Xóa quảng cáo và có tải xuống không giới hạn.';
 
   @override
-  String get settingsRestorePurchase => 'Khôi phục Premium';
+  String get settingsRestorePurchase => 'Khôi phục giao dịch mua';
 
   @override
-  String get settingsRestoreSuccess => 'Khôi phục giao dịch thành công!';
+  String get settingsRestoreSuccess => 'Khôi phục giao dịch mua thành công!';
 
   @override
-  String get settingsRestoreError => 'Không thể khôi phục giao dịch. Không tìm thấy gói đăng ký hoạt động hoặc đã xảy ra lỗi.';
+  String get settingsRestoreError => 'Không thể khôi phục giao dịch mua. Không tìm thấy gói đăng ký hoạt động hoặc có lỗi xảy ra.';
 
   @override
-  String get settingsGeneralSection => 'Tổng quan';
+  String get settingsGeneralSection => 'Chung';
 
   @override
   String get settingsDownloadsSection => 'Tải xuống';
@@ -194,10 +194,10 @@ class AppLocalizationsVi extends AppLocalizations {
   String get settingsAccountSection => 'Tài khoản';
 
   @override
-  String get settingsSupportSection => 'Hỗ trợ & Phản hồi';
+  String get settingsSupportSection => 'Hỗ trợ và phản hồi';
 
   @override
-  String get settingsAbout => 'Giới thiệu';
+  String get settingsAbout => 'Về ứng dụng';
 
   @override
   String get settingsContact => 'Liên hệ';
@@ -212,13 +212,13 @@ class AppLocalizationsVi extends AppLocalizations {
   String get premiumUser => 'Người dùng Premium';
 
   @override
-  String get aboutTitle => 'Giới thiệu Threads Downloader';
+  String get aboutTitle => 'Về TikTok Downloader';
 
   @override
-  String get aboutContent => 'Ứng dụng này giúp bạn tải xuống ảnh, video và ghi âm công khai từ các bài đăng Threads.\n\nVui lòng tôn trọng bản quyền và quyền riêng tư. Chỉ tải xuống nội dung mà bạn được phép sử dụng.';
+  String get aboutContent => 'Ứng dụng này giúp bạn tải xuống video, ảnh và âm thanh công khai từ các bài đăng TikTok.\n\nVui lòng tôn trọng bản quyền và quyền riêng tư. Chỉ tải xuống nội dung mà bạn có quyền sử dụng.';
 
   @override
-  String get contactTitle => 'Liên hệ với chúng tôi';
+  String get contactTitle => 'Liên hệ';
 
   @override
   String get contactNameHint => 'Tên của bạn';
@@ -242,19 +242,19 @@ class AppLocalizationsVi extends AppLocalizations {
   String get contactError => 'Không thể gửi tin nhắn. Vui lòng thử lại sau.';
 
   @override
-  String get permissionRequiredTitle => 'Yêu cầu quyền truy cập';
+  String get permissionRequiredTitle => 'Cần quyền truy cập';
 
   @override
-  String get permissionStorageDenied => 'Cần quyền truy cập bộ nhớ để lưu các tập tin đã tải xuống. Vui lòng cấp quyền trong cài đặt.';
+  String get permissionStorageDenied => 'Cần quyền truy cập bộ nhớ để lưu các tệp đã tải xuống. Vui lòng cấp quyền trong cài đặt.';
 
   @override
-  String get permissionPhotosDenied => 'Cần quyền truy cập ảnh để lưu các tập tin đã tải xuống (iOS). Vui lòng cấp quyền trong cài đặt.';
+  String get permissionPhotosDenied => 'Cần quyền truy cập ảnh để lưu các tệp đã tải xuống (iOS). Vui lòng cấp quyền trong cài đặt.';
 
   @override
-  String get permissionNotificationDenied => 'Nên cấp quyền thông báo để cập nhật tiến trình tải xuống.';
+  String get permissionNotificationDenied => 'Khuyến nghị cấp quyền thông báo để cập nhật tiến trình tải xuống.';
 
   @override
-  String get permissiongoToSettings => 'Đi đến Cài đặt';
+  String get permissiongoToSettings => 'Đi đến cài đặt';
 
   @override
   String get ok => 'OK';
@@ -278,7 +278,7 @@ class AppLocalizationsVi extends AppLocalizations {
   String get planLifetime => 'Trọn đời';
 
   @override
-  String get oneTimePurchase => 'Thanh toán một lần';
+  String get oneTimePurchase => 'Mua một lần';
 
   @override
   String savePercent(String percent) {
@@ -295,30 +295,30 @@ class AppLocalizationsVi extends AppLocalizations {
   String get selectPlanErrorMessage => 'Không thể tải các gói đăng ký. Vui lòng kiểm tra kết nối internet và thử lại.';
 
   @override
-  String get purchaseFailed => 'Thanh toán thất bại';
+  String get purchaseFailed => 'Mua hàng thất bại';
 
   @override
-  String get purchaseCancelled => 'Đã hủy thanh toán';
+  String get purchaseCancelled => 'Đã hủy mua hàng';
 
   @override
-  String get purchasePending => 'Đang xử lý thanh toán';
+  String get purchasePending => 'Giao dịch mua đang chờ';
 
   @override
-  String get purchaseSuccess => 'Thanh toán thành công!';
+  String get purchaseSuccess => 'Mua hàng thành công!';
 
   @override
   String get alreadyPremium => 'Bạn đã là người dùng Premium.';
 
   @override
-  String get getPremium => 'Nâng cấp Premium';
+  String get getPremium => 'Nhận Premium';
 
   @override
   String downloadsRemainingMessage(Object currentLimit) {
-    return 'Lượt tải còn lại: $currentLimit. Bạn có thể nhận các lượt tải miễn phí bằng cách xem quảng cáo';
+    return 'Số lần tải xuống còn lại: $currentLimit. Bạn có thể nhận tải xuống miễn phí bằng cách xem quảng cáo';
   }
 
   @override
-  String get unlockSaveVideoPro => 'Mở khóa tính năng cao cấp';
+  String get unlockSaveVideoPro => 'Mở khóa tính năng Premium';
 
   @override
   String get noAdsUnlockAllFeatures => 'Không quảng cáo và mở khóa tất cả tính năng';
@@ -327,10 +327,10 @@ class AppLocalizationsVi extends AppLocalizations {
   String get removeAds => 'Xóa tất cả quảng cáo';
 
   @override
-  String get threadsDownloads => 'Tải xuống không giới hạn video, ảnh và tin nhắn thoại HD từ Threads';
+  String get tiktokDownloads => 'Tải xuống HD không giới hạn video, ảnh và nhạc từ TikTok';
 
   @override
-  String get instagramDownloads => 'Tải xuống không giới hạn video, ảnh, reels, story và hồ sơ HD từ Instagram';
+  String get instagramDownloads => 'Tải xuống chất lượng cao không có watermark';
 
   @override
   String get lifetimePro => 'Pro trọn đời';
@@ -372,7 +372,7 @@ class AppLocalizationsVi extends AppLocalizations {
   String get loadingPlans => 'Đang tải gói...';
 
   @override
-  String get failedToLoadPlans => 'Tải gói thất bại';
+  String get failedToLoadPlans => 'Không thể tải gói';
 
   @override
   String get retry => 'Thử lại';
@@ -396,58 +396,58 @@ class AppLocalizationsVi extends AppLocalizations {
   String get supportedPlatforms => 'Nền tảng được hỗ trợ';
 
   @override
-  String get supportThreads => 'Tải xuống video, hình ảnh và tin nhắn thoại';
+  String get supportTiktok => 'Tải xuống video, hình ảnh, nhạc';
 
   @override
-  String get supportInstagram => 'Tải xuống video, hình ảnh, Reels, Stories và hồ sơ';
+  String get supportInstagram => 'Tải xuống chất lượng cao không có watermark';
 
   @override
-  String get playlistTab => 'Playlist';
+  String get playlistTab => 'Danh sách phát';
 
   @override
-  String get authorsTab => 'Authors';
+  String get authorsTab => 'Tác giả';
 
   @override
-  String get createPlaylist => 'Create Playlist';
+  String get createPlaylist => 'Tạo danh sách phát';
 
   @override
-  String get playlistTitle => 'Playlist Title';
+  String get playlistTitle => 'Tiêu đề danh sách phát';
 
   @override
-  String get playlistDescription => 'Description';
+  String get playlistDescription => 'Mô tả';
 
   @override
-  String get chooseFiles => 'Choose Files';
+  String get chooseFiles => 'Chọn tệp';
 
   @override
-  String get createPlaylistButton => 'Create Playlist';
+  String get createPlaylistButton => 'Tạo danh sách phát';
 
   @override
-  String get playlistTitleHint => 'Enter playlist title';
+  String get playlistTitleHint => 'Nhập tiêu đề danh sách phát';
 
   @override
-  String get playlistDescriptionHint => 'Enter playlist description (optional)';
+  String get playlistDescriptionHint => 'Nhập mô tả danh sách phát (tùy chọn)';
 
   @override
-  String get selectFiles => 'Select files to add to playlist';
+  String get selectFiles => 'Chọn tệp để thêm vào danh sách phát';
 
   @override
-  String get noPlaylistsYet => 'No playlists yet';
+  String get noPlaylistsYet => 'Chưa có danh sách phát nào';
 
   @override
-  String get createFirstPlaylist => 'Create your first playlist to organize your downloads';
+  String get createFirstPlaylist => 'Tạo danh sách phát đầu tiên để sắp xếp các tệp tải xuống';
 
   @override
-  String get noAuthorsYet => 'No authors yet';
+  String get noAuthorsYet => 'Chưa có tác giả nào';
 
   @override
-  String get downloadSomethingFirst => 'Download some content to see authors here';
+  String get downloadSomethingFirst => 'Tải xuống một số nội dung trước để xem tác giả ở đây';
 
   @override
   String authorVideos(Object author) {
-    return 'Videos by $author';
+    return 'Video của $author';
   }
 
   @override
-  String get noVideosFromAuthor => 'No videos from this author yet';
+  String get noVideosFromAuthor => 'Chưa có video nào từ tác giả này';
 }

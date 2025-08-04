@@ -9,7 +9,7 @@ class AppLocalizationsKo extends AppLocalizations {
   AppLocalizationsKo([String locale = 'ko']) : super(locale);
 
   @override
-  String get appTitle => 'Threads 비디오 다운로더';
+  String get appTitle => 'TikTok 다운로더';
 
   @override
   String get homeTab => '홈';
@@ -30,16 +30,16 @@ class AppLocalizationsKo extends AppLocalizations {
   String get download => '다운로드';
 
   @override
-  String get enterThreadsUrl => 'Threads/Instagram URL 입력';
+  String get enterTiktokUrl => 'TikTok URL 입력';
 
   @override
   String get howToUseTitle => '사용 방법:';
 
   @override
-  String get howToUseStep1 => '1. Threads를 열고 다운로드하려는 게시물을 찾으세요.';
+  String get howToUseStep1 => '1. TikTok을 열고 다운로드하고 싶은 동영상을 찾으세요.';
 
   @override
-  String get howToUseStep2 => '2. 게시물 아래의 \'공유\' 아이콘을 탭하세요.';
+  String get howToUseStep2 => '2. 동영상 오른쪽의 \'공유\' 아이콘을 탭하세요.';
 
   @override
   String get howToUseStep3 => '3. \'링크 복사\'를 선택하세요.';
@@ -48,7 +48,7 @@ class AppLocalizationsKo extends AppLocalizations {
   String get howToUseStep4 => '4. 위의 입력 필드에 링크를 붙여넣고 \'다운로드\'를 탭하세요.';
 
   @override
-  String get invalidUrlError => '잘못된 Threads URL 형식입니다.';
+  String get invalidUrlError => '잘못된 TikTok URL 형식입니다.';
 
   @override
   String get fetchingMedia => '미디어 가져오는 중...';
@@ -57,10 +57,10 @@ class AppLocalizationsKo extends AppLocalizations {
   String get downloadPhoto => '사진 다운로드';
 
   @override
-  String get downloadVideo => '비디오 다운로드';
+  String get downloadVideo => '동영상 다운로드';
 
   @override
-  String get downloadVoice => '음성 다운로드';
+  String get downloadVoice => '음악 다운로드';
 
   @override
   String get downloadMp3 => 'MP3 다운로드';
@@ -79,7 +79,7 @@ class AppLocalizationsKo extends AppLocalizations {
 
   @override
   String downloadLimitReachedMessage(Object limit) {
-    return '다운로드 한도($limit회)에 도달했습니다. 짧은 광고를 시청하여 5회 더 다운로드할 수 있습니다.';
+    return '다운로드 한도에 도달했습니다 ($limit회). 짧은 광고를 시청하고 5회 다운로드 기회를 더 얻으세요.';
   }
 
   @override
@@ -92,10 +92,10 @@ class AppLocalizationsKo extends AppLocalizations {
   String get photosTab => '사진';
 
   @override
-  String get videosTab => '비디오';
+  String get videosTab => '동영상';
 
   @override
-  String get voiceTab => '음성';
+  String get musicTab => '음악';
 
   @override
   String get view => '보기';
@@ -104,7 +104,7 @@ class AppLocalizationsKo extends AppLocalizations {
   String get info => '정보';
 
   @override
-  String get rename => '이름 변경';
+  String get rename => '이름 바꾸기';
 
   @override
   String get share => '공유';
@@ -128,7 +128,7 @@ class AppLocalizationsKo extends AppLocalizations {
   String get fileSize => '크기';
 
   @override
-  String get renameMediaTitle => '미디어 이름 변경';
+  String get renameMediaTitle => '미디어 이름 바꾸기';
 
   @override
   String get enterNewName => '새 이름 입력';
@@ -140,7 +140,7 @@ class AppLocalizationsKo extends AppLocalizations {
   String get deleteConfirmationTitle => '삭제 확인';
 
   @override
-  String get deleteConfirmationMessage => '이 파일을 삭제하시겠습니까? 이 작업은 취소할 수 없습니다.';
+  String get deleteConfirmationMessage => '이 파일을 삭제하시겠습니까? 이 작업은 되돌릴 수 없습니다.';
 
   @override
   String get confirm => '확인';
@@ -152,28 +152,28 @@ class AppLocalizationsKo extends AppLocalizations {
   String get settingsTheme => '테마';
 
   @override
-  String get settingsThemeLight => '라이트';
+  String get settingsThemeLight => '밝음';
 
   @override
-  String get settingsThemeDark => '다크';
+  String get settingsThemeDark => '어둠';
 
   @override
   String get settingsThemeSystem => '시스템';
 
   @override
-  String get settingsClaimMoreDownloads => '5회 더 다운로드 받기';
+  String get settingsClaimMoreDownloads => '5회 다운로드 더 받기';
 
   @override
-  String get settingsClaimSuccess => '성공! 5회 더 다운로드할 수 있습니다.';
+  String get settingsClaimSuccess => '성공! 5회 다운로드가 더 있습니다.';
 
   @override
-  String get settingsClaimError => '광고 로드에 실패했습니다. 나중에 다시 시도해 주세요.';
+  String get settingsClaimError => '광고를 로드하지 못했습니다. 나중에 다시 시도해 주세요.';
 
   @override
   String get settingsPremium => '프리미엄으로 업그레이드';
 
   @override
-  String get settingsPremiumDescription => '광고 제거 및 무제한 다운로드 이용.';
+  String get settingsPremiumDescription => '광고를 제거하고 무제한 다운로드를 받으세요.';
 
   @override
   String get settingsRestorePurchase => '구매 복원';
@@ -182,7 +182,7 @@ class AppLocalizationsKo extends AppLocalizations {
   String get settingsRestoreSuccess => '구매가 성공적으로 복원되었습니다!';
 
   @override
-  String get settingsRestoreError => '구매 복원에 실패했습니다. 활성 구독을 찾을 수 없거나 오류가 발생했습니다.';
+  String get settingsRestoreError => '구매를 복원하지 못했습니다. 활성 구독을 찾을 수 없거나 오류가 발생했습니다.';
 
   @override
   String get settingsGeneralSection => '일반';
@@ -203,19 +203,19 @@ class AppLocalizationsKo extends AppLocalizations {
   String get settingsContact => '문의하기';
 
   @override
-  String get settingsRateApp => '앱 평가하기';
+  String get settingsRateApp => '이 앱 평가하기';
 
   @override
-  String get settingsShareApp => '앱 공유하기';
+  String get settingsShareApp => '이 앱 공유하기';
 
   @override
   String get premiumUser => '프리미엄 사용자';
 
   @override
-  String get aboutTitle => 'Threads 다운로더 정보';
+  String get aboutTitle => 'TikTok 다운로더 정보';
 
   @override
-  String get aboutContent => '이 앱은 Threads 게시물에서 공개 사진, 비디오 및 음성 메모를 다운로드하는 데 도움을 줍니다.\n\n저작권과 개인 정보를 존중해 주세요. 사용 권한이 있는 콘텐츠만 다운로드하세요.';
+  String get aboutContent => '이 앱은 TikTok 게시물에서 공개 동영상, 사진, 오디오를 다운로드하는 데 도움을 줍니다.\n\n저작권과 개인정보를 존중해 주세요. 사용 권한이 있는 콘텐츠만 다운로드하세요.';
 
   @override
   String get contactTitle => '문의하기';
@@ -236,19 +236,19 @@ class AppLocalizationsKo extends AppLocalizations {
   String get contactSending => '전송 중...';
 
   @override
-  String get contactSuccess => '메시지가 성공적으로 전송되었습니다! 곧 연락드리겠습니다.';
+  String get contactSuccess => '메시지를 성공적으로 보냈습니다! 곧 연락드리겠습니다.';
 
   @override
-  String get contactError => '메시지 전송에 실패했습니다. 나중에 다시 시도해 주세요.';
+  String get contactError => '메시지를 보내지 못했습니다. 나중에 다시 시도해 주세요.';
 
   @override
   String get permissionRequiredTitle => '권한 필요';
 
   @override
-  String get permissionStorageDenied => '다운로드한 파일을 저장하려면 저장소 권한이 필요합니다. 설정에서 권한을 부여해 주세요.';
+  String get permissionStorageDenied => '다운로드한 파일을 저장하려면 저장소 권한이 필요합니다. 설정에서 권한을 허용해 주세요.';
 
   @override
-  String get permissionPhotosDenied => '다운로드한 파일을 저장하려면 사진 권한이 필요합니다 (iOS). 설정에서 권한을 부여해 주세요.';
+  String get permissionPhotosDenied => '다운로드한 파일을 저장하려면 사진 권한이 필요합니다 (iOS). 설정에서 권한을 허용해 주세요.';
 
   @override
   String get permissionNotificationDenied => '다운로드 진행 상황 업데이트를 위해 알림 권한을 권장합니다.';
@@ -282,7 +282,7 @@ class AppLocalizationsKo extends AppLocalizations {
 
   @override
   String savePercent(String percent) {
-    return '$percent% 절약';
+    return '$percent% 할인';
   }
 
   @override
@@ -318,19 +318,19 @@ class AppLocalizationsKo extends AppLocalizations {
   }
 
   @override
-  String get unlockSaveVideoPro => '프리미엄 기능 잠금 해제';
+  String get unlockSaveVideoPro => '프리미엄 기능 잠금해제';
 
   @override
-  String get noAdsUnlockAllFeatures => '광고 없음 및 모든 기능 잠금 해제';
+  String get noAdsUnlockAllFeatures => '광고 없음 및 모든 기능 잠금해제';
 
   @override
   String get removeAds => '모든 광고 제거';
 
   @override
-  String get threadsDownloads => 'Threads에서 동영상, 사진, 음성 메시지 무제한 HD 다운로드';
+  String get tiktokDownloads => 'TikTok에서 동영상, 사진, 음악의 무제한 HD 다운로드';
 
   @override
-  String get instagramDownloads => 'Instagram에서 동영상, 사진, 릴, 스토리, 전체 프로필 무제한 HD 다운로드';
+  String get instagramDownloads => '워터마크 없는 고품질 다운로드';
 
   @override
   String get lifetimePro => '평생 프로';
@@ -369,10 +369,10 @@ class AppLocalizationsKo extends AppLocalizations {
   String get privacyPolicy => '개인정보 처리방침';
 
   @override
-  String get loadingPlans => '요금제 로딩 중...';
+  String get loadingPlans => '플랜 로딩 중...';
 
   @override
-  String get failedToLoadPlans => '요금제 로딩 실패';
+  String get failedToLoadPlans => '플랜 로드 실패';
 
   @override
   String get retry => '다시 시도';
@@ -396,58 +396,58 @@ class AppLocalizationsKo extends AppLocalizations {
   String get supportedPlatforms => '지원 플랫폼';
 
   @override
-  String get supportThreads => '동영상, 이미지, 음성 메모 다운로드';
+  String get supportTiktok => '동영상, 이미지, 음악 다운로드';
 
   @override
-  String get supportInstagram => '동영상, 이미지, Reels, Stories, 프로필 다운로드';
+  String get supportInstagram => '워터마크 없는 고품질 다운로드';
 
   @override
-  String get playlistTab => 'Playlist';
+  String get playlistTab => '재생목록';
 
   @override
-  String get authorsTab => 'Authors';
+  String get authorsTab => '작성자';
 
   @override
-  String get createPlaylist => 'Create Playlist';
+  String get createPlaylist => '재생목록 만들기';
 
   @override
-  String get playlistTitle => 'Playlist Title';
+  String get playlistTitle => '재생목록 제목';
 
   @override
-  String get playlistDescription => 'Description';
+  String get playlistDescription => '설명';
 
   @override
-  String get chooseFiles => 'Choose Files';
+  String get chooseFiles => '파일 선택';
 
   @override
-  String get createPlaylistButton => 'Create Playlist';
+  String get createPlaylistButton => '재생목록 만들기';
 
   @override
-  String get playlistTitleHint => 'Enter playlist title';
+  String get playlistTitleHint => '재생목록 제목 입력';
 
   @override
-  String get playlistDescriptionHint => 'Enter playlist description (optional)';
+  String get playlistDescriptionHint => '재생목록 설명 입력 (선택사항)';
 
   @override
-  String get selectFiles => 'Select files to add to playlist';
+  String get selectFiles => '재생목록에 추가할 파일 선택';
 
   @override
-  String get noPlaylistsYet => 'No playlists yet';
+  String get noPlaylistsYet => '재생목록이 아직 없습니다';
 
   @override
-  String get createFirstPlaylist => 'Create your first playlist to organize your downloads';
+  String get createFirstPlaylist => '다운로드를 정리하기 위해 첫 번째 재생목록을 만드세요';
 
   @override
-  String get noAuthorsYet => 'No authors yet';
+  String get noAuthorsYet => '작성자가 아직 없습니다';
 
   @override
-  String get downloadSomethingFirst => 'Download some content to see authors here';
+  String get downloadSomethingFirst => '여기서 작성자를 보려면 먼저 콘텐츠를 다운로드하세요';
 
   @override
   String authorVideos(Object author) {
-    return 'Videos by $author';
+    return '$author의 동영상';
   }
 
   @override
-  String get noVideosFromAuthor => 'No videos from this author yet';
+  String get noVideosFromAuthor => '이 작성자의 동영상이 아직 없습니다';
 }

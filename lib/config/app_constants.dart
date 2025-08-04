@@ -41,7 +41,7 @@ class AppConstants {
   static const String contactFormUrl =
       ApiConfig.baseUrl + ApiConfig.contactEndpoint;
   static const String playStoreUrl =
-      'market://details?id=com.snaptik.tiktok.downloader';
+      'market://details?id=com.snapvids.threads.video.downloader';
   static const String appStoreUrl = '';
 
   // Legal URLs

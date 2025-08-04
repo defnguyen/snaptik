@@ -1,4 +1,4 @@
-package com.snaptik.tiktok.downloader
+package com.snapvids.threads.video.downloader
 
 import io.flutter.embedding.android.FlutterActivity
 import io.flutter.embedding.engine.FlutterEngine

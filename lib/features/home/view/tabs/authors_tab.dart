@@ -67,14 +67,14 @@ class _AuthorsTabState extends State<AuthorsTab> {
             color: Theme.of(context).colorScheme.primary.withOpacity(0.5),
           ),
           const SizedBox(height: 16),
-          const Text(
-            'No authors yet', // TODO: Use l10n.noAuthorsYet
-            style: TextStyle(fontSize: 20),
+          Text(
+            l10n.noAuthorsYet,
+            style: const TextStyle(fontSize: 20),
             textAlign: TextAlign.center,
           ),
           const SizedBox(height: 8),
           Text(
-            'Download some content to see authors here', // TODO: Use l10n.downloadSomethingFirst
+            l10n.downloadSomethingFirst,
             style: Theme.of(context).textTheme.bodyMedium?.copyWith(
               color: Theme.of(context).colorScheme.onSurface.withOpacity(0.7),
             ),
@@ -246,8 +246,8 @@ class _AuthorDetailScreenState extends State<AuthorDetailScreen> {
             color: Theme.of(context).colorScheme.primary.withOpacity(0.5),
           ),
           const SizedBox(height: 16),
-          const Text(
-            'No videos from this author yet', // TODO: Use l10n.noVideosFromAuthor
+          Text(
+            l10n.noVideosFromAuthor,
             style: TextStyle(fontSize: 20),
             textAlign: TextAlign.center,
           ),

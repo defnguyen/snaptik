@@ -9,7 +9,7 @@ class AppLocalizationsAr extends AppLocalizations {
   AppLocalizationsAr([String locale = 'ar']) : super(locale);
 
   @override
-  String get appTitle => 'تنزيل فيديوهات ثريدز';
+  String get appTitle => 'تحميل TikTok';
 
   @override
   String get homeTab => 'الرئيسية';
@@ -27,63 +27,63 @@ class AppLocalizationsAr extends AppLocalizations {
   String get clear => 'مسح';
 
   @override
-  String get download => 'تنزيل';
+  String get download => 'تحميل';
 
   @override
-  String get enterThreadsUrl => 'أدخل رابط Threads/Instagram';
+  String get enterTiktokUrl => 'أدخل رابط TikTok';
 
   @override
   String get howToUseTitle => 'كيفية الاستخدام:';
 
   @override
-  String get howToUseStep1 => '١. افتح ثريدز وابحث عن المنشور الذي تريد تنزيله.';
+  String get howToUseStep1 => '1. افتح TikTok وابحث عن الفيديو الذي تريد تحميله.';
 
   @override
-  String get howToUseStep2 => '٢. انقر على أيقونة \'المشاركة\' أسفل المنشور.';
+  String get howToUseStep2 => '2. اضغط على أيقونة \'مشاركة\' على الجانب الأيمن من الفيديو.';
 
   @override
-  String get howToUseStep3 => '٣. اختر \'نسخ الرابط\'.';
+  String get howToUseStep3 => '3. اختر \'نسخ الرابط\'.';
 
   @override
-  String get howToUseStep4 => '٤. الصق الرابط في حقل الإدخال أعلاه واضغط على \'تنزيل\'.';
+  String get howToUseStep4 => '4. الصق الرابط في حقل الإدخال أعلاه واضغط على \'تحميل\'.';
 
   @override
-  String get invalidUrlError => 'صيغة رابط ثريدز غير صالحة.';
+  String get invalidUrlError => 'تنسيق رابط TikTok غير صحيح.';
 
   @override
-  String get fetchingMedia => 'جارٍ جلب الوسائط...';
+  String get fetchingMedia => 'جاري جلب الوسائط...';
 
   @override
-  String get downloadPhoto => 'تنزيل الصورة';
+  String get downloadPhoto => 'تحميل الصورة';
 
   @override
-  String get downloadVideo => 'تنزيل الفيديو';
+  String get downloadVideo => 'تحميل الفيديو';
 
   @override
-  String get downloadVoice => 'تنزيل الصوت';
+  String get downloadVoice => 'تحميل الموسيقى';
 
   @override
-  String get downloadMp3 => 'تنزيل MP3';
+  String get downloadMp3 => 'تحميل MP3';
 
   @override
-  String get downloading => 'جارٍ التنزيل...';
+  String get downloading => 'جاري التحميل...';
 
   @override
-  String get downloadSuccess => 'اكتمل التنزيل!';
+  String get downloadSuccess => 'اكتمل التحميل!';
 
   @override
-  String get downloadError => 'فشل التنزيل. يرجى المحاولة مرة أخرى.';
+  String get downloadError => 'فشل التحميل. يرجى المحاولة مرة أخرى.';
 
   @override
-  String get downloadLimitReachedTitle => 'تم الوصول إلى حد التنزيل';
+  String get downloadLimitReachedTitle => 'تم الوصول لحد التحميل';
 
   @override
   String downloadLimitReachedMessage(Object limit) {
-    return 'لقد وصلت إلى حد التنزيل ($limit مرات). شاهد إعلانًا قصيرًا للحصول على ٥ محاولات تنزيل إضافية.';
+    return 'لقد وصلت إلى حد التحميل ($limit مرات). شاهد إعلاناً قصيراً للحصول على 5 محاولات تحميل إضافية.';
   }
 
   @override
-  String get watchAd => 'مشاهدة إعلان';
+  String get watchAd => 'مشاهدة الإعلان';
 
   @override
   String get cancel => 'إلغاء';
@@ -95,7 +95,7 @@ class AppLocalizationsAr extends AppLocalizations {
   String get videosTab => 'الفيديوهات';
 
   @override
-  String get voiceTab => 'الصوت';
+  String get musicTab => 'الموسيقى';
 
   @override
   String get view => 'عرض';
@@ -131,7 +131,7 @@ class AppLocalizationsAr extends AppLocalizations {
   String get renameMediaTitle => 'إعادة تسمية الوسائط';
 
   @override
-  String get enterNewName => 'أدخل اسمًا جديدًا';
+  String get enterNewName => 'أدخل اسماً جديداً';
 
   @override
   String get save => 'حفظ';
@@ -140,7 +140,7 @@ class AppLocalizationsAr extends AppLocalizations {
   String get deleteConfirmationTitle => 'تأكيد الحذف';
 
   @override
-  String get deleteConfirmationMessage => 'هل أنت متأكد من رغبتك في حذف هذا الملف؟ لا يمكن التراجع عن هذا الإجراء.';
+  String get deleteConfirmationMessage => 'هل أنت متأكد من أنك تريد حذف هذا الملف؟ لا يمكن التراجع عن هذا الإجراء.';
 
   @override
   String get confirm => 'تأكيد';
@@ -161,19 +161,19 @@ class AppLocalizationsAr extends AppLocalizations {
   String get settingsThemeSystem => 'النظام';
 
   @override
-  String get settingsClaimMoreDownloads => 'الحصول على ٥ تنزيلات إضافية';
+  String get settingsClaimMoreDownloads => 'احصل على 5 تحميلات إضافية';
 
   @override
-  String get settingsClaimSuccess => 'تم بنجاح! لديك ٥ تنزيلات إضافية.';
+  String get settingsClaimSuccess => 'نجح! لديك 5 تحميلات إضافية.';
 
   @override
-  String get settingsClaimError => 'فشل تحميل الإعلان. يرجى المحاولة مرة أخرى لاحقًا.';
+  String get settingsClaimError => 'فشل في تحميل الإعلان. يرجى المحاولة لاحقاً.';
 
   @override
-  String get settingsPremium => 'الترقية إلى النسخة المميزة';
+  String get settingsPremium => 'الترقية إلى المميز';
 
   @override
-  String get settingsPremiumDescription => 'إزالة الإعلانات والحصول على تنزيلات غير محدودة.';
+  String get settingsPremiumDescription => 'إزالة الإعلانات والحصول على تحميلات غير محدودة.';
 
   @override
   String get settingsRestorePurchase => 'استعادة الشراء';
@@ -182,19 +182,19 @@ class AppLocalizationsAr extends AppLocalizations {
   String get settingsRestoreSuccess => 'تم استعادة المشتريات بنجاح!';
 
   @override
-  String get settingsRestoreError => 'فشل استعادة المشتريات. لم يتم العثور على اشتراك نشط أو حدث خطأ.';
+  String get settingsRestoreError => 'فشل في استعادة المشتريات. لم يتم العثور على اشتراك نشط أو حدث خطأ.';
 
   @override
   String get settingsGeneralSection => 'عام';
 
   @override
-  String get settingsDownloadsSection => 'التنزيلات';
+  String get settingsDownloadsSection => 'التحميلات';
 
   @override
   String get settingsAccountSection => 'الحساب';
 
   @override
-  String get settingsSupportSection => 'الدعم والملاحظات';
+  String get settingsSupportSection => 'الدعم والتعليقات';
 
   @override
   String get settingsAbout => 'حول';
@@ -203,7 +203,7 @@ class AppLocalizationsAr extends AppLocalizations {
   String get settingsContact => 'اتصل بنا';
 
   @override
-  String get settingsRateApp => 'قيّم هذا التطبيق';
+  String get settingsRateApp => 'قيم هذا التطبيق';
 
   @override
   String get settingsShareApp => 'شارك هذا التطبيق';
@@ -212,10 +212,10 @@ class AppLocalizationsAr extends AppLocalizations {
   String get premiumUser => 'مستخدم مميز';
 
   @override
-  String get aboutTitle => 'حول تنزيل ثريدز';
+  String get aboutTitle => 'حول تحميل TikTok';
 
   @override
-  String get aboutContent => 'يساعدك هذا التطبيق على تنزيل الصور والفيديوهات والملاحظات الصوتية العامة من منشورات ثريدز.\n\nيرجى احترام حقوق النشر والخصوصية. قم بتنزيل المحتوى الذي لديك إذن باستخدامه فقط.';
+  String get aboutContent => 'يساعدك هذا التطبيق على تحميل الفيديوهات والصور والملفات الصوتية العامة من منشورات TikTok.\n\nيرجى احترام حقوق الطبع والنشر والخصوصية. حمل المحتوى الذي لديك الإذن لاستخدامه فقط.';
 
   @override
   String get contactTitle => 'اتصل بنا';
@@ -233,34 +233,34 @@ class AppLocalizationsAr extends AppLocalizations {
   String get contactSendButton => 'إرسال الرسالة';
 
   @override
-  String get contactSending => 'جارٍ الإرسال...';
+  String get contactSending => 'جاري الإرسال...';
 
   @override
-  String get contactSuccess => 'تم إرسال الرسالة بنجاح! سنرد عليك قريبًا.';
+  String get contactSuccess => 'تم إرسال الرسالة بنجاح! سنعود إليك قريباً.';
 
   @override
-  String get contactError => 'فشل إرسال الرسالة. يرجى المحاولة مرة أخرى لاحقًا.';
+  String get contactError => 'فشل في إرسال الرسالة. يرجى المحاولة لاحقاً.';
 
   @override
-  String get permissionRequiredTitle => 'الإذن مطلوب';
+  String get permissionRequiredTitle => 'إذن مطلوب';
 
   @override
-  String get permissionStorageDenied => 'إذن التخزين مطلوب لحفظ الملفات التي تم تنزيلها. يرجى منح الإذن في الإعدادات.';
+  String get permissionStorageDenied => 'إذن التخزين مطلوب لحفظ الملفات المحملة. يرجى منح الإذن في الإعدادات.';
 
   @override
-  String get permissionPhotosDenied => 'إذن الصور مطلوب لحفظ الملفات التي تم تنزيلها (آيفون). يرجى منح الإذن في الإعدادات.';
+  String get permissionPhotosDenied => 'إذن الصور مطلوب لحفظ الملفات المحملة (iOS). يرجى منح الإذن في الإعدادات.';
 
   @override
-  String get permissionNotificationDenied => 'يوصى بإذن الإشعارات لتحديثات تقدم التنزيل.';
+  String get permissionNotificationDenied => 'إذن الإشعارات موصى به لتحديثات تقدم التحميل.';
 
   @override
-  String get permissiongoToSettings => 'انتقل إلى الإعدادات';
+  String get permissiongoToSettings => 'الذهاب إلى الإعدادات';
 
   @override
   String get ok => 'موافق';
 
   @override
-  String get upgradeNow => 'الترقية الآن';
+  String get upgradeNow => 'ترقية الآن';
 
   @override
   String get chooseYourPlan => 'اختر خطتك';
@@ -292,60 +292,60 @@ class AppLocalizationsAr extends AppLocalizations {
   String get selectPlanErrorTitle => 'خطأ في تحميل الخطط';
 
   @override
-  String get selectPlanErrorMessage => 'تعذر تحميل خطط الاشتراك. يرجى التحقق من اتصالك بالإنترنت والمحاولة مرة أخرى.';
+  String get selectPlanErrorMessage => 'لا يمكن تحميل خطط الاشتراك. يرجى التحقق من اتصال الإنترنت والمحاولة مرة أخرى.';
 
   @override
-  String get purchaseFailed => 'فشلت عملية الشراء';
+  String get purchaseFailed => 'فشل الشراء';
 
   @override
-  String get purchaseCancelled => 'تم إلغاء عملية الشراء';
+  String get purchaseCancelled => 'تم إلغاء الشراء';
 
   @override
-  String get purchasePending => 'عملية الشراء معلقة';
+  String get purchasePending => 'الشراء معلق';
 
   @override
-  String get purchaseSuccess => 'تمت عملية الشراء بنجاح!';
+  String get purchaseSuccess => 'نجح الشراء!';
 
   @override
   String get alreadyPremium => 'أنت بالفعل مستخدم مميز.';
 
   @override
-  String get getPremium => 'احصل على النسخة المميزة';
+  String get getPremium => 'احصل على المميز';
 
   @override
   String downloadsRemainingMessage(Object currentLimit) {
-    return 'التنزيلات المتبقية: $currentLimit. يمكنك الحصول على تنزيلات مجانية عن طريق مشاهدة الإعلانات';
+    return 'التحميلات المتبقية: $currentLimit. يمكنك الحصول على تحميلات مجانية من خلال مشاهدة الإعلانات';
   }
 
   @override
-  String get unlockSaveVideoPro => 'إلغاء قفل الميزات المتميزة';
+  String get unlockSaveVideoPro => 'فتح الميزات المميزة';
 
   @override
-  String get noAdsUnlockAllFeatures => 'بدون إعلانات وإلغاء قفل جميع الميزات';
+  String get noAdsUnlockAllFeatures => 'بدون إعلانات وفتح جميع الميزات';
 
   @override
   String get removeAds => 'إزالة جميع الإعلانات';
 
   @override
-  String get threadsDownloads => 'تنزيلات غير محدودة بجودة عالية للفيديوهات والصور والأصوات من Threads';
+  String get tiktokDownloads => 'تحميلات غير محدودة عالية الجودة للفيديوهات والصور والموسيقى من TikTok';
 
   @override
-  String get instagramDownloads => 'تنزيلات غير محدودة بجودة عالية للفيديوهات والصور والريلز والقصص والملفات الشخصية الكاملة من Instagram';
+  String get instagramDownloads => 'تحميلات عالية الجودة بدون علامات مائية';
 
   @override
-  String get lifetimePro => 'النسخة المتميزة مدى الحياة';
+  String get lifetimePro => 'مميز مدى الحياة';
 
   @override
-  String get yearlyPro => 'النسخة المتميزة السنوية';
+  String get yearlyPro => 'مميز سنوي';
 
   @override
-  String get monthlyPro => 'النسخة المتميزة الشهرية';
+  String get monthlyPro => 'مميز شهري';
 
   @override
-  String get weeklyPro => 'النسخة المتميزة الأسبوعية';
+  String get weeklyPro => 'مميز أسبوعي';
 
   @override
-  String get onlyBuyOnce => 'ادفع مرة واحدة فقط';
+  String get onlyBuyOnce => 'اشتر مرة واحدة فقط';
 
   @override
   String get perYear => '/سنة';
@@ -379,75 +379,75 @@ class AppLocalizationsAr extends AppLocalizations {
 
   @override
   String freeTrialDays(int days) {
-    return 'تجربة مجانية لمدة $days أيام';
+    return 'تجربة مجانية لـ $days أيام';
   }
 
   @override
   String freeTrialWeeks(int weeks) {
-    return 'تجربة مجانية لمدة $weeks أسابيع';
+    return 'تجربة مجانية لـ $weeks أسابيع';
   }
 
   @override
   String freeTrialMonths(int months) {
-    return 'تجربة مجانية لمدة $months أشهر';
+    return 'تجربة مجانية لـ $months أشهر';
   }
 
   @override
   String get supportedPlatforms => 'المنصات المدعومة';
 
   @override
-  String get supportThreads => 'تحميل الفيديوهات والصور والرسائل الصوتية';
+  String get supportTiktok => 'تحميل الفيديوهات والصور والموسيقى';
 
   @override
-  String get supportInstagram => 'تحميل الفيديوهات والصور و Reels و Stories والملفات الشخصية';
+  String get supportInstagram => 'تحميلات عالية الجودة بدون علامات مائية';
 
   @override
-  String get playlistTab => 'Playlist';
+  String get playlistTab => 'قائمة التشغيل';
 
   @override
-  String get authorsTab => 'Authors';
+  String get authorsTab => 'المؤلفون';
 
   @override
-  String get createPlaylist => 'Create Playlist';
+  String get createPlaylist => 'إنشاء قائمة تشغيل';
 
   @override
-  String get playlistTitle => 'Playlist Title';
+  String get playlistTitle => 'عنوان قائمة التشغيل';
 
   @override
-  String get playlistDescription => 'Description';
+  String get playlistDescription => 'الوصف';
 
   @override
-  String get chooseFiles => 'Choose Files';
+  String get chooseFiles => 'اختيار الملفات';
 
   @override
-  String get createPlaylistButton => 'Create Playlist';
+  String get createPlaylistButton => 'إنشاء قائمة التشغيل';
 
   @override
-  String get playlistTitleHint => 'Enter playlist title';
+  String get playlistTitleHint => 'أدخل عنوان قائمة التشغيل';
 
   @override
-  String get playlistDescriptionHint => 'Enter playlist description (optional)';
+  String get playlistDescriptionHint => 'أدخل وصف قائمة التشغيل (اختياري)';
 
   @override
-  String get selectFiles => 'Select files to add to playlist';
+  String get selectFiles => 'اختر الملفات لإضافتها إلى قائمة التشغيل';
 
   @override
-  String get noPlaylistsYet => 'No playlists yet';
+  String get noPlaylistsYet => 'لا توجد قوائم تشغيل حتى الآن';
 
   @override
-  String get createFirstPlaylist => 'Create your first playlist to organize your downloads';
+  String get createFirstPlaylist => 'أنشئ أول قائمة تشغيل لك لتنظيم تحميلاتك';
 
   @override
-  String get noAuthorsYet => 'No authors yet';
+  String get noAuthorsYet => 'لا يوجد مؤلفون حتى الآن';
 
   @override
-  String get downloadSomethingFirst => 'Download some content to see authors here';
+  String get downloadSomethingFirst => 'حمل بعض المحتوى لرؤية المؤلفين هنا';
 
   @override
   String authorVideos(Object author) {
-    return 'Videos by $author';
+    return 'فيديوهات $author';
   }
 
   @override
-  String get noVideosFromAuthor => 'No videos from this author yet';
+  String get noVideosFromAuthor => 'لا توجد فيديوهات من هذا المؤلف حتى الآن';
 }

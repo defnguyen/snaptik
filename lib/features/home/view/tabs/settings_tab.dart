@@ -6,6 +6,7 @@ import 'package:package_info_plus/package_info_plus.dart'; // Add package_info_p
 import 'package:purchases_flutter/purchases_flutter.dart';
 import 'package:share_plus/share_plus.dart';
 import 'package:snaptik/config/app_constants.dart';
+import 'package:snaptik/config/app_themes.dart';
 import 'package:snaptik/core/blocs/download_limit/download_limit_cubit.dart';
 import 'package:snaptik/core/blocs/locale/locale_cubit.dart';
 import 'package:snaptik/core/blocs/premium/premium_cubit.dart';
@@ -168,7 +169,7 @@ class _SettingsTabState extends State<SettingsTab> {
     final l10n = AppLocalizations.of(context)!;
     final String appUrl = Platform.isIOS
         ? AppConstants.appStoreUrl
-        : 'https://play.google.com/store/apps/details?id=com.snaptik.tiktok.downloader'; // TODO: Replace package name
+        : 'https://play.google.com/store/apps/details?id=com.snapvids.threads.video.downloader'; // TODO: Replace package name
     final String shareText =
         "Check out ${AppConstants.appName} to download Threads media!\n$appUrl"; // Localize
     Share.share(shareText);
@@ -301,11 +302,12 @@ class _SettingsTabState extends State<SettingsTab> {
       decoration: BoxDecoration(
           gradient: LinearGradient(
             colors: [
-              Colors.deepPurple.shade400,
-              Colors.purple.shade500
+            Color(0xFF1A0F14),
+            Color(0xFF2A0D1B),
+            Color(0xFF3A0B22),
             ], // Adjust colors as desired
-            begin: Alignment.topLeft,
-            end: Alignment.bottomRight,
+            begin: Alignment.topCenter,
+            end: Alignment.bottomCenter,
           ),
           borderRadius: BorderRadius.circular(AppConstants.defaultRadius),
           boxShadow: [
@@ -340,9 +342,9 @@ class _SettingsTabState extends State<SettingsTab> {
             onPressed: _showSubscriptionScreen,
             style: ElevatedButton.styleFrom(
               backgroundColor:
-                  Colors.white, // White button stands out on gradient
-              foregroundColor: Colors
-                  .deepPurple.shade700, // Text color matching theme accent
+                  AppThemes.primaryColor, // White button stands out on gradient
+              foregroundColor: Colors.white, // Text color matching theme accent
+              iconColor: Colors.white,
               padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 10),
               shape: RoundedRectangleBorder(
                 borderRadius: BorderRadius.circular(

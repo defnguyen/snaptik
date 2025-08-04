@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:snaptik/config/app_constants.dart';
+import 'package:snaptik/config/app_themes.dart';
 import 'package:snaptik/core/blocs/download_limit/download_limit_cubit.dart';
 import 'package:snaptik/core/blocs/premium/premium_cubit.dart';
 import 'package:snaptik/core/enums/media_type.dart';
@@ -167,7 +168,7 @@ class _DownloadTabState extends State<DownloadTab> {
               TextField(
                 controller: _urlController,
                 decoration: InputDecoration(
-                  hintText: l10n.enterThreadsUrl,
+                  hintText: l10n.enterTiktokUrl,
                   border: const OutlineInputBorder(),
                   errorBorder: OutlineInputBorder(
                     borderSide: BorderSide(color: Theme.of(context).colorScheme.error, width: 2),
@@ -199,24 +200,19 @@ class _DownloadTabState extends State<DownloadTab> {
                   final bool isLoading = state is DownloadLoading;
                   return ElevatedButton.icon(
                     icon: isLoading
-                        ? const SizedBox(
+                        ? SizedBox(
                             width: 20,
                             height: 20,
                             child: CircularProgressIndicator(
                                 strokeWidth: 2, color: Colors.white))
                         : const Icon(Icons.download),
                     label: Text(isLoading ? l10n.fetchingMedia : l10n.download, style: const TextStyle(fontSize: 16)),
-                    onPressed: isLoading || _urlController.text.isEmpty
-                        ? null
-                        : _submitUrl,
+                    onPressed: _submitUrl,
                     style: ElevatedButton.styleFrom(
                       padding: const EdgeInsets.symmetric(vertical: 12),
-                      backgroundColor: isLoading || _urlController.text.isEmpty
-                          ? null
-                          : Theme.of(context).colorScheme.primary,
-                      foregroundColor: isLoading || _urlController.text.isEmpty
-                          ? null
-                          : Theme.of(context).colorScheme.onPrimary,
+                      backgroundColor: AppThemes.primaryColor,
+                      foregroundColor: Colors.white,
+                      iconColor: Colors.white
                     ),
                   );
                 },

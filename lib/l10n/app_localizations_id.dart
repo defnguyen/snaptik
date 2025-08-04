@@ -9,7 +9,7 @@ class AppLocalizationsId extends AppLocalizations {
   AppLocalizationsId([String locale = 'id']) : super(locale);
 
   @override
-  String get appTitle => 'Threads Video Downloader';
+  String get appTitle => 'TikTok Downloader';
 
   @override
   String get homeTab => 'Beranda';
@@ -21,7 +21,7 @@ class AppLocalizationsId extends AppLocalizations {
   String get settingsTab => 'Pengaturan';
 
   @override
-  String get pasteLink => 'Tempel Tautan';
+  String get pasteLink => 'Tempel Link';
 
   @override
   String get clear => 'Hapus';
@@ -30,25 +30,25 @@ class AppLocalizationsId extends AppLocalizations {
   String get download => 'Unduh';
 
   @override
-  String get enterThreadsUrl => 'Masukkan URL Threads/Instagram';
+  String get enterTiktokUrl => 'Masukkan URL TikTok';
 
   @override
-  String get howToUseTitle => 'Cara Penggunaan:';
+  String get howToUseTitle => 'Cara Menggunakan:';
 
   @override
-  String get howToUseStep1 => '1. Buka Threads dan temukan postingan yang ingin Anda unduh.';
+  String get howToUseStep1 => '1. Buka TikTok dan cari video yang ingin kamu unduh.';
 
   @override
-  String get howToUseStep2 => '2. Ketuk ikon \'Bagikan\' di bawah postingan.';
+  String get howToUseStep2 => '2. Ketuk ikon \'Bagikan\' di sisi kanan video.';
 
   @override
-  String get howToUseStep3 => '3. Pilih \'Salin tautan\'.';
+  String get howToUseStep3 => '3. Pilih \'Salin link\'.';
 
   @override
-  String get howToUseStep4 => '4. Tempel tautan ke kolom input di atas dan ketuk \'Unduh\'.';
+  String get howToUseStep4 => '4. Tempel link di kolom input di atas dan ketuk \'Unduh\'.';
 
   @override
-  String get invalidUrlError => 'Format URL Threads tidak valid.';
+  String get invalidUrlError => 'Format URL TikTok tidak valid.';
 
   @override
   String get fetchingMedia => 'Mengambil media...';
@@ -60,7 +60,7 @@ class AppLocalizationsId extends AppLocalizations {
   String get downloadVideo => 'Unduh Video';
 
   @override
-  String get downloadVoice => 'Unduh Suara';
+  String get downloadVoice => 'Unduh Musik';
 
   @override
   String get downloadMp3 => 'Unduh MP3';
@@ -69,17 +69,17 @@ class AppLocalizationsId extends AppLocalizations {
   String get downloading => 'Mengunduh...';
 
   @override
-  String get downloadSuccess => 'Pengunduhan selesai!';
+  String get downloadSuccess => 'Unduhan selesai!';
 
   @override
-  String get downloadError => 'Pengunduhan gagal. Silakan coba lagi.';
+  String get downloadError => 'Unduhan gagal. Silakan coba lagi.';
 
   @override
   String get downloadLimitReachedTitle => 'Batas Unduhan Tercapai';
 
   @override
   String downloadLimitReachedMessage(Object limit) {
-    return 'Anda telah mencapai batas unduhan ($limit kali). Tonton iklan singkat untuk mendapatkan 5 percobaan unduhan tambahan.';
+    return 'Kamu telah mencapai batas unduhan ($limit kali). Tonton iklan singkat untuk mendapatkan 5 percobaan unduh lagi.';
   }
 
   @override
@@ -95,7 +95,7 @@ class AppLocalizationsId extends AppLocalizations {
   String get videosTab => 'Video';
 
   @override
-  String get voiceTab => 'Suara';
+  String get musicTab => 'Musik';
 
   @override
   String get view => 'Lihat';
@@ -104,7 +104,7 @@ class AppLocalizationsId extends AppLocalizations {
   String get info => 'Info';
 
   @override
-  String get rename => 'Ganti Nama';
+  String get rename => 'Ubah Nama';
 
   @override
   String get share => 'Bagikan';
@@ -128,7 +128,7 @@ class AppLocalizationsId extends AppLocalizations {
   String get fileSize => 'Ukuran';
 
   @override
-  String get renameMediaTitle => 'Ganti Nama Media';
+  String get renameMediaTitle => 'Ubah Nama Media';
 
   @override
   String get enterNewName => 'Masukkan nama baru';
@@ -140,7 +140,7 @@ class AppLocalizationsId extends AppLocalizations {
   String get deleteConfirmationTitle => 'Konfirmasi Hapus';
 
   @override
-  String get deleteConfirmationMessage => 'Apakah Anda yakin ingin menghapus file ini? Tindakan ini tidak dapat dibatalkan.';
+  String get deleteConfirmationMessage => 'Apakah kamu yakin ingin menghapus file ini? Tindakan ini tidak bisa dibatalkan.';
 
   @override
   String get confirm => 'Konfirmasi';
@@ -164,16 +164,16 @@ class AppLocalizationsId extends AppLocalizations {
   String get settingsClaimMoreDownloads => 'Dapatkan 5 Unduhan Lagi';
 
   @override
-  String get settingsClaimSuccess => 'Berhasil! Anda mendapatkan 5 unduhan tambahan.';
+  String get settingsClaimSuccess => 'Berhasil! Kamu punya 5 unduhan lagi.';
 
   @override
   String get settingsClaimError => 'Gagal memuat iklan. Silakan coba lagi nanti.';
 
   @override
-  String get settingsPremium => 'Tingkatkan ke Premium';
+  String get settingsPremium => 'Upgrade ke Premium';
 
   @override
-  String get settingsPremiumDescription => 'Hapus iklan dan dapatkan unduhan tanpa batas.';
+  String get settingsPremiumDescription => 'Hapus iklan dan dapatkan unduhan unlimited.';
 
   @override
   String get settingsRestorePurchase => 'Pulihkan Pembelian';
@@ -194,7 +194,7 @@ class AppLocalizationsId extends AppLocalizations {
   String get settingsAccountSection => 'Akun';
 
   @override
-  String get settingsSupportSection => 'Dukungan & Umpan Balik';
+  String get settingsSupportSection => 'Dukungan & Masukan';
 
   @override
   String get settingsAbout => 'Tentang';
@@ -203,7 +203,7 @@ class AppLocalizationsId extends AppLocalizations {
   String get settingsContact => 'Hubungi Kami';
 
   @override
-  String get settingsRateApp => 'Nilai Aplikasi Ini';
+  String get settingsRateApp => 'Beri Rating Aplikasi Ini';
 
   @override
   String get settingsShareApp => 'Bagikan Aplikasi Ini';
@@ -212,22 +212,22 @@ class AppLocalizationsId extends AppLocalizations {
   String get premiumUser => 'Pengguna Premium';
 
   @override
-  String get aboutTitle => 'Tentang Threads Downloader';
+  String get aboutTitle => 'Tentang TikTok Downloader';
 
   @override
-  String get aboutContent => 'Aplikasi ini membantu Anda mengunduh foto, video, dan catatan suara publik dari postingan Threads.\n\nHarap hormati hak cipta dan privasi. Hanya unduh konten yang Anda memiliki izin untuk menggunakannya.';
+  String get aboutContent => 'Aplikasi ini membantu kamu mengunduh video, foto, dan audio publik dari postingan TikTok.\n\nMohon hormati hak cipta dan privasi. Hanya unduh konten yang kamu punya izin untuk gunakan.';
 
   @override
   String get contactTitle => 'Hubungi Kami';
 
   @override
-  String get contactNameHint => 'Nama Anda';
+  String get contactNameHint => 'Nama Kamu';
 
   @override
-  String get contactEmailHint => 'Email Anda';
+  String get contactEmailHint => 'Email Kamu';
 
   @override
-  String get contactMessageHint => 'Pesan Anda';
+  String get contactMessageHint => 'Pesan Kamu';
 
   @override
   String get contactSendButton => 'Kirim Pesan';
@@ -236,7 +236,7 @@ class AppLocalizationsId extends AppLocalizations {
   String get contactSending => 'Mengirim...';
 
   @override
-  String get contactSuccess => 'Pesan berhasil dikirim! Kami akan segera menghubungi Anda.';
+  String get contactSuccess => 'Pesan berhasil dikirim! Kami akan segera menghubungi kamu.';
 
   @override
   String get contactError => 'Gagal mengirim pesan. Silakan coba lagi nanti.';
@@ -245,25 +245,25 @@ class AppLocalizationsId extends AppLocalizations {
   String get permissionRequiredTitle => 'Izin Diperlukan';
 
   @override
-  String get permissionStorageDenied => 'Izin penyimpanan diperlukan untuk menyimpan file yang diunduh. Harap berikan izin di pengaturan.';
+  String get permissionStorageDenied => 'Izin penyimpanan diperlukan untuk menyimpan file yang diunduh. Mohon berikan izin di pengaturan.';
 
   @override
-  String get permissionPhotosDenied => 'Izin foto diperlukan untuk menyimpan file yang diunduh (iOS). Harap berikan izin di pengaturan.';
+  String get permissionPhotosDenied => 'Izin foto diperlukan untuk menyimpan file yang diunduh (iOS). Mohon berikan izin di pengaturan.';
 
   @override
-  String get permissionNotificationDenied => 'Izin notifikasi direkomendasikan untuk pembaruan progres unduhan.';
+  String get permissionNotificationDenied => 'Izin notifikasi disarankan untuk update progres unduhan.';
 
   @override
-  String get permissiongoToSettings => 'Buka Pengaturan';
+  String get permissiongoToSettings => 'Ke Pengaturan';
 
   @override
   String get ok => 'OK';
 
   @override
-  String get upgradeNow => 'Tingkatkan Sekarang';
+  String get upgradeNow => 'Upgrade Sekarang';
 
   @override
-  String get chooseYourPlan => 'Pilih Paket Anda';
+  String get chooseYourPlan => 'Pilih Paket Kamu';
 
   @override
   String get planWeekly => 'Mingguan';
@@ -278,7 +278,7 @@ class AppLocalizationsId extends AppLocalizations {
   String get planLifetime => 'Seumur Hidup';
 
   @override
-  String get oneTimePurchase => 'Pembelian Sekali Bayar';
+  String get oneTimePurchase => 'Pembelian Sekali';
 
   @override
   String savePercent(String percent) {
@@ -292,7 +292,7 @@ class AppLocalizationsId extends AppLocalizations {
   String get selectPlanErrorTitle => 'Error Memuat Paket';
 
   @override
-  String get selectPlanErrorMessage => 'Tidak dapat memuat paket langganan. Silakan periksa koneksi internet Anda dan coba lagi.';
+  String get selectPlanErrorMessage => 'Tidak bisa memuat paket langganan. Mohon periksa koneksi internet dan coba lagi.';
 
   @override
   String get purchaseFailed => 'Pembelian Gagal';
@@ -307,30 +307,30 @@ class AppLocalizationsId extends AppLocalizations {
   String get purchaseSuccess => 'Pembelian Berhasil!';
 
   @override
-  String get alreadyPremium => 'Anda sudah menjadi pengguna Premium.';
+  String get alreadyPremium => 'Kamu sudah pengguna Premium.';
 
   @override
   String get getPremium => 'Dapatkan Premium';
 
   @override
   String downloadsRemainingMessage(Object currentLimit) {
-    return 'Unduhan tersisa: $currentLimit. Anda bisa mendapatkan unduhan gratis dengan menonton iklan';
+    return 'Unduhan tersisa: $currentLimit. Kamu bisa mendapat unduhan gratis dengan menonton iklan';
   }
 
   @override
   String get unlockSaveVideoPro => 'Buka Fitur Premium';
 
   @override
-  String get noAdsUnlockAllFeatures => 'Tanpa iklan & buka semua fitur';
+  String get noAdsUnlockAllFeatures => 'Tanpa Iklan & Buka Semua Fitur';
 
   @override
   String get removeAds => 'Hapus semua iklan';
 
   @override
-  String get threadsDownloads => 'Download HD tak terbatas video, foto, dan pesan suara dari Threads';
+  String get tiktokDownloads => 'Unduhan HD unlimited video, foto, dan musik dari TikTok';
 
   @override
-  String get instagramDownloads => 'Download HD tak terbatas video, foto, reels, story, dan profil lengkap dari Instagram';
+  String get instagramDownloads => 'Unduhan berkualitas tinggi tanpa watermark';
 
   @override
   String get lifetimePro => 'Pro Seumur Hidup';
@@ -357,10 +357,10 @@ class AppLocalizationsId extends AppLocalizations {
   String get perWeek => '/minggu';
 
   @override
-  String get mostPopular => 'Paling populer';
+  String get mostPopular => 'Paling Populer';
 
   @override
-  String get buyNow => 'Beli sekarang';
+  String get buyNow => 'Beli Sekarang';
 
   @override
   String get termsOfUse => 'Syarat Penggunaan';
@@ -375,7 +375,7 @@ class AppLocalizationsId extends AppLocalizations {
   String get failedToLoadPlans => 'Gagal memuat paket';
 
   @override
-  String get retry => 'Coba lagi';
+  String get retry => 'Coba Lagi';
 
   @override
   String freeTrialDays(int days) {
@@ -396,58 +396,58 @@ class AppLocalizationsId extends AppLocalizations {
   String get supportedPlatforms => 'Platform yang Didukung';
 
   @override
-  String get supportThreads => 'Unduh Video, Gambar, Pesan Suara';
+  String get supportTiktok => 'Unduh Video, Gambar, Musik';
 
   @override
-  String get supportInstagram => 'Unduh Video, Gambar, Reels, Stories, Profil';
+  String get supportInstagram => 'Unduhan Berkualitas Tinggi Tanpa Watermark';
 
   @override
   String get playlistTab => 'Playlist';
 
   @override
-  String get authorsTab => 'Authors';
+  String get authorsTab => 'Penulis';
 
   @override
-  String get createPlaylist => 'Create Playlist';
+  String get createPlaylist => 'Buat Playlist';
 
   @override
-  String get playlistTitle => 'Playlist Title';
+  String get playlistTitle => 'Judul Playlist';
 
   @override
-  String get playlistDescription => 'Description';
+  String get playlistDescription => 'Deskripsi';
 
   @override
-  String get chooseFiles => 'Choose Files';
+  String get chooseFiles => 'Pilih File';
 
   @override
-  String get createPlaylistButton => 'Create Playlist';
+  String get createPlaylistButton => 'Buat Playlist';
 
   @override
-  String get playlistTitleHint => 'Enter playlist title';
+  String get playlistTitleHint => 'Masukkan judul playlist';
 
   @override
-  String get playlistDescriptionHint => 'Enter playlist description (optional)';
+  String get playlistDescriptionHint => 'Masukkan deskripsi playlist (opsional)';
 
   @override
-  String get selectFiles => 'Select files to add to playlist';
+  String get selectFiles => 'Pilih file untuk ditambahkan ke playlist';
 
   @override
-  String get noPlaylistsYet => 'No playlists yet';
+  String get noPlaylistsYet => 'Belum ada playlist';
 
   @override
-  String get createFirstPlaylist => 'Create your first playlist to organize your downloads';
+  String get createFirstPlaylist => 'Buat playlist pertama kamu untuk mengatur unduhan';
 
   @override
-  String get noAuthorsYet => 'No authors yet';
+  String get noAuthorsYet => 'Belum ada penulis';
 
   @override
-  String get downloadSomethingFirst => 'Download some content to see authors here';
+  String get downloadSomethingFirst => 'Unduh beberapa konten untuk melihat penulis di sini';
 
   @override
   String authorVideos(Object author) {
-    return 'Videos by $author';
+    return 'Video oleh $author';
   }
 
   @override
-  String get noVideosFromAuthor => 'No videos from this author yet';
+  String get noVideosFromAuthor => 'Belum ada video dari penulis ini';
 }

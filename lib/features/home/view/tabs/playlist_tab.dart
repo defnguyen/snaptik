@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:cached_network_image/cached_network_image.dart';
+import 'package:snaptik/config/app_themes.dart';
 import 'package:snaptik/features/database/services/tiktok_results_service.dart';
 import 'package:snaptik/features/database/models/tiktok_result.dart';
 import 'package:snaptik/features/playlist/services/playlist_service.dart';
@@ -63,6 +64,8 @@ class _PlaylistTabState extends State<PlaylistTab> {
       floatingActionButton: FloatingActionButton(
         onPressed: () => _showCreatePlaylistModal(context),
         child: const Icon(Icons.add),
+        backgroundColor: AppThemes.primaryColor,
+        foregroundColor: Colors.white,
       ),
     );
   }
@@ -78,14 +81,14 @@ class _PlaylistTabState extends State<PlaylistTab> {
             color: Theme.of(context).colorScheme.primary.withOpacity(0.5),
           ),
           const SizedBox(height: 16),
-          const Text(
-            'No playlists yet', // TODO: Use l10n.noPlaylistsYet
+          Text(
+            l10n.noPlaylistsYet,
             style: TextStyle(fontSize: 20),
             textAlign: TextAlign.center,
           ),
           const SizedBox(height: 8),
           Text(
-            'Create your first playlist to organize your downloads', // TODO: Use l10n.createFirstPlaylist
+            l10n.createFirstPlaylist,
             style: Theme.of(context).textTheme.bodyMedium?.copyWith(
               color: Theme.of(context).colorScheme.onSurface.withOpacity(0.7),
             ),
@@ -95,7 +98,12 @@ class _PlaylistTabState extends State<PlaylistTab> {
           ElevatedButton.icon(
             onPressed: () => _showCreatePlaylistModal(context),
             icon: const Icon(Icons.add),
-            label: const Text('Create Playlist'), // TODO: Use l10n.createPlaylist
+            label: Text(l10n.createPlaylist),
+            style: ElevatedButton.styleFrom(
+              backgroundColor: AppThemes.primaryColor,
+              foregroundColor: Colors.white,
+              iconColor: Colors.white
+            ),
           ),
         ],
       ),

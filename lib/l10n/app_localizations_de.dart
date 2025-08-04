@@ -9,7 +9,7 @@ class AppLocalizationsDe extends AppLocalizations {
   AppLocalizationsDe([String locale = 'de']) : super(locale);
 
   @override
-  String get appTitle => 'Threads Video Downloader';
+  String get appTitle => 'TikTok Downloader';
 
   @override
   String get homeTab => 'Startseite';
@@ -30,25 +30,25 @@ class AppLocalizationsDe extends AppLocalizations {
   String get download => 'Herunterladen';
 
   @override
-  String get enterThreadsUrl => 'Threads/Instagram URL eingeben';
+  String get enterTiktokUrl => 'TikTok URL eingeben';
 
   @override
-  String get howToUseTitle => 'Anleitung:';
+  String get howToUseTitle => 'So verwenden Sie:';
 
   @override
-  String get howToUseStep1 => '1. Öffne Threads und finde den Beitrag, den du herunterladen möchtest.';
+  String get howToUseStep1 => '1. Öffnen Sie TikTok und finden Sie das Video, das Sie herunterladen möchten.';
 
   @override
-  String get howToUseStep2 => '2. Tippe auf das \'Teilen\'-Symbol unter dem Beitrag.';
+  String get howToUseStep2 => '2. Tippen Sie auf das \'Teilen\'-Symbol auf der rechten Seite des Videos.';
 
   @override
-  String get howToUseStep3 => '3. Wähle \'Link kopieren\'.';
+  String get howToUseStep3 => '3. Wählen Sie \'Link kopieren\'.';
 
   @override
-  String get howToUseStep4 => '4. Füge den Link in das obige Eingabefeld ein und tippe auf \'Herunterladen\'.';
+  String get howToUseStep4 => '4. Fügen Sie den Link in das Eingabefeld oben ein und tippen Sie auf \'Herunterladen\'.';
 
   @override
-  String get invalidUrlError => 'Ungültiges Threads-URL-Format.';
+  String get invalidUrlError => 'Ungültiges TikTok URL-Format.';
 
   @override
   String get fetchingMedia => 'Medien werden abgerufen...';
@@ -60,7 +60,7 @@ class AppLocalizationsDe extends AppLocalizations {
   String get downloadVideo => 'Video herunterladen';
 
   @override
-  String get downloadVoice => 'Sprachnotiz herunterladen';
+  String get downloadVoice => 'Musik herunterladen';
 
   @override
   String get downloadMp3 => 'MP3 herunterladen';
@@ -72,14 +72,14 @@ class AppLocalizationsDe extends AppLocalizations {
   String get downloadSuccess => 'Download abgeschlossen!';
 
   @override
-  String get downloadError => 'Download fehlgeschlagen. Bitte versuche es erneut.';
+  String get downloadError => 'Download fehlgeschlagen. Bitte versuchen Sie es erneut.';
 
   @override
   String get downloadLimitReachedTitle => 'Download-Limit erreicht';
 
   @override
   String downloadLimitReachedMessage(Object limit) {
-    return 'Du hast das Download-Limit erreicht ($limit Mal). Schaue eine kurze Werbung, um 5 weitere Download-Versuche zu erhalten.';
+    return 'Sie haben das Download-Limit erreicht ($limit Mal). Sehen Sie sich eine kurze Werbung an, um 5 weitere Download-Versuche zu erhalten.';
   }
 
   @override
@@ -95,10 +95,10 @@ class AppLocalizationsDe extends AppLocalizations {
   String get videosTab => 'Videos';
 
   @override
-  String get voiceTab => 'Sprachnotizen';
+  String get musicTab => 'Musik';
 
   @override
-  String get view => 'Ansehen';
+  String get view => 'Anzeigen';
 
   @override
   String get info => 'Info';
@@ -128,7 +128,7 @@ class AppLocalizationsDe extends AppLocalizations {
   String get fileSize => 'Größe';
 
   @override
-  String get renameMediaTitle => 'Medium umbenennen';
+  String get renameMediaTitle => 'Medien umbenennen';
 
   @override
   String get enterNewName => 'Neuen Namen eingeben';
@@ -140,7 +140,7 @@ class AppLocalizationsDe extends AppLocalizations {
   String get deleteConfirmationTitle => 'Löschen bestätigen';
 
   @override
-  String get deleteConfirmationMessage => 'Bist du sicher, dass du diese Datei löschen möchtest? Diese Aktion kann nicht rückgängig gemacht werden.';
+  String get deleteConfirmationMessage => 'Sind Sie sicher, dass Sie diese Datei löschen möchten? Diese Aktion kann nicht rückgängig gemacht werden.';
 
   @override
   String get confirm => 'Bestätigen';
@@ -164,16 +164,16 @@ class AppLocalizationsDe extends AppLocalizations {
   String get settingsClaimMoreDownloads => '5 weitere Downloads erhalten';
 
   @override
-  String get settingsClaimSuccess => 'Erfolg! Du hast 5 weitere Downloads.';
+  String get settingsClaimSuccess => 'Erfolg! Sie haben 5 weitere Downloads.';
 
   @override
-  String get settingsClaimError => 'Fehler beim Laden der Werbung. Bitte versuche es später noch einmal.';
+  String get settingsClaimError => 'Werbung konnte nicht geladen werden. Bitte versuchen Sie es später erneut.';
 
   @override
   String get settingsPremium => 'Auf Premium upgraden';
 
   @override
-  String get settingsPremiumDescription => 'Werbung entfernen und unbegrenzte Downloads erhalten.';
+  String get settingsPremiumDescription => 'Entfernen Sie Werbung und erhalten Sie unbegrenzte Downloads.';
 
   @override
   String get settingsRestorePurchase => 'Kauf wiederherstellen';
@@ -182,7 +182,7 @@ class AppLocalizationsDe extends AppLocalizations {
   String get settingsRestoreSuccess => 'Käufe erfolgreich wiederhergestellt!';
 
   @override
-  String get settingsRestoreError => 'Fehler beim Wiederherstellen der Käufe. Kein aktives Abonnement gefunden oder Fehler aufgetreten.';
+  String get settingsRestoreError => 'Käufe konnten nicht wiederhergestellt werden. Kein aktives Abonnement gefunden oder es ist ein Fehler aufgetreten.';
 
   @override
   String get settingsGeneralSection => 'Allgemein';
@@ -200,7 +200,7 @@ class AppLocalizationsDe extends AppLocalizations {
   String get settingsAbout => 'Über';
 
   @override
-  String get settingsContact => 'Kontaktiere uns';
+  String get settingsContact => 'Kontakt';
 
   @override
   String get settingsRateApp => 'App bewerten';
@@ -209,25 +209,25 @@ class AppLocalizationsDe extends AppLocalizations {
   String get settingsShareApp => 'App teilen';
 
   @override
-  String get premiumUser => 'Premium-Nutzer';
+  String get premiumUser => 'Premium-Benutzer';
 
   @override
-  String get aboutTitle => 'Über Threads Downloader';
+  String get aboutTitle => 'Über TikTok Downloader';
 
   @override
-  String get aboutContent => 'Diese App hilft dir beim Herunterladen öffentlicher Fotos, Videos und Sprachnotizen von Threads-Beiträgen.\n\nBitte respektiere Urheberrechte und Privatsphäre. Lade nur Inhalte herunter, für deren Nutzung du die Erlaubnis hast.';
+  String get aboutContent => 'Diese App hilft Ihnen dabei, öffentliche Videos, Fotos und Audio-Dateien von TikTok-Posts herunterzuladen.\n\nBitte respektieren Sie Urheberrechte und Privatsphäre. Laden Sie nur Inhalte herunter, für die Sie eine Nutzungsberechtigung haben.';
 
   @override
-  String get contactTitle => 'Kontaktiere uns';
+  String get contactTitle => 'Kontakt';
 
   @override
-  String get contactNameHint => 'Dein Name';
+  String get contactNameHint => 'Ihr Name';
 
   @override
-  String get contactEmailHint => 'Deine E-Mail';
+  String get contactEmailHint => 'Ihre E-Mail';
 
   @override
-  String get contactMessageHint => 'Deine Nachricht';
+  String get contactMessageHint => 'Ihre Nachricht';
 
   @override
   String get contactSendButton => 'Nachricht senden';
@@ -236,25 +236,25 @@ class AppLocalizationsDe extends AppLocalizations {
   String get contactSending => 'Wird gesendet...';
 
   @override
-  String get contactSuccess => 'Nachricht erfolgreich gesendet! Wir werden uns bald bei dir melden.';
+  String get contactSuccess => 'Nachricht erfolgreich gesendet! Wir werden uns bald bei Ihnen melden.';
 
   @override
-  String get contactError => 'Fehler beim Senden der Nachricht. Bitte versuche es später erneut.';
+  String get contactError => 'Nachricht konnte nicht gesendet werden. Bitte versuchen Sie es später erneut.';
 
   @override
   String get permissionRequiredTitle => 'Berechtigung erforderlich';
 
   @override
-  String get permissionStorageDenied => 'Speicherberechtigung ist erforderlich, um heruntergeladene Dateien zu speichern. Bitte erteile die Berechtigung in den Einstellungen.';
+  String get permissionStorageDenied => 'Speicherberechtigung ist erforderlich, um heruntergeladene Dateien zu speichern. Bitte gewähren Sie die Berechtigung in den Einstellungen.';
 
   @override
-  String get permissionPhotosDenied => 'Fotos-Berechtigung ist erforderlich, um heruntergeladene Dateien zu speichern (iOS). Bitte erteile die Berechtigung in den Einstellungen.';
+  String get permissionPhotosDenied => 'Foto-Berechtigung ist erforderlich, um heruntergeladene Dateien zu speichern (iOS). Bitte gewähren Sie die Berechtigung in den Einstellungen.';
 
   @override
-  String get permissionNotificationDenied => 'Benachrichtigungsberechtigung wird für Download-Fortschrittsaktualisierungen empfohlen.';
+  String get permissionNotificationDenied => 'Benachrichtigungsberechtigung wird für Download-Fortschrittsupdates empfohlen.';
 
   @override
-  String get permissiongoToSettings => 'Zu den Einstellungen';
+  String get permissiongoToSettings => 'Zu Einstellungen';
 
   @override
   String get ok => 'OK';
@@ -263,7 +263,7 @@ class AppLocalizationsDe extends AppLocalizations {
   String get upgradeNow => 'Jetzt upgraden';
 
   @override
-  String get chooseYourPlan => 'Wähle deinen Plan';
+  String get chooseYourPlan => 'Wählen Sie Ihren Plan';
 
   @override
   String get planWeekly => 'Wöchentlich';
@@ -282,17 +282,17 @@ class AppLocalizationsDe extends AppLocalizations {
 
   @override
   String savePercent(String percent) {
-    return '$percent% sparen';
+    return 'Sparen Sie $percent%';
   }
 
   @override
-  String get bestValue => 'Bestes Angebot';
+  String get bestValue => 'Bester Wert';
 
   @override
   String get selectPlanErrorTitle => 'Fehler beim Laden der Pläne';
 
   @override
-  String get selectPlanErrorMessage => 'Abonnementpläne konnten nicht geladen werden. Bitte überprüfe deine Internetverbindung und versuche es erneut.';
+  String get selectPlanErrorMessage => 'Abonnementpläne konnten nicht geladen werden. Bitte überprüfen Sie Ihre Internetverbindung und versuchen Sie es erneut.';
 
   @override
   String get purchaseFailed => 'Kauf fehlgeschlagen';
@@ -307,7 +307,7 @@ class AppLocalizationsDe extends AppLocalizations {
   String get purchaseSuccess => 'Kauf erfolgreich!';
 
   @override
-  String get alreadyPremium => 'Du bist bereits Premium-Nutzer.';
+  String get alreadyPremium => 'Sie sind bereits Premium-Benutzer.';
 
   @override
   String get getPremium => 'Premium erhalten';
@@ -318,19 +318,19 @@ class AppLocalizationsDe extends AppLocalizations {
   }
 
   @override
-  String get unlockSaveVideoPro => 'Premium-Features freischalten';
+  String get unlockSaveVideoPro => 'Premium-Funktionen freischalten';
 
   @override
-  String get noAdsUnlockAllFeatures => 'Keine Werbung & alle Features freischalten';
+  String get noAdsUnlockAllFeatures => 'Keine Werbung & alle Funktionen freischalten';
 
   @override
   String get removeAds => 'Alle Werbung entfernen';
 
   @override
-  String get threadsDownloads => 'Unbegrenzte HD-Downloads von Videos, Fotos und Sprachnachrichten von Threads';
+  String get tiktokDownloads => 'Unbegrenzte HD-Downloads von Videos, Fotos und Musik von TikTok';
 
   @override
-  String get instagramDownloads => 'Unbegrenzte HD-Downloads von Videos, Fotos, Reels, Stories und vollständigen Profilen von Instagram';
+  String get instagramDownloads => 'Hochwertige Downloads ohne Wasserzeichen';
 
   @override
   String get lifetimePro => 'Lebenslang Pro';
@@ -357,7 +357,7 @@ class AppLocalizationsDe extends AppLocalizations {
   String get perWeek => '/Woche';
 
   @override
-  String get mostPopular => 'Beliebteste';
+  String get mostPopular => 'Am beliebtesten';
 
   @override
   String get buyNow => 'Jetzt kaufen';
@@ -369,13 +369,13 @@ class AppLocalizationsDe extends AppLocalizations {
   String get privacyPolicy => 'Datenschutzrichtlinie';
 
   @override
-  String get loadingPlans => 'Tarife werden geladen...';
+  String get loadingPlans => 'Pläne werden geladen...';
 
   @override
-  String get failedToLoadPlans => 'Laden der Tarife fehlgeschlagen';
+  String get failedToLoadPlans => 'Pläne konnten nicht geladen werden';
 
   @override
-  String get retry => 'Erneut versuchen';
+  String get retry => 'Wiederholen';
 
   @override
   String freeTrialDays(int days) {
@@ -396,58 +396,58 @@ class AppLocalizationsDe extends AppLocalizations {
   String get supportedPlatforms => 'Unterstützte Plattformen';
 
   @override
-  String get supportThreads => 'Videos, Bilder und Sprachnachrichten herunterladen';
+  String get supportTiktok => 'Videos, Bilder, Musik herunterladen';
 
   @override
-  String get supportInstagram => 'Videos, Bilder, Reels, Stories und Profile herunterladen';
+  String get supportInstagram => 'Hochwertige Downloads ohne Wasserzeichen';
 
   @override
-  String get playlistTab => 'Playlist';
+  String get playlistTab => 'Wiedergabeliste';
 
   @override
-  String get authorsTab => 'Authors';
+  String get authorsTab => 'Autoren';
 
   @override
-  String get createPlaylist => 'Create Playlist';
+  String get createPlaylist => 'Wiedergabeliste erstellen';
 
   @override
-  String get playlistTitle => 'Playlist Title';
+  String get playlistTitle => 'Wiedergabelisten-Titel';
 
   @override
-  String get playlistDescription => 'Description';
+  String get playlistDescription => 'Beschreibung';
 
   @override
-  String get chooseFiles => 'Choose Files';
+  String get chooseFiles => 'Dateien auswählen';
 
   @override
-  String get createPlaylistButton => 'Create Playlist';
+  String get createPlaylistButton => 'Wiedergabeliste erstellen';
 
   @override
-  String get playlistTitleHint => 'Enter playlist title';
+  String get playlistTitleHint => 'Wiedergabelisten-Titel eingeben';
 
   @override
-  String get playlistDescriptionHint => 'Enter playlist description (optional)';
+  String get playlistDescriptionHint => 'Wiedergabelisten-Beschreibung eingeben (optional)';
 
   @override
-  String get selectFiles => 'Select files to add to playlist';
+  String get selectFiles => 'Dateien für die Wiedergabeliste auswählen';
 
   @override
-  String get noPlaylistsYet => 'No playlists yet';
+  String get noPlaylistsYet => 'Noch keine Wiedergabelisten';
 
   @override
-  String get createFirstPlaylist => 'Create your first playlist to organize your downloads';
+  String get createFirstPlaylist => 'Erstellen Sie Ihre erste Wiedergabeliste, um Ihre Downloads zu organisieren';
 
   @override
-  String get noAuthorsYet => 'No authors yet';
+  String get noAuthorsYet => 'Noch keine Autoren';
 
   @override
-  String get downloadSomethingFirst => 'Download some content to see authors here';
+  String get downloadSomethingFirst => 'Laden Sie zuerst Inhalte herunter, um hier Autoren zu sehen';
 
   @override
   String authorVideos(Object author) {
-    return 'Videos by $author';
+    return 'Videos von $author';
   }
 
   @override
-  String get noVideosFromAuthor => 'No videos from this author yet';
+  String get noVideosFromAuthor => 'Noch keine Videos von diesem Autor';
 }

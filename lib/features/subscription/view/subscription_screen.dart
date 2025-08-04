@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:purchases_flutter/purchases_flutter.dart';
 import 'package:snaptik/config/app_constants.dart';
+import 'package:snaptik/config/app_themes.dart';
 import 'package:snaptik/core/blocs/premium/premium_cubit.dart';
 import 'package:snaptik/core/services/purchase_service.dart';
 import 'package:snaptik/core/widgets/loading_indicator.dart';
@@ -120,9 +121,9 @@ class _SubscriptionScreenState extends State<SubscriptionScreen> {
               begin: Alignment.topCenter,
               end: Alignment.bottomCenter,
               colors: [
-                Color(0xFF1A1A2E),
-                Color(0xFF16213E),
-                Color(0xFF0F3460),
+                Color(0xFF1C1C1C),
+                Color(0xFF2C2C2C),
+                Color(0xFF400D17),
               ],
             ),
           ),
@@ -219,7 +220,7 @@ class _SubscriptionScreenState extends State<SubscriptionScreen> {
 
     final features = [
       l10n.removeAds,
-      l10n.threadsDownloads,
+      l10n.tiktokDownloads,
       l10n.instagramDownloads,
     ];
 
@@ -329,7 +330,7 @@ class _SubscriptionScreenState extends State<SubscriptionScreen> {
             ? () => _handlePurchase(_selectedPackage!)
             : null,
         style: ElevatedButton.styleFrom(
-          backgroundColor: Colors.purple,
+          backgroundColor: AppThemes.primaryColor,
           shape: RoundedRectangleBorder(
             borderRadius: BorderRadius.circular(28),
           ),
@@ -358,14 +359,14 @@ class _SubscriptionScreenState extends State<SubscriptionScreen> {
           onPressed: () => _launchUrl(AppConstants.termsOfServiceUrl),
           child: Text(
             l10n.termsOfUse,
-            style: const TextStyle(color: Colors.purple, fontSize: 14),
+            style: const TextStyle(color: Colors.white, fontSize: 14),
           ),
         ),
         TextButton(
           onPressed: () => _launchUrl(AppConstants.privacyPolicyUrl),
           child: Text(
             l10n.privacyPolicy,
-            style: const TextStyle(color: Colors.purple, fontSize: 14),
+            style: const TextStyle(color: Colors.white, fontSize: 14),
           ),
         ),
       ],

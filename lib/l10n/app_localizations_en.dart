@@ -30,7 +30,7 @@ class AppLocalizationsEn extends AppLocalizations {
   String get download => 'Download';
 
   @override
-  String get enterThreadsUrl => 'Enter TikTok URL';
+  String get enterTiktokUrl => 'Enter TikTok URL';
 
   @override
   String get howToUseTitle => 'How to Use:';
@@ -60,7 +60,7 @@ class AppLocalizationsEn extends AppLocalizations {
   String get downloadVideo => 'Download Video';
 
   @override
-  String get downloadVoice => 'Download Voice';
+  String get downloadVoice => 'Download Music';
 
   @override
   String get downloadMp3 => 'Download MP3';
@@ -95,7 +95,7 @@ class AppLocalizationsEn extends AppLocalizations {
   String get videosTab => 'Videos';
 
   @override
-  String get voiceTab => 'Voice';
+  String get musicTab => 'Music';
 
   @override
   String get view => 'View';
@@ -327,7 +327,7 @@ class AppLocalizationsEn extends AppLocalizations {
   String get removeAds => 'Remove all ads';
 
   @override
-  String get threadsDownloads => 'Unlimited HD downloads of videos, photos, and audio from TikTok';
+  String get tiktokDownloads => 'Unlimited HD downloads of videos, photos, and music from TikTok';
 
   @override
   String get instagramDownloads => 'High quality downloads with no watermarks';
@@ -396,7 +396,7 @@ class AppLocalizationsEn extends AppLocalizations {
   String get supportedPlatforms => 'Supported Platforms';
 
   @override
-  String get supportThreads => 'Download Videos, Images, Audio';
+  String get supportTiktok => 'Download Videos, Images, Music';
 
   @override
   String get supportInstagram => 'High Quality Downloads with No Watermarks';

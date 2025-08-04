@@ -175,11 +175,11 @@ abstract class AppLocalizations {
   /// **'Download'**
   String get download;
 
-  /// No description provided for @enterThreadsUrl.
+  /// No description provided for @enterTiktokUrl.
   ///
   /// In en, this message translates to:
   /// **'Enter TikTok URL'**
-  String get enterThreadsUrl;
+  String get enterTiktokUrl;
 
   /// No description provided for @howToUseTitle.
   ///
@@ -238,7 +238,7 @@ abstract class AppLocalizations {
   /// No description provided for @downloadVoice.
   ///
   /// In en, this message translates to:
-  /// **'Download Voice'**
+  /// **'Download Music'**
   String get downloadVoice;
 
   /// No description provided for @downloadMp3.
@@ -301,11 +301,11 @@ abstract class AppLocalizations {
   /// **'Videos'**
   String get videosTab;
 
-  /// No description provided for @voiceTab.
+  /// No description provided for @musicTab.
   ///
   /// In en, this message translates to:
-  /// **'Voice'**
-  String get voiceTab;
+  /// **'Music'**
+  String get musicTab;
 
   /// No description provided for @view.
   ///
@@ -757,11 +757,11 @@ abstract class AppLocalizations {
   /// **'Remove all ads'**
   String get removeAds;
 
-  /// No description provided for @threadsDownloads.
+  /// No description provided for @tiktokDownloads.
   ///
   /// In en, this message translates to:
-  /// **'Unlimited HD downloads of videos, photos, and audio from TikTok'**
-  String get threadsDownloads;
+  /// **'Unlimited HD downloads of videos, photos, and music from TikTok'**
+  String get tiktokDownloads;
 
   /// No description provided for @instagramDownloads.
   ///
@@ -883,11 +883,11 @@ abstract class AppLocalizations {
   /// **'Supported Platforms'**
   String get supportedPlatforms;
 
-  /// No description provided for @supportThreads.
+  /// No description provided for @supportTiktok.
   ///
   /// In en, this message translates to:
-  /// **'Download Videos, Images, Audio'**
-  String get supportThreads;
+  /// **'Download Videos, Images, Music'**
+  String get supportTiktok;
 
   /// No description provided for @supportInstagram.
   ///

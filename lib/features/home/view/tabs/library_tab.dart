@@ -50,7 +50,7 @@ class LibraryTabState extends State<LibraryTab>
       _tabs.addAll([
         Tab(text: l10n.photosTab), // Use localized strings
         Tab(text: l10n.videosTab),
-        Tab(text: l10n.voiceTab), // Combined Voice/MP3
+        Tab(text: l10n.musicTab), // Combined Voice/MP3
       ]);
       _tabController = TabController(length: _tabs.length, vsync: this);
       _tabController.addListener(_handleTabSelection);

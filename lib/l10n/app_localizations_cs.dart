@@ -9,7 +9,7 @@ class AppLocalizationsCs extends AppLocalizations {
   AppLocalizationsCs([String locale = 'cs']) : super(locale);
 
   @override
-  String get appTitle => 'Threads Video Downloader';
+  String get appTitle => 'TikTok Downloader';
 
   @override
   String get homeTab => 'Domů';
@@ -30,25 +30,25 @@ class AppLocalizationsCs extends AppLocalizations {
   String get download => 'Stáhnout';
 
   @override
-  String get enterThreadsUrl => 'Zadejte URL adresu Threads/Instagram';
+  String get enterTiktokUrl => 'Zadejte TikTok URL';
 
   @override
   String get howToUseTitle => 'Jak používat:';
 
   @override
-  String get howToUseStep1 => '1. Otevřete Threads a najděte příspěvek, který chcete stáhnout.';
+  String get howToUseStep1 => '1. Otevřete TikTok a najděte video, které chcete stáhnout.';
 
   @override
-  String get howToUseStep2 => '2. Klepněte na ikonu \'Sdílet\' pod příspěvkem.';
+  String get howToUseStep2 => '2. Klepněte na ikonu \'Sdílet\' na pravé straně videa.';
 
   @override
   String get howToUseStep3 => '3. Vyberte \'Kopírovat odkaz\'.';
 
   @override
-  String get howToUseStep4 => '4. Vložte odkaz do pole výše a klepněte na \'Stáhnout\'.';
+  String get howToUseStep4 => '4. Vložte odkaz do vstupního pole výše a klepněte na \'Stáhnout\'.';
 
   @override
-  String get invalidUrlError => 'Neplatný formát URL Threads.';
+  String get invalidUrlError => 'Neplatný formát TikTok URL.';
 
   @override
   String get fetchingMedia => 'Načítání médií...';
@@ -60,7 +60,7 @@ class AppLocalizationsCs extends AppLocalizations {
   String get downloadVideo => 'Stáhnout video';
 
   @override
-  String get downloadVoice => 'Stáhnout hlas';
+  String get downloadVoice => 'Stáhnout hudbu';
 
   @override
   String get downloadMp3 => 'Stáhnout MP3';
@@ -79,11 +79,11 @@ class AppLocalizationsCs extends AppLocalizations {
 
   @override
   String downloadLimitReachedMessage(Object limit) {
-    return 'Dosáhli jste limitu stahování ($limit krát). Zhlédněte krátkou reklamu a získejte 5 dalších pokusů o stažení.';
+    return 'Dosáhli jste limitu stahování (${limit}x). Zhlédněte krátkou reklamu a získejte 5 dalších pokusů o stažení.';
   }
 
   @override
-  String get watchAd => 'Zhlédnout reklamu';
+  String get watchAd => 'Shlédnout reklamu';
 
   @override
   String get cancel => 'Zrušit';
@@ -95,13 +95,13 @@ class AppLocalizationsCs extends AppLocalizations {
   String get videosTab => 'Videa';
 
   @override
-  String get voiceTab => 'Hlas';
+  String get musicTab => 'Hudba';
 
   @override
   String get view => 'Zobrazit';
 
   @override
-  String get info => 'Info';
+  String get info => 'Informace';
 
   @override
   String get rename => 'Přejmenovat';
@@ -140,7 +140,7 @@ class AppLocalizationsCs extends AppLocalizations {
   String get deleteConfirmationTitle => 'Potvrdit smazání';
 
   @override
-  String get deleteConfirmationMessage => 'Opravdu chcete tento soubor smazat? Tuto akci nelze vrátit zpět.';
+  String get deleteConfirmationMessage => 'Opravdu chcete smazat tento soubor? Tuto akci nelze vrátit zpět.';
 
   @override
   String get confirm => 'Potvrdit';
@@ -149,16 +149,16 @@ class AppLocalizationsCs extends AppLocalizations {
   String get settingsLanguage => 'Jazyk';
 
   @override
-  String get settingsTheme => 'Motiv';
+  String get settingsTheme => 'Téma';
 
   @override
-  String get settingsThemeLight => 'Světlý';
+  String get settingsThemeLight => 'Světlé';
 
   @override
-  String get settingsThemeDark => 'Tmavý';
+  String get settingsThemeDark => 'Tmavé';
 
   @override
-  String get settingsThemeSystem => 'Systémový';
+  String get settingsThemeSystem => 'Systémové';
 
   @override
   String get settingsClaimMoreDownloads => 'Získat 5 dalších stažení';
@@ -179,10 +179,10 @@ class AppLocalizationsCs extends AppLocalizations {
   String get settingsRestorePurchase => 'Obnovit nákup';
 
   @override
-  String get settingsRestoreSuccess => 'Nákupy byly úspěšně obnoveny!';
+  String get settingsRestoreSuccess => 'Nákupy úspěšně obnoveny!';
 
   @override
-  String get settingsRestoreError => 'Nepodařilo se obnovit nákupy. Nebyl nalezen žádný aktivní předplatné nebo došlo k chybě.';
+  String get settingsRestoreError => 'Nepodařilo se obnovit nákupy. Nebylo nalezeno aktivní předplatné nebo došlo k chybě.';
 
   @override
   String get settingsGeneralSection => 'Obecné';
@@ -203,19 +203,19 @@ class AppLocalizationsCs extends AppLocalizations {
   String get settingsContact => 'Kontaktujte nás';
 
   @override
-  String get settingsRateApp => 'Ohodnotit tuto aplikaci';
+  String get settingsRateApp => 'Ohodnotit aplikaci';
 
   @override
-  String get settingsShareApp => 'Sdílet tuto aplikaci';
+  String get settingsShareApp => 'Sdílet aplikaci';
 
   @override
-  String get premiumUser => 'Prémiový uživatel';
+  String get premiumUser => 'Premium uživatel';
 
   @override
-  String get aboutTitle => 'O Threads Downloaderu';
+  String get aboutTitle => 'O TikTok Downloader';
 
   @override
-  String get aboutContent => 'Tato aplikace vám pomáhá stahovat veřejné fotografie, videa a hlasové poznámky z příspěvků Threads.\n\nRespektujte autorská práva a soukromí. Stahujte pouze obsah, který máte povoleno používat.';
+  String get aboutContent => 'Tato aplikace vám pomáhá stahovat veřejná videa, fotografie a zvukové soubory z TikTok příspěvků.\n\nProsím respektujte autorská práva a soukromí. Stahujte pouze obsah, k jehož použití máte oprávnění.';
 
   @override
   String get contactTitle => 'Kontaktujte nás';
@@ -224,7 +224,7 @@ class AppLocalizationsCs extends AppLocalizations {
   String get contactNameHint => 'Vaše jméno';
 
   @override
-  String get contactEmailHint => 'Váš e-mail';
+  String get contactEmailHint => 'Váš email';
 
   @override
   String get contactMessageHint => 'Vaše zpráva';
@@ -242,16 +242,16 @@ class AppLocalizationsCs extends AppLocalizations {
   String get contactError => 'Nepodařilo se odeslat zprávu. Zkuste to prosím později.';
 
   @override
-  String get permissionRequiredTitle => 'Vyžadováno oprávnění';
+  String get permissionRequiredTitle => 'Požadováno oprávnění';
 
   @override
-  String get permissionStorageDenied => 'Pro ukládání stažených souborů je vyžadováno oprávnění k úložišti. Udělte prosím oprávnění v nastavení.';
+  String get permissionStorageDenied => 'Oprávnění k úložišti je potřeba pro uložení stažených souborů. Prosím udělte oprávnění v nastavení.';
 
   @override
-  String get permissionPhotosDenied => 'Pro ukládání stažených souborů je vyžadováno oprávnění k fotografiím (iOS). Udělte prosím oprávnění v nastavení.';
+  String get permissionPhotosDenied => 'Oprávnění k fotografiím je potřeba pro uložení stažených souborů (iOS). Prosím udělte oprávnění v nastavení.';
 
   @override
-  String get permissionNotificationDenied => 'Pro aktualizace průběhu stahování je doporučeno oprávnění k oznámením.';
+  String get permissionNotificationDenied => 'Oprávnění k oznámením je doporučeno pro aktualizace průběhu stahování.';
 
   @override
   String get permissiongoToSettings => 'Přejít do nastavení';
@@ -263,19 +263,19 @@ class AppLocalizationsCs extends AppLocalizations {
   String get upgradeNow => 'Upgradovat nyní';
 
   @override
-  String get chooseYourPlan => 'Vyberte si plán';
+  String get chooseYourPlan => 'Vyberte svůj plán';
 
   @override
-  String get planWeekly => 'Týdně';
+  String get planWeekly => 'Týdenní';
 
   @override
-  String get planMonthly => 'Měsíčně';
+  String get planMonthly => 'Měsíční';
 
   @override
-  String get planAnnually => 'Ročně';
+  String get planAnnually => 'Roční';
 
   @override
-  String get planLifetime => 'Doživotně';
+  String get planLifetime => 'Doživotní';
 
   @override
   String get oneTimePurchase => 'Jednorázový nákup';
@@ -292,33 +292,33 @@ class AppLocalizationsCs extends AppLocalizations {
   String get selectPlanErrorTitle => 'Chyba při načítání plánů';
 
   @override
-  String get selectPlanErrorMessage => 'Nepodařilo se načíst plány předplatného. Zkontrolujte prosím připojení k internetu a zkuste to znovu.';
+  String get selectPlanErrorMessage => 'Nepodařilo se načíst předplatné plány. Zkontrolujte prosím připojení k internetu a zkuste to znovu.';
 
   @override
   String get purchaseFailed => 'Nákup selhal';
 
   @override
-  String get purchaseCancelled => 'Nákup byl zrušen';
+  String get purchaseCancelled => 'Nákup zrušen';
 
   @override
-  String get purchasePending => 'Nákup čeká na vyřízení';
+  String get purchasePending => 'Nákup čekající';
 
   @override
-  String get purchaseSuccess => 'Nákup byl úspěšný!';
+  String get purchaseSuccess => 'Nákup úspěšný!';
 
   @override
-  String get alreadyPremium => 'Už jste prémiový uživatel.';
+  String get alreadyPremium => 'Již jste Premium uživatel.';
 
   @override
   String get getPremium => 'Získat Premium';
 
   @override
   String downloadsRemainingMessage(Object currentLimit) {
-    return 'Zbývající počet stažení: $currentLimit. Můžete získat bezplatná stažení sledováním reklam';
+    return 'Zbývající stahování: $currentLimit. Můžete získat bezplatná stahování sledováním reklam';
   }
 
   @override
-  String get unlockSaveVideoPro => 'Odemknout prémiové funkce';
+  String get unlockSaveVideoPro => 'Odemknout Premium funkce';
 
   @override
   String get noAdsUnlockAllFeatures => 'Bez reklam a odemknutí všech funkcí';
@@ -327,10 +327,10 @@ class AppLocalizationsCs extends AppLocalizations {
   String get removeAds => 'Odstranit všechny reklamy';
 
   @override
-  String get threadsDownloads => 'Neomezené HD stahování videí, fotek a hlasových zpráv z Threads';
+  String get tiktokDownloads => 'Neomezená HD stahování videí, fotografií a hudby z TikTok';
 
   @override
-  String get instagramDownloads => 'Neomezené HD stahování videí, fotek, reels, stories a celých profilů z Instagramu';
+  String get instagramDownloads => 'Vysoce kvalitní stahování bez vodoznaků';
 
   @override
   String get lifetimePro => 'Doživotní Pro';
@@ -345,7 +345,7 @@ class AppLocalizationsCs extends AppLocalizations {
   String get weeklyPro => 'Týdenní Pro';
 
   @override
-  String get onlyBuyOnce => 'Zaplaťte pouze jednou';
+  String get onlyBuyOnce => 'Kupte pouze jednou';
 
   @override
   String get perYear => '/rok';
@@ -379,75 +379,75 @@ class AppLocalizationsCs extends AppLocalizations {
 
   @override
   String freeTrialDays(int days) {
-    return '$days dní zkušební verze zdarma';
+    return '$days dní bezplatná zkušební verze';
   }
 
   @override
   String freeTrialWeeks(int weeks) {
-    return '$weeks týdnů zkušební verze zdarma';
+    return '$weeks týdnů bezplatná zkušební verze';
   }
 
   @override
   String freeTrialMonths(int months) {
-    return '$months měsíců zkušební verze zdarma';
+    return '$months měsíců bezplatná zkušební verze';
   }
 
   @override
   String get supportedPlatforms => 'Podporované platformy';
 
   @override
-  String get supportThreads => 'Stahování videí, obrázků a hlasových zpráv';
+  String get supportTiktok => 'Stahování videí, obrázků, hudby';
 
   @override
-  String get supportInstagram => 'Stahování videí, obrázků, Reels, Stories a profilů';
+  String get supportInstagram => 'Vysoce kvalitní stahování bez vodoznaků';
 
   @override
   String get playlistTab => 'Playlist';
 
   @override
-  String get authorsTab => 'Authors';
+  String get authorsTab => 'Autoři';
 
   @override
-  String get createPlaylist => 'Create Playlist';
+  String get createPlaylist => 'Vytvořit playlist';
 
   @override
-  String get playlistTitle => 'Playlist Title';
+  String get playlistTitle => 'Název playlistu';
 
   @override
-  String get playlistDescription => 'Description';
+  String get playlistDescription => 'Popis';
 
   @override
-  String get chooseFiles => 'Choose Files';
+  String get chooseFiles => 'Vybrat soubory';
 
   @override
-  String get createPlaylistButton => 'Create Playlist';
+  String get createPlaylistButton => 'Vytvořit playlist';
 
   @override
-  String get playlistTitleHint => 'Enter playlist title';
+  String get playlistTitleHint => 'Zadejte název playlistu';
 
   @override
-  String get playlistDescriptionHint => 'Enter playlist description (optional)';
+  String get playlistDescriptionHint => 'Zadejte popis playlistu (volitelné)';
 
   @override
-  String get selectFiles => 'Select files to add to playlist';
+  String get selectFiles => 'Vyberte soubory pro přidání do playlistu';
 
   @override
-  String get noPlaylistsYet => 'No playlists yet';
+  String get noPlaylistsYet => 'Zatím žádné playlisty';
 
   @override
-  String get createFirstPlaylist => 'Create your first playlist to organize your downloads';
+  String get createFirstPlaylist => 'Vytvořte svůj první playlist pro organizaci stažených souborů';
 
   @override
-  String get noAuthorsYet => 'No authors yet';
+  String get noAuthorsYet => 'Zatím žádní autoři';
 
   @override
-  String get downloadSomethingFirst => 'Download some content to see authors here';
+  String get downloadSomethingFirst => 'Nejprve si stáhněte nějaký obsah, abyste zde viděli autory';
 
   @override
   String authorVideos(Object author) {
-    return 'Videos by $author';
+    return 'Videa od $author';
   }
 
   @override
-  String get noVideosFromAuthor => 'No videos from this author yet';
+  String get noVideosFromAuthor => 'Zatím žádná videa od tohoto autora';
 }

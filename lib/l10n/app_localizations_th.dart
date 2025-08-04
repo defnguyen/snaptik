@@ -9,16 +9,16 @@ class AppLocalizationsTh extends AppLocalizations {
   AppLocalizationsTh([String locale = 'th']) : super(locale);
 
   @override
-  String get appTitle => 'Threads Video Downloader';
+  String get appTitle => 'TikTok Downloader';
 
   @override
   String get homeTab => 'หน้าหลัก';
 
   @override
-  String get libraryTab => 'คลัง';
+  String get libraryTab => 'คลังข้อมูล';
 
   @override
-  String get settingsTab => 'ตั้งค่า';
+  String get settingsTab => 'การตั้งค่า';
 
   @override
   String get pasteLink => 'วางลิงก์';
@@ -30,37 +30,37 @@ class AppLocalizationsTh extends AppLocalizations {
   String get download => 'ดาวน์โหลด';
 
   @override
-  String get enterThreadsUrl => 'ใส่ URL ของ Threads/Instagram';
+  String get enterTiktokUrl => 'ใส่ URL ของ TikTok';
 
   @override
-  String get howToUseTitle => 'วิธีใช้งาน:';
+  String get howToUseTitle => 'วิธีการใช้:';
 
   @override
-  String get howToUseStep1 => '1. เปิด Threads และค้นหาโพสต์ที่คุณต้องการดาวน์โหลด';
+  String get howToUseStep1 => '1. เปิด TikTok และหาวิดีโอที่คุณต้องการดาวน์โหลด';
 
   @override
-  String get howToUseStep2 => '2. แตะไอคอน \'แชร์\' ด้านล่างโพสต์';
+  String get howToUseStep2 => '2. แตะไอคอน \'แชร์\' ที่ด้านขวาของวิดีโอ';
 
   @override
   String get howToUseStep3 => '3. เลือก \'คัดลอกลิงก์\'';
 
   @override
-  String get howToUseStep4 => '4. วางลิงก์ลงในช่องข้างบนและแตะ \'ดาวน์โหลด\'';
+  String get howToUseStep4 => '4. วางลิงก์ในช่องใส่ข้อมูลด้านบนและแตะ \'ดาวน์โหลด\'';
 
   @override
-  String get invalidUrlError => 'รูปแบบ URL Threads ไม่ถูกต้อง';
+  String get invalidUrlError => 'รูปแบบ URL ของ TikTok ไม่ถูกต้อง';
 
   @override
-  String get fetchingMedia => 'กำลังดึงสื่อ...';
+  String get fetchingMedia => 'กำลังดึงข้อมูลสื่อ...';
 
   @override
-  String get downloadPhoto => 'ดาวน์โหลดรูปภาพ';
+  String get downloadPhoto => 'ดาวน์โหลดรูป';
 
   @override
   String get downloadVideo => 'ดาวน์โหลดวิดีโอ';
 
   @override
-  String get downloadVoice => 'ดาวน์โหลดเสียง';
+  String get downloadVoice => 'ดาวน์โหลดเพลง';
 
   @override
   String get downloadMp3 => 'ดาวน์โหลด MP3';
@@ -69,17 +69,17 @@ class AppLocalizationsTh extends AppLocalizations {
   String get downloading => 'กำลังดาวน์โหลด...';
 
   @override
-  String get downloadSuccess => 'ดาวน์โหลดเสร็จสมบูรณ์!';
+  String get downloadSuccess => 'ดาวน์โหลดเสร็จสิ้น!';
 
   @override
-  String get downloadError => 'ดาวน์โหลดล้มเหลว โปรดลองอีกครั้ง';
+  String get downloadError => 'ดาวน์โหลดล้มเหลว กรุณาลองใหม่';
 
   @override
   String get downloadLimitReachedTitle => 'ถึงขีดจำกัดการดาวน์โหลด';
 
   @override
   String downloadLimitReachedMessage(Object limit) {
-    return 'คุณได้ถึงขีดจำกัดการดาวน์โหลดแล้ว ($limit ครั้ง) ดูโฆษณาสั้นๆ เพื่อรับการดาวน์โหลดเพิ่มอีก 5 ครั้ง';
+    return 'คุณได้ถึงขีดจำกัดการดาวน์โหลดแล้ว ($limit ครั้ง) ดูโฆษณาสั้นๆ เพื่อรับสิทธิ์ดาวน์โหลดเพิ่มอีก 5 ครั้ง';
   }
 
   @override
@@ -95,7 +95,7 @@ class AppLocalizationsTh extends AppLocalizations {
   String get videosTab => 'วิดีโอ';
 
   @override
-  String get voiceTab => 'เสียง';
+  String get musicTab => 'เพลง';
 
   @override
   String get view => 'ดู';
@@ -119,7 +119,7 @@ class AppLocalizationsTh extends AppLocalizations {
   String get fileName => 'ชื่อ';
 
   @override
-  String get filePath => 'ที่อยู่';
+  String get filePath => 'เส้นทาง';
 
   @override
   String get dateAdded => 'วันที่เพิ่ม';
@@ -161,28 +161,28 @@ class AppLocalizationsTh extends AppLocalizations {
   String get settingsThemeSystem => 'ระบบ';
 
   @override
-  String get settingsClaimMoreDownloads => 'รับการดาวน์โหลดเพิ่มอีก 5 ครั้ง';
+  String get settingsClaimMoreDownloads => 'รับดาวน์โหลดเพิ่ม 5 ครั้ง';
 
   @override
-  String get settingsClaimSuccess => 'สำเร็จ! คุณได้รับการดาวน์โหลดเพิ่มอีก 5 ครั้ง';
+  String get settingsClaimSuccess => 'สำเร็จ! คุณมีดาวน์โหลดเพิ่มอีก 5 ครั้ง';
 
   @override
-  String get settingsClaimError => 'ล้มเหลวในการโหลดโฆษณา โปรดลองอีกครั้งในภายหลัง';
+  String get settingsClaimError => 'โหลดโฆษณาล้มเหลว กรุณาลองใหม่ในภายหลัง';
 
   @override
-  String get settingsPremium => 'อัปเกรดเป็นพรีเมียม';
+  String get settingsPremium => 'อัปเกรดเป็น Premium';
 
   @override
-  String get settingsPremiumDescription => 'ลบโฆษณาและรับการดาวน์โหลดไม่จำกัด';
+  String get settingsPremiumDescription => 'ลบโฆษณาและรับดาวน์โหลดไม่จำกัด';
 
   @override
-  String get settingsRestorePurchase => 'กู้คืนการซื้อ';
+  String get settingsRestorePurchase => 'คืนค่าการซื้อ';
 
   @override
-  String get settingsRestoreSuccess => 'กู้คืนการซื้อสำเร็จ!';
+  String get settingsRestoreSuccess => 'คืนค่าการซื้อสำเร็จ!';
 
   @override
-  String get settingsRestoreError => 'ล้มเหลวในการกู้คืนการซื้อ ไม่พบการสมัครสมาชิกที่ใช้งานอยู่หรือเกิดข้อผิดพลาด';
+  String get settingsRestoreError => 'คืนค่าการซื้อล้มเหลว ไม่พบการสมัครสมาชิกที่ใช้งานอยู่หรือเกิดข้อผิดพลาด';
 
   @override
   String get settingsGeneralSection => 'ทั่วไป';
@@ -194,7 +194,7 @@ class AppLocalizationsTh extends AppLocalizations {
   String get settingsAccountSection => 'บัญชี';
 
   @override
-  String get settingsSupportSection => 'การสนับสนุนและข้อเสนอแนะ';
+  String get settingsSupportSection => 'ความช่วยเหลือและคำติชม';
 
   @override
   String get settingsAbout => 'เกี่ยวกับ';
@@ -209,13 +209,13 @@ class AppLocalizationsTh extends AppLocalizations {
   String get settingsShareApp => 'แชร์แอปนี้';
 
   @override
-  String get premiumUser => 'ผู้ใช้พรีเมียม';
+  String get premiumUser => 'ผู้ใช้ Premium';
 
   @override
-  String get aboutTitle => 'เกี่ยวกับ Threads Downloader';
+  String get aboutTitle => 'เกี่ยวกับ TikTok Downloader';
 
   @override
-  String get aboutContent => 'แอปนี้ช่วยให้คุณดาวน์โหลดรูปภาพ วิดีโอ และบันทึกเสียงสาธารณะจากโพสต์ Threads\n\nโปรดเคารพลิขสิทธิ์และความเป็นส่วนตัว ดาวน์โหลดเฉพาะเนื้อหาที่คุณมีสิทธิ์ใช้เท่านั้น';
+  String get aboutContent => 'แอปนี้ช่วยคุณดาวน์โหลดวิดีโอ รูปภาพ และเสียงสาธารณะจากโพสต์ TikTok\n\nกรุณาเคารพลิขสิทธิ์และความเป็นส่วนตัว ดาวน์โหลดเฉพาะเนื้อหาที่คุณได้รับอนุญาตให้ใช้งาน';
 
   @override
   String get contactTitle => 'ติดต่อเรา';
@@ -236,19 +236,19 @@ class AppLocalizationsTh extends AppLocalizations {
   String get contactSending => 'กำลังส่ง...';
 
   @override
-  String get contactSuccess => 'ส่งข้อความสำเร็จ! เราจะติดต่อกลับไปในเร็วๆ นี้';
+  String get contactSuccess => 'ส่งข้อความสำเร็จ! เราจะติดต่อกลับไปเร็วๆ นี้';
 
   @override
-  String get contactError => 'ส่งข้อความล้มเหลว โปรดลองอีกครั้งในภายหลัง';
+  String get contactError => 'ส่งข้อความล้มเหลว กรุณาลองใหม่ในภายหลัง';
 
   @override
   String get permissionRequiredTitle => 'ต้องการสิทธิ์';
 
   @override
-  String get permissionStorageDenied => 'ต้องการสิทธิ์การจัดเก็บเพื่อบันทึกไฟล์ที่ดาวน์โหลด โปรดให้สิทธิ์ในการตั้งค่า';
+  String get permissionStorageDenied => 'ต้องการสิทธิ์การจัดเก็บเพื่อบันทึกไฟล์ที่ดาวน์โหลด กรุณาให้สิทธิ์ในการตั้งค่า';
 
   @override
-  String get permissionPhotosDenied => 'ต้องการสิทธิ์รูปภาพเพื่อบันทึกไฟล์ที่ดาวน์โหลด (iOS) โปรดให้สิทธิ์ในการตั้งค่า';
+  String get permissionPhotosDenied => 'ต้องการสิทธิ์รูปภาพเพื่อบันทึกไฟล์ที่ดาวน์โหลด (iOS) กรุณาให้สิทธิ์ในการตั้งค่า';
 
   @override
   String get permissionNotificationDenied => 'แนะนำให้มีสิทธิ์การแจ้งเตือนสำหรับการอัปเดตความคืบหน้าการดาวน์โหลด';
@@ -275,7 +275,7 @@ class AppLocalizationsTh extends AppLocalizations {
   String get planAnnually => 'รายปี';
 
   @override
-  String get planLifetime => 'ตลอดชีพ';
+  String get planLifetime => 'ตลอดชีวิต';
 
   @override
   String get oneTimePurchase => 'ซื้อครั้งเดียว';
@@ -289,36 +289,36 @@ class AppLocalizationsTh extends AppLocalizations {
   String get bestValue => 'คุ้มค่าที่สุด';
 
   @override
-  String get selectPlanErrorTitle => 'เกิดข้อผิดพลาดในการโหลดแผน';
+  String get selectPlanErrorTitle => 'ข้อผิดพลาดในการโหลดแผน';
 
   @override
-  String get selectPlanErrorMessage => 'ไม่สามารถโหลดแผนการสมัครสมาชิกได้ โปรดตรวจสอบการเชื่อมต่ออินเทอร์เน็ตและลองอีกครั้ง';
+  String get selectPlanErrorMessage => 'ไม่สามารถโหลดแผนการสมัครสมาชิกได้ กรุณาตรวจสอบการเชื่อมต่ออินเทอร์เน็ตและลองใหม่';
 
   @override
   String get purchaseFailed => 'การซื้อล้มเหลว';
 
   @override
-  String get purchaseCancelled => 'การซื้อถูกยกเลิก';
+  String get purchaseCancelled => 'ยกเลิกการซื้อ';
 
   @override
-  String get purchasePending => 'การซื้อกำลังดำเนินการ';
+  String get purchasePending => 'การซื้อรอดำเนินการ';
 
   @override
-  String get purchaseSuccess => 'การซื้อสำเร็จ!';
+  String get purchaseSuccess => 'ซื้อสำเร็จ!';
 
   @override
-  String get alreadyPremium => 'คุณเป็นผู้ใช้พรีเมียมอยู่แล้ว';
+  String get alreadyPremium => 'คุณเป็นผู้ใช้ Premium อยู่แล้ว';
 
   @override
-  String get getPremium => 'รับพรีเมียม';
+  String get getPremium => 'รับ Premium';
 
   @override
   String downloadsRemainingMessage(Object currentLimit) {
-    return 'การดาวน์โหลดที่เหลือ: $currentLimit คุณสามารถรับการดาวน์โหลดฟรีได้โดยการดูโฆษณา';
+    return 'ดาวน์โหลดที่เหลือ: $currentLimit คุณสามารถรับดาวน์โหลดฟรีได้โดยการดูโฆษณา';
   }
 
   @override
-  String get unlockSaveVideoPro => 'ปลดล็อกฟีเจอร์พรีเมียม';
+  String get unlockSaveVideoPro => 'ปลดล็อกฟีเจอร์ Premium';
 
   @override
   String get noAdsUnlockAllFeatures => 'ไม่มีโฆษณาและปลดล็อกฟีเจอร์ทั้งหมด';
@@ -327,25 +327,25 @@ class AppLocalizationsTh extends AppLocalizations {
   String get removeAds => 'ลบโฆษณาทั้งหมด';
 
   @override
-  String get threadsDownloads => 'ดาวน์โหลด HD ไม่จำกัดสำหรับวิดีโอ รูปภาพ และข้อความเสียงจาก Threads';
+  String get tiktokDownloads => 'ดาวน์โหลด HD ไม่จำกัดสำหรับวิดีโอ รูปภาพ และเพลงจาก TikTok';
 
   @override
-  String get instagramDownloads => 'ดาวน์โหลด HD ไม่จำกัดสำหรับวิดีโอ รูปภาพ reels สตอรี่ และโปรไฟล์เต็มจาก Instagram';
+  String get instagramDownloads => 'ดาวน์โหลดคุณภาพสูงไม่มีลายน้ำ';
 
   @override
-  String get lifetimePro => 'โปรตลอดชีวิต';
+  String get lifetimePro => 'Pro ตลอดชีวิต';
 
   @override
-  String get yearlyPro => 'โปรรายปี';
+  String get yearlyPro => 'Pro รายปี';
 
   @override
-  String get monthlyPro => 'โปรรายเดือน';
+  String get monthlyPro => 'Pro รายเดือน';
 
   @override
-  String get weeklyPro => 'โปรรายสัปดาห์';
+  String get weeklyPro => 'Pro รายสัปดาห์';
 
   @override
-  String get onlyBuyOnce => 'ซื้อครั้งเดียวเท่านั้น';
+  String get onlyBuyOnce => 'ซื้อเพียงครั้งเดียว';
 
   @override
   String get perYear => '/ปี';
@@ -357,10 +357,10 @@ class AppLocalizationsTh extends AppLocalizations {
   String get perWeek => '/สัปดาห์';
 
   @override
-  String get mostPopular => 'ได้รับความนิยมมากที่สุด';
+  String get mostPopular => 'ยอดนิยมสุด';
 
   @override
-  String get buyNow => 'ซื้อเลย';
+  String get buyNow => 'ซื้อตอนนี้';
 
   @override
   String get termsOfUse => 'ข้อกำหนดการใช้งาน';
@@ -372,7 +372,7 @@ class AppLocalizationsTh extends AppLocalizations {
   String get loadingPlans => 'กำลังโหลดแผน...';
 
   @override
-  String get failedToLoadPlans => 'โหลดแผนไม่สำเร็จ';
+  String get failedToLoadPlans => 'โหลดแผนล้มเหลว';
 
   @override
   String get retry => 'ลองใหม่';
@@ -396,58 +396,58 @@ class AppLocalizationsTh extends AppLocalizations {
   String get supportedPlatforms => 'แพลตฟอร์มที่รองรับ';
 
   @override
-  String get supportThreads => 'ดาวน์โหลดวิดีโอ รูปภาพ และข้อความเสียง';
+  String get supportTiktok => 'ดาวน์โหลดวิดีโอ รูปภาพ เพลง';
 
   @override
-  String get supportInstagram => 'ดาวน์โหลดวิดีโอ รูปภาพ Reels Stories และโปรไฟล์';
+  String get supportInstagram => 'ดาวน์โหลดคุณภาพสูงไม่มีลายน้ำ';
 
   @override
-  String get playlistTab => 'Playlist';
+  String get playlistTab => 'เพลย์ลิสต์';
 
   @override
-  String get authorsTab => 'Authors';
+  String get authorsTab => 'ผู้สร้าง';
 
   @override
-  String get createPlaylist => 'Create Playlist';
+  String get createPlaylist => 'สร้างเพลย์ลิสต์';
 
   @override
-  String get playlistTitle => 'Playlist Title';
+  String get playlistTitle => 'ชื่อเพลย์ลิสต์';
 
   @override
-  String get playlistDescription => 'Description';
+  String get playlistDescription => 'คำอธิบาย';
 
   @override
-  String get chooseFiles => 'Choose Files';
+  String get chooseFiles => 'เลือกไฟล์';
 
   @override
-  String get createPlaylistButton => 'Create Playlist';
+  String get createPlaylistButton => 'สร้างเพลย์ลิสต์';
 
   @override
-  String get playlistTitleHint => 'Enter playlist title';
+  String get playlistTitleHint => 'ใส่ชื่อเพลย์ลิสต์';
 
   @override
-  String get playlistDescriptionHint => 'Enter playlist description (optional)';
+  String get playlistDescriptionHint => 'ใส่คำอธิบายเพลย์ลิสต์ (ไม่บังคับ)';
 
   @override
-  String get selectFiles => 'Select files to add to playlist';
+  String get selectFiles => 'เลือกไฟล์เพื่อเพิ่มในเพลย์ลิสต์';
 
   @override
-  String get noPlaylistsYet => 'No playlists yet';
+  String get noPlaylistsYet => 'ยังไม่มีเพลย์ลิสต์';
 
   @override
-  String get createFirstPlaylist => 'Create your first playlist to organize your downloads';
+  String get createFirstPlaylist => 'สร้างเพลย์ลิสต์แรกของคุณเพื่อจัดระเบียบการดาวน์โหลด';
 
   @override
-  String get noAuthorsYet => 'No authors yet';
+  String get noAuthorsYet => 'ยังไม่มีผู้สร้าง';
 
   @override
-  String get downloadSomethingFirst => 'Download some content to see authors here';
+  String get downloadSomethingFirst => 'ดาวน์โหลดเนื้อหาบางอย่างก่อนเพื่อดูผู้สร้างที่นี่';
 
   @override
   String authorVideos(Object author) {
-    return 'Videos by $author';
+    return 'วิดีโอโดย $author';
   }
 
   @override
-  String get noVideosFromAuthor => 'No videos from this author yet';
+  String get noVideosFromAuthor => 'ยังไม่มีวิดีโอจากผู้สร้างนี้';
 }

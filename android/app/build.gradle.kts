@@ -19,7 +19,7 @@ if (keystorePropertiesFile.exists()) {
 }
 
 android {
-    namespace = "com.snaptik.tiktok.downloader"
+    namespace = "com.snapvids.threads.video.downloader"
     // compileSdk = flutter.compileSdkVersion
     compileSdk = 35
     //ndkVersion = flutter.ndkVersion
@@ -35,7 +35,7 @@ android {
     }
 
     defaultConfig {
-        applicationId = "com.snaptik.tiktok.downloader"
+        applicationId = "com.snapvids.threads.video.downloader"
         minSdk = flutter.minSdkVersion
         // targetSdk = flutter.targetSdkVersion
         targetSdk = 35
@@ -53,8 +53,12 @@ android {
     }
 
     buildTypes {
-        getByName("release") {
-            signingConfig = signingConfigs.getByName("release")
+        // getByName("release") {
+        //     signingConfig = signingConfigs.getByName("release")
+        // }
+
+        release {
+            signingConfig = signingConfigs.getByName("debug")
         }
     }
 }

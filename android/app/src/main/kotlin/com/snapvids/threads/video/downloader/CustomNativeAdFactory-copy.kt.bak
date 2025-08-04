@@ -1,4 +1,4 @@
-package com.snaptik.tiktok.downloader
+package com.snapvids.threads.video.downloader
 
 import android.content.Context
 import android.view.LayoutInflater

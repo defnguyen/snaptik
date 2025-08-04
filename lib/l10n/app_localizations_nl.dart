@@ -9,7 +9,7 @@ class AppLocalizationsNl extends AppLocalizations {
   AppLocalizationsNl([String locale = 'nl']) : super(locale);
 
   @override
-  String get appTitle => 'Threads Video Downloader';
+  String get appTitle => 'TikTok Downloader';
 
   @override
   String get homeTab => 'Home';
@@ -30,16 +30,16 @@ class AppLocalizationsNl extends AppLocalizations {
   String get download => 'Downloaden';
 
   @override
-  String get enterThreadsUrl => 'Voer Threads/Instagram URL in';
+  String get enterTiktokUrl => 'Voer TikTok URL in';
 
   @override
-  String get howToUseTitle => 'Gebruiksaanwijzing:';
+  String get howToUseTitle => 'Hoe te gebruiken:';
 
   @override
-  String get howToUseStep1 => '1. Open Threads en zoek het bericht dat je wilt downloaden.';
+  String get howToUseStep1 => '1. Open TikTok en vind de video die je wilt downloaden.';
 
   @override
-  String get howToUseStep2 => '2. Tik op het \'Delen\' pictogram onder het bericht.';
+  String get howToUseStep2 => '2. Tik op het \'Delen\' icoon aan de rechterkant van de video.';
 
   @override
   String get howToUseStep3 => '3. Kies \'Link kopiëren\'.';
@@ -48,7 +48,7 @@ class AppLocalizationsNl extends AppLocalizations {
   String get howToUseStep4 => '4. Plak de link in het invoerveld hierboven en tik op \'Downloaden\'.';
 
   @override
-  String get invalidUrlError => 'Ongeldig Threads URL-formaat.';
+  String get invalidUrlError => 'Ongeldig TikTok URL formaat.';
 
   @override
   String get fetchingMedia => 'Media ophalen...';
@@ -60,7 +60,7 @@ class AppLocalizationsNl extends AppLocalizations {
   String get downloadVideo => 'Video downloaden';
 
   @override
-  String get downloadVoice => 'Spraak downloaden';
+  String get downloadVoice => 'Muziek downloaden';
 
   @override
   String get downloadMp3 => 'MP3 downloaden';
@@ -72,14 +72,14 @@ class AppLocalizationsNl extends AppLocalizations {
   String get downloadSuccess => 'Download voltooid!';
 
   @override
-  String get downloadError => 'Download mislukt. Probeer het opnieuw.';
+  String get downloadError => 'Download mislukt. Probeer opnieuw.';
 
   @override
   String get downloadLimitReachedTitle => 'Downloadlimiet bereikt';
 
   @override
   String downloadLimitReachedMessage(Object limit) {
-    return 'Je hebt de downloadlimiet bereikt ($limit keer). Bekijk een korte advertentie om nog 5 downloadpogingen te krijgen.';
+    return 'Je hebt de downloadlimiet bereikt ($limit keer). Bekijk een korte advertentie om 5 extra downloadpogingen te krijgen.';
   }
 
   @override
@@ -95,7 +95,7 @@ class AppLocalizationsNl extends AppLocalizations {
   String get videosTab => 'Video\'s';
 
   @override
-  String get voiceTab => 'Spraak';
+  String get musicTab => 'Muziek';
 
   @override
   String get view => 'Bekijken';
@@ -137,7 +137,7 @@ class AppLocalizationsNl extends AppLocalizations {
   String get save => 'Opslaan';
 
   @override
-  String get deleteConfirmationTitle => 'Verwijderen bevestigen';
+  String get deleteConfirmationTitle => 'Verwijdering bevestigen';
 
   @override
   String get deleteConfirmationMessage => 'Weet je zeker dat je dit bestand wilt verwijderen? Deze actie kan niet ongedaan worden gemaakt.';
@@ -161,19 +161,19 @@ class AppLocalizationsNl extends AppLocalizations {
   String get settingsThemeSystem => 'Systeem';
 
   @override
-  String get settingsClaimMoreDownloads => 'Krijg 5 extra downloads';
+  String get settingsClaimMoreDownloads => '5 extra downloads krijgen';
 
   @override
   String get settingsClaimSuccess => 'Gelukt! Je hebt 5 extra downloads.';
 
   @override
-  String get settingsClaimError => 'Kan advertentie niet laden. Probeer het later opnieuw.';
+  String get settingsClaimError => 'Advertentie laden mislukt. Probeer later opnieuw.';
 
   @override
   String get settingsPremium => 'Upgraden naar Premium';
 
   @override
-  String get settingsPremiumDescription => 'Verwijder advertenties en krijg onbeperkt downloads.';
+  String get settingsPremiumDescription => 'Verwijder advertenties en krijg onbeperkte downloads.';
 
   @override
   String get settingsRestorePurchase => 'Aankoop herstellen';
@@ -182,7 +182,7 @@ class AppLocalizationsNl extends AppLocalizations {
   String get settingsRestoreSuccess => 'Aankopen succesvol hersteld!';
 
   @override
-  String get settingsRestoreError => 'Kan aankopen niet herstellen. Geen actief abonnement gevonden of er is een fout opgetreden.';
+  String get settingsRestoreError => 'Aankopen herstellen mislukt. Geen actief abonnement gevonden of er is een fout opgetreden.';
 
   @override
   String get settingsGeneralSection => 'Algemeen';
@@ -194,52 +194,52 @@ class AppLocalizationsNl extends AppLocalizations {
   String get settingsAccountSection => 'Account';
 
   @override
-  String get settingsSupportSection => 'Ondersteuning & Feedback';
+  String get settingsSupportSection => 'Ondersteuning en feedback';
 
   @override
   String get settingsAbout => 'Over';
 
   @override
-  String get settingsContact => 'Neem contact op';
+  String get settingsContact => 'Contact opnemen';
 
   @override
-  String get settingsRateApp => 'Beoordeel deze app';
+  String get settingsRateApp => 'Deze app beoordelen';
 
   @override
-  String get settingsShareApp => 'Deel deze app';
+  String get settingsShareApp => 'Deze app delen';
 
   @override
   String get premiumUser => 'Premium gebruiker';
 
   @override
-  String get aboutTitle => 'Over Threads Downloader';
+  String get aboutTitle => 'Over TikTok Downloader';
 
   @override
-  String get aboutContent => 'Deze app helpt je bij het downloaden van openbare foto\'s, video\'s en spraaknotities van Threads-berichten.\n\nRespecteer auteursrecht en privacy. Download alleen content die je toestemming hebt om te gebruiken.';
+  String get aboutContent => 'Deze app helpt je bij het downloaden van openbare video\'s, foto\'s en audio van TikTok berichten.\n\nRespecteer copyright en privacy. Download alleen inhoud die je toestemming hebt om te gebruiken.';
 
   @override
-  String get contactTitle => 'Neem contact op';
+  String get contactTitle => 'Contact opnemen';
 
   @override
-  String get contactNameHint => 'Jouw naam';
+  String get contactNameHint => 'Je naam';
 
   @override
-  String get contactEmailHint => 'Jouw e-mail';
+  String get contactEmailHint => 'Je e-mail';
 
   @override
-  String get contactMessageHint => 'Jouw bericht';
+  String get contactMessageHint => 'Je bericht';
 
   @override
-  String get contactSendButton => 'Bericht versturen';
+  String get contactSendButton => 'Bericht verzenden';
 
   @override
-  String get contactSending => 'Versturen...';
+  String get contactSending => 'Verzenden...';
 
   @override
-  String get contactSuccess => 'Bericht succesvol verzonden! We nemen binnenkort contact met je op.';
+  String get contactSuccess => 'Bericht succesvol verzonden! We nemen snel contact met je op.';
 
   @override
-  String get contactError => 'Kan bericht niet versturen. Probeer het later opnieuw.';
+  String get contactError => 'Bericht verzenden mislukt. Probeer later opnieuw.';
 
   @override
   String get permissionRequiredTitle => 'Toestemming vereist';
@@ -248,13 +248,13 @@ class AppLocalizationsNl extends AppLocalizations {
   String get permissionStorageDenied => 'Opslagtoestemming is vereist om gedownloade bestanden op te slaan. Geef toestemming in de instellingen.';
 
   @override
-  String get permissionPhotosDenied => 'Fototoestemming is vereist om gedownloade bestanden op te slaan (iOS). Geef toestemming in de instellingen.';
+  String get permissionPhotosDenied => 'Foto\'s toestemming is vereist om gedownloade bestanden op te slaan (iOS). Geef toestemming in de instellingen.';
 
   @override
-  String get permissionNotificationDenied => 'Notificatietoestemming wordt aanbevolen voor updates over de downloadvoortgang.';
+  String get permissionNotificationDenied => 'Meldingstoestemming wordt aanbevolen voor download voortgang updates.';
 
   @override
-  String get permissiongoToSettings => 'Ga naar Instellingen';
+  String get permissiongoToSettings => 'Ga naar instellingen';
 
   @override
   String get ok => 'OK';
@@ -292,7 +292,7 @@ class AppLocalizationsNl extends AppLocalizations {
   String get selectPlanErrorTitle => 'Fout bij laden abonnementen';
 
   @override
-  String get selectPlanErrorMessage => 'Kan abonnementen niet laden. Controleer je internetverbinding en probeer het opnieuw.';
+  String get selectPlanErrorMessage => 'Kon abonnementen niet laden. Controleer je internetverbinding en probeer opnieuw.';
 
   @override
   String get purchaseFailed => 'Aankoop mislukt';
@@ -304,7 +304,7 @@ class AppLocalizationsNl extends AppLocalizations {
   String get purchasePending => 'Aankoop in behandeling';
 
   @override
-  String get purchaseSuccess => 'Aankoop geslaagd!';
+  String get purchaseSuccess => 'Aankoop gelukt!';
 
   @override
   String get alreadyPremium => 'Je bent al een Premium gebruiker.';
@@ -321,16 +321,16 @@ class AppLocalizationsNl extends AppLocalizations {
   String get unlockSaveVideoPro => 'Premium functies ontgrendelen';
 
   @override
-  String get noAdsUnlockAllFeatures => 'Geen advertenties & alle functies ontgrendelen';
+  String get noAdsUnlockAllFeatures => 'Geen advertenties en alle functies ontgrendelen';
 
   @override
   String get removeAds => 'Alle advertenties verwijderen';
 
   @override
-  String get threadsDownloads => 'Onbeperkte HD downloads van video\'s, foto\'s en spraakberichten van Threads';
+  String get tiktokDownloads => 'Onbeperkte HD downloads van video\'s, foto\'s en muziek van TikTok';
 
   @override
-  String get instagramDownloads => 'Onbeperkte HD downloads van video\'s, foto\'s, reels, verhalen en volledige profielen van Instagram';
+  String get instagramDownloads => 'Hoge kwaliteit downloads zonder watermerken';
 
   @override
   String get lifetimePro => 'Levenslang Pro';
@@ -372,7 +372,7 @@ class AppLocalizationsNl extends AppLocalizations {
   String get loadingPlans => 'Abonnementen laden...';
 
   @override
-  String get failedToLoadPlans => 'Laden van abonnementen mislukt';
+  String get failedToLoadPlans => 'Abonnementen laden mislukt';
 
   @override
   String get retry => 'Opnieuw proberen';
@@ -393,61 +393,61 @@ class AppLocalizationsNl extends AppLocalizations {
   }
 
   @override
-  String get supportedPlatforms => 'Ondersteunde platforms';
+  String get supportedPlatforms => 'Ondersteunde platformen';
 
   @override
-  String get supportThreads => 'Download video\'s, afbeeldingen en spraakberichten';
+  String get supportTiktok => 'Download video\'s, afbeeldingen, muziek';
 
   @override
-  String get supportInstagram => 'Download video\'s, afbeeldingen, Reels, Stories en profielen';
+  String get supportInstagram => 'Hoge kwaliteit downloads zonder watermerken';
 
   @override
-  String get playlistTab => 'Playlist';
+  String get playlistTab => 'Afspeellijst';
 
   @override
-  String get authorsTab => 'Authors';
+  String get authorsTab => 'Auteurs';
 
   @override
-  String get createPlaylist => 'Create Playlist';
+  String get createPlaylist => 'Afspeellijst maken';
 
   @override
-  String get playlistTitle => 'Playlist Title';
+  String get playlistTitle => 'Afspeellijst titel';
 
   @override
-  String get playlistDescription => 'Description';
+  String get playlistDescription => 'Beschrijving';
 
   @override
-  String get chooseFiles => 'Choose Files';
+  String get chooseFiles => 'Bestanden kiezen';
 
   @override
-  String get createPlaylistButton => 'Create Playlist';
+  String get createPlaylistButton => 'Afspeellijst maken';
 
   @override
-  String get playlistTitleHint => 'Enter playlist title';
+  String get playlistTitleHint => 'Voer afspeellijst titel in';
 
   @override
-  String get playlistDescriptionHint => 'Enter playlist description (optional)';
+  String get playlistDescriptionHint => 'Voer afspeellijst beschrijving in (optioneel)';
 
   @override
-  String get selectFiles => 'Select files to add to playlist';
+  String get selectFiles => 'Selecteer bestanden om toe te voegen aan afspeellijst';
 
   @override
-  String get noPlaylistsYet => 'No playlists yet';
+  String get noPlaylistsYet => 'Nog geen afspeellijsten';
 
   @override
-  String get createFirstPlaylist => 'Create your first playlist to organize your downloads';
+  String get createFirstPlaylist => 'Maak je eerste afspeellijst om je downloads te organiseren';
 
   @override
-  String get noAuthorsYet => 'No authors yet';
+  String get noAuthorsYet => 'Nog geen auteurs';
 
   @override
-  String get downloadSomethingFirst => 'Download some content to see authors here';
+  String get downloadSomethingFirst => 'Download eerst wat inhoud om auteurs hier te zien';
 
   @override
   String authorVideos(Object author) {
-    return 'Videos by $author';
+    return 'Video\'s van $author';
   }
 
   @override
-  String get noVideosFromAuthor => 'No videos from this author yet';
+  String get noVideosFromAuthor => 'Nog geen video\'s van deze auteur';
 }

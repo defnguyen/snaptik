@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:purchases_flutter/purchases_flutter.dart';
+import 'package:snaptik/config/app_themes.dart';
 import 'package:snaptik/l10n/app_localizations.dart';
 
 class SubscriptionPlanCard extends StatelessWidget {
@@ -34,7 +35,7 @@ class SubscriptionPlanCard extends StatelessWidget {
                 color: Colors.white.withOpacity(0.1),
                 borderRadius: BorderRadius.circular(12),
                 border: Border.all(
-                  color: isSelected ? Colors.purple : Colors.white.withOpacity(0.3),
+                  color: isSelected ? AppThemes.primaryColor : Colors.white.withOpacity(0.3),
                   width: isSelected ? 2 : 2,
                 ),
               ),
@@ -59,7 +60,7 @@ class SubscriptionPlanCard extends StatelessWidget {
                               Container(
                                 padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 2),
                                 decoration: BoxDecoration(
-                                  color: Colors.purple,
+                                  color: AppThemes.primaryColor,
                                   borderRadius: BorderRadius.circular(8),
                                 ),
                                 child: Text(
@@ -120,10 +121,10 @@ class SubscriptionPlanCard extends StatelessWidget {
                       decoration: BoxDecoration(
                         shape: BoxShape.circle,
                         border: Border.all(
-                          color: isSelected ? Colors.purple : Colors.white.withOpacity(0.5),
+                          color: isSelected ? AppThemes.primaryColor : Colors.white.withOpacity(0.5),
                           width: 2,
                         ),
-                        color: isSelected ? Colors.purple : Colors.transparent,
+                        color: isSelected ? AppThemes.primaryColor : Colors.transparent,
                       ),
                       child: isSelected
                           ? const Icon(Icons.check, color: Colors.white, size: 16)

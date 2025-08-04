@@ -9,7 +9,7 @@ class AppLocalizationsPt extends AppLocalizations {
   AppLocalizationsPt([String locale = 'pt']) : super(locale);
 
   @override
-  String get appTitle => 'Threads Video Downloader';
+  String get appTitle => 'TikTok Downloader';
 
   @override
   String get homeTab => 'Início';
@@ -30,25 +30,25 @@ class AppLocalizationsPt extends AppLocalizations {
   String get download => 'Baixar';
 
   @override
-  String get enterThreadsUrl => 'Digite a URL do Threads/Instagram';
+  String get enterTiktokUrl => 'Digite a URL do TikTok';
 
   @override
-  String get howToUseTitle => 'Como Usar:';
+  String get howToUseTitle => 'Como usar:';
 
   @override
-  String get howToUseStep1 => '1. Abra o Threads e encontre a publicação que deseja baixar.';
+  String get howToUseStep1 => '1. Abra o TikTok e encontre o vídeo que deseja baixar.';
 
   @override
-  String get howToUseStep2 => '2. Toque no ícone \'Compartilhar\' abaixo da publicação.';
+  String get howToUseStep2 => '2. Toque no ícone \'Compartilhar\' no lado direito do vídeo.';
 
   @override
   String get howToUseStep3 => '3. Escolha \'Copiar link\'.';
 
   @override
-  String get howToUseStep4 => '4. Cole o link no campo acima e toque em \'Baixar\'.';
+  String get howToUseStep4 => '4. Cole o link no campo de entrada acima e toque em \'Baixar\'.';
 
   @override
-  String get invalidUrlError => 'Formato de URL do Threads inválido.';
+  String get invalidUrlError => 'Formato de URL do TikTok inválido.';
 
   @override
   String get fetchingMedia => 'Buscando mídia...';
@@ -60,7 +60,7 @@ class AppLocalizationsPt extends AppLocalizations {
   String get downloadVideo => 'Baixar Vídeo';
 
   @override
-  String get downloadVoice => 'Baixar Áudio';
+  String get downloadVoice => 'Baixar Música';
 
   @override
   String get downloadMp3 => 'Baixar MP3';
@@ -72,14 +72,14 @@ class AppLocalizationsPt extends AppLocalizations {
   String get downloadSuccess => 'Download concluído!';
 
   @override
-  String get downloadError => 'Falha no download. Por favor, tente novamente.';
+  String get downloadError => 'Falha no download. Tente novamente.';
 
   @override
-  String get downloadLimitReachedTitle => 'Limite de Downloads Atingido';
+  String get downloadLimitReachedTitle => 'Limite de Download Atingido';
 
   @override
   String downloadLimitReachedMessage(Object limit) {
-    return 'Você atingiu o limite de downloads ($limit vezes). Assista a um anúncio curto para obter mais 5 tentativas de download.';
+    return 'Você atingiu o limite de download ($limit vezes). Assista a um anúncio curto para obter mais 5 tentativas de download.';
   }
 
   @override
@@ -95,7 +95,7 @@ class AppLocalizationsPt extends AppLocalizations {
   String get videosTab => 'Vídeos';
 
   @override
-  String get voiceTab => 'Áudio';
+  String get musicTab => 'Música';
 
   @override
   String get view => 'Visualizar';
@@ -140,7 +140,7 @@ class AppLocalizationsPt extends AppLocalizations {
   String get deleteConfirmationTitle => 'Confirmar Exclusão';
 
   @override
-  String get deleteConfirmationMessage => 'Tem certeza que deseja excluir este arquivo? Esta ação não pode ser desfeita.';
+  String get deleteConfirmationMessage => 'Tem certeza de que deseja excluir este arquivo? Esta ação não pode ser desfeita.';
 
   @override
   String get confirm => 'Confirmar';
@@ -161,13 +161,13 @@ class AppLocalizationsPt extends AppLocalizations {
   String get settingsThemeSystem => 'Sistema';
 
   @override
-  String get settingsClaimMoreDownloads => 'Obter Mais 5 Downloads';
+  String get settingsClaimMoreDownloads => 'Obter mais 5 Downloads';
 
   @override
   String get settingsClaimSuccess => 'Sucesso! Você tem mais 5 downloads.';
 
   @override
-  String get settingsClaimError => 'Falha ao carregar anúncio. Por favor, tente novamente mais tarde.';
+  String get settingsClaimError => 'Falha ao carregar anúncio. Tente novamente mais tarde.';
 
   @override
   String get settingsPremium => 'Atualizar para Premium';
@@ -200,22 +200,22 @@ class AppLocalizationsPt extends AppLocalizations {
   String get settingsAbout => 'Sobre';
 
   @override
-  String get settingsContact => 'Contato';
+  String get settingsContact => 'Entre em Contato';
 
   @override
-  String get settingsRateApp => 'Avaliar este Aplicativo';
+  String get settingsRateApp => 'Avaliar este App';
 
   @override
-  String get settingsShareApp => 'Compartilhar este Aplicativo';
+  String get settingsShareApp => 'Compartilhar este App';
 
   @override
   String get premiumUser => 'Usuário Premium';
 
   @override
-  String get aboutTitle => 'Sobre o Threads Downloader';
+  String get aboutTitle => 'Sobre o TikTok Downloader';
 
   @override
-  String get aboutContent => 'Este aplicativo ajuda você a baixar fotos, vídeos e notas de voz públicas de publicações do Threads.\n\nPor favor, respeite os direitos autorais e a privacidade. Baixe apenas conteúdo que você tenha permissão para usar.';
+  String get aboutContent => 'Este app ajuda você a baixar vídeos, fotos e áudios públicos de posts do TikTok.\n\nPor favor, respeite direitos autorais e privacidade. Baixe apenas conteúdo que você tem permissão para usar.';
 
   @override
   String get contactTitle => 'Entre em Contato';
@@ -239,19 +239,19 @@ class AppLocalizationsPt extends AppLocalizations {
   String get contactSuccess => 'Mensagem enviada com sucesso! Entraremos em contato em breve.';
 
   @override
-  String get contactError => 'Falha ao enviar mensagem. Por favor, tente novamente mais tarde.';
+  String get contactError => 'Falha ao enviar mensagem. Tente novamente mais tarde.';
 
   @override
   String get permissionRequiredTitle => 'Permissão Necessária';
 
   @override
-  String get permissionStorageDenied => 'A permissão de armazenamento é necessária para salvar arquivos baixados. Por favor, conceda a permissão nas configurações.';
+  String get permissionStorageDenied => 'Permissão de armazenamento é necessária para salvar arquivos baixados. Conceda a permissão nas configurações.';
 
   @override
-  String get permissionPhotosDenied => 'A permissão de fotos é necessária para salvar arquivos baixados (iOS). Por favor, conceda a permissão nas configurações.';
+  String get permissionPhotosDenied => 'Permissão de fotos é necessária para salvar arquivos baixados (iOS). Conceda a permissão nas configurações.';
 
   @override
-  String get permissionNotificationDenied => 'A permissão de notificação é recomendada para atualizações do progresso de download.';
+  String get permissionNotificationDenied => 'Permissão de notificação é recomendada para atualizações do progresso de download.';
 
   @override
   String get permissiongoToSettings => 'Ir para Configurações';
@@ -263,7 +263,7 @@ class AppLocalizationsPt extends AppLocalizations {
   String get upgradeNow => 'Atualizar Agora';
 
   @override
-  String get chooseYourPlan => 'Escolha Seu Plano';
+  String get chooseYourPlan => 'Escolha seu Plano';
 
   @override
   String get planWeekly => 'Semanal';
@@ -292,7 +292,7 @@ class AppLocalizationsPt extends AppLocalizations {
   String get selectPlanErrorTitle => 'Erro ao Carregar Planos';
 
   @override
-  String get selectPlanErrorMessage => 'Não foi possível carregar os planos de assinatura. Por favor, verifique sua conexão com a internet e tente novamente.';
+  String get selectPlanErrorMessage => 'Não foi possível carregar os planos de assinatura. Verifique sua conexão com a internet e tente novamente.';
 
   @override
   String get purchaseFailed => 'Compra Falhou';
@@ -314,35 +314,35 @@ class AppLocalizationsPt extends AppLocalizations {
 
   @override
   String downloadsRemainingMessage(Object currentLimit) {
-    return 'Downloads restantes: $currentLimit. Você pode obter downloads gratuitos assistindo a anúncios';
+    return 'Downloads restantes: $currentLimit. Você pode obter downloads gratuitos assistindo anúncios';
   }
 
   @override
-  String get unlockSaveVideoPro => 'Desbloquear recursos premium';
+  String get unlockSaveVideoPro => 'Desbloquear Recursos Premium';
 
   @override
-  String get noAdsUnlockAllFeatures => 'Sem anúncios e desbloquear todos os recursos';
+  String get noAdsUnlockAllFeatures => 'Sem Anúncios e Desbloquear Todos os Recursos';
 
   @override
   String get removeAds => 'Remover todos os anúncios';
 
   @override
-  String get threadsDownloads => 'Downloads HD ilimitados de vídeos, fotos e mensagens de voz do Threads';
+  String get tiktokDownloads => 'Downloads HD ilimitados de vídeos, fotos e música do TikTok';
 
   @override
-  String get instagramDownloads => 'Downloads HD ilimitados de vídeos, fotos, reels, stories e perfis completos do Instagram';
+  String get instagramDownloads => 'Downloads de alta qualidade sem marcas d\'água';
 
   @override
-  String get lifetimePro => 'Pro vitalício';
+  String get lifetimePro => 'Pro Vitalício';
 
   @override
-  String get yearlyPro => 'Pro anual';
+  String get yearlyPro => 'Pro Anual';
 
   @override
-  String get monthlyPro => 'Pro mensal';
+  String get monthlyPro => 'Pro Mensal';
 
   @override
-  String get weeklyPro => 'Pro semanal';
+  String get weeklyPro => 'Pro Semanal';
 
   @override
   String get onlyBuyOnce => 'Compre apenas uma vez';
@@ -357,16 +357,16 @@ class AppLocalizationsPt extends AppLocalizations {
   String get perWeek => '/semana';
 
   @override
-  String get mostPopular => 'Mais popular';
+  String get mostPopular => 'Mais Popular';
 
   @override
-  String get buyNow => 'Comprar agora';
+  String get buyNow => 'Comprar Agora';
 
   @override
-  String get termsOfUse => 'Termos de uso';
+  String get termsOfUse => 'Termos de Uso';
 
   @override
-  String get privacyPolicy => 'Política de privacidade';
+  String get privacyPolicy => 'Política de Privacidade';
 
   @override
   String get loadingPlans => 'Carregando planos...';
@@ -375,79 +375,79 @@ class AppLocalizationsPt extends AppLocalizations {
   String get failedToLoadPlans => 'Falha ao carregar planos';
 
   @override
-  String get retry => 'Tentar novamente';
+  String get retry => 'Tentar Novamente';
 
   @override
   String freeTrialDays(int days) {
-    return 'Teste gratuito de $days dias';
+    return '$days dias de teste grátis';
   }
 
   @override
   String freeTrialWeeks(int weeks) {
-    return 'Teste gratuito de $weeks semanas';
+    return '$weeks semanas de teste grátis';
   }
 
   @override
   String freeTrialMonths(int months) {
-    return 'Teste gratuito de $months meses';
+    return '$months meses de teste grátis';
   }
 
   @override
-  String get supportedPlatforms => 'Plataformas suportadas';
+  String get supportedPlatforms => 'Plataformas Suportadas';
 
   @override
-  String get supportThreads => 'Baixar vídeos, imagens e notas de voz';
+  String get supportTiktok => 'Baixar Vídeos, Imagens, Música';
 
   @override
-  String get supportInstagram => 'Baixar vídeos, imagens, Reels, Stories e perfis';
+  String get supportInstagram => 'Downloads de Alta Qualidade Sem Marcas d\'Água';
 
   @override
   String get playlistTab => 'Playlist';
 
   @override
-  String get authorsTab => 'Authors';
+  String get authorsTab => 'Autores';
 
   @override
-  String get createPlaylist => 'Create Playlist';
+  String get createPlaylist => 'Criar Playlist';
 
   @override
-  String get playlistTitle => 'Playlist Title';
+  String get playlistTitle => 'Título da Playlist';
 
   @override
-  String get playlistDescription => 'Description';
+  String get playlistDescription => 'Descrição';
 
   @override
-  String get chooseFiles => 'Choose Files';
+  String get chooseFiles => 'Escolher Arquivos';
 
   @override
-  String get createPlaylistButton => 'Create Playlist';
+  String get createPlaylistButton => 'Criar Playlist';
 
   @override
-  String get playlistTitleHint => 'Enter playlist title';
+  String get playlistTitleHint => 'Digite o título da playlist';
 
   @override
-  String get playlistDescriptionHint => 'Enter playlist description (optional)';
+  String get playlistDescriptionHint => 'Digite a descrição da playlist (opcional)';
 
   @override
-  String get selectFiles => 'Select files to add to playlist';
+  String get selectFiles => 'Selecione arquivos para adicionar à playlist';
 
   @override
-  String get noPlaylistsYet => 'No playlists yet';
+  String get noPlaylistsYet => 'Ainda não há playlists';
 
   @override
-  String get createFirstPlaylist => 'Create your first playlist to organize your downloads';
+  String get createFirstPlaylist => 'Crie sua primeira playlist para organizar seus downloads';
 
   @override
-  String get noAuthorsYet => 'No authors yet';
+  String get noAuthorsYet => 'Ainda não há autores';
 
   @override
-  String get downloadSomethingFirst => 'Download some content to see authors here';
+  String get downloadSomethingFirst => 'Baixe algum conteúdo primeiro para ver autores aqui';
 
   @override
   String authorVideos(Object author) {
-    return 'Videos by $author';
+    return 'Vídeos de $author';
   }
 
   @override
-  String get noVideosFromAuthor => 'No videos from this author yet';
+  String get noVideosFromAuthor => 'Ainda não há vídeos deste autor';
 }

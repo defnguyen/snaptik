@@ -9,7 +9,7 @@ class AppLocalizationsUk extends AppLocalizations {
   AppLocalizationsUk([String locale = 'uk']) : super(locale);
 
   @override
-  String get appTitle => 'Завантажувач відео Threads';
+  String get appTitle => 'TikTok Завантажувач';
 
   @override
   String get homeTab => 'Головна';
@@ -30,25 +30,25 @@ class AppLocalizationsUk extends AppLocalizations {
   String get download => 'Завантажити';
 
   @override
-  String get enterThreadsUrl => 'Введіть URL Threads/Instagram';
+  String get enterTiktokUrl => 'Введіть URL TikTok';
 
   @override
-  String get howToUseTitle => 'Як користуватися:';
+  String get howToUseTitle => 'Як використовувати:';
 
   @override
-  String get howToUseStep1 => '1. Відкрийте Threads і знайдіть допис, який бажаєте завантажити.';
+  String get howToUseStep1 => '1. Відкрийте TikTok і знайдіть відео, яке хочете завантажити.';
 
   @override
-  String get howToUseStep2 => '2. Натисніть на іконку \'Поділитися\' під дописом.';
+  String get howToUseStep2 => '2. Натисніть на іконку \'Поділитися\' праворуч від відео.';
 
   @override
   String get howToUseStep3 => '3. Виберіть \'Копіювати посилання\'.';
 
   @override
-  String get howToUseStep4 => '4. Вставте посилання у поле вище та натисніть \'Завантажити\'.';
+  String get howToUseStep4 => '4. Вставте посилання у поле введення вище та натисніть \'Завантажити\'.';
 
   @override
-  String get invalidUrlError => 'Недійсний формат URL Threads.';
+  String get invalidUrlError => 'Неправильний формат URL TikTok.';
 
   @override
   String get fetchingMedia => 'Отримання медіа...';
@@ -60,7 +60,7 @@ class AppLocalizationsUk extends AppLocalizations {
   String get downloadVideo => 'Завантажити відео';
 
   @override
-  String get downloadVoice => 'Завантажити голосове';
+  String get downloadVoice => 'Завантажити музику';
 
   @override
   String get downloadMp3 => 'Завантажити MP3';
@@ -72,18 +72,18 @@ class AppLocalizationsUk extends AppLocalizations {
   String get downloadSuccess => 'Завантаження завершено!';
 
   @override
-  String get downloadError => 'Помилка завантаження. Будь ласка, спробуйте ще раз.';
+  String get downloadError => 'Помилка завантаження. Спробуйте ще раз.';
 
   @override
   String get downloadLimitReachedTitle => 'Досягнуто ліміт завантажень';
 
   @override
   String downloadLimitReachedMessage(Object limit) {
-    return 'Ви досягли ліміту завантажень ($limit разів). Перегляньте коротку рекламу, щоб отримати ще 5 спроб завантаження.';
+    return 'Ви досягли ліміту завантажень ($limit разів). Подивіться коротку рекламу, щоб отримати ще 5 спроб завантаження.';
   }
 
   @override
-  String get watchAd => 'Переглянути рекламу';
+  String get watchAd => 'Подивитися рекламу';
 
   @override
   String get cancel => 'Скасувати';
@@ -95,7 +95,7 @@ class AppLocalizationsUk extends AppLocalizations {
   String get videosTab => 'Відео';
 
   @override
-  String get voiceTab => 'Голосові';
+  String get musicTab => 'Музика';
 
   @override
   String get view => 'Переглянути';
@@ -116,7 +116,7 @@ class AppLocalizationsUk extends AppLocalizations {
   String get mediaInfoTitle => 'Інформація про медіа';
 
   @override
-  String get fileName => 'Назва';
+  String get fileName => 'Ім\'я';
 
   @override
   String get filePath => 'Шлях';
@@ -131,13 +131,13 @@ class AppLocalizationsUk extends AppLocalizations {
   String get renameMediaTitle => 'Перейменувати медіа';
 
   @override
-  String get enterNewName => 'Введіть нову назву';
+  String get enterNewName => 'Введіть нове ім\'я';
 
   @override
   String get save => 'Зберегти';
 
   @override
-  String get deleteConfirmationTitle => 'Підтвердження видалення';
+  String get deleteConfirmationTitle => 'Підтвердити видалення';
 
   @override
   String get deleteConfirmationMessage => 'Ви впевнені, що хочете видалити цей файл? Цю дію неможливо скасувати.';
@@ -167,13 +167,13 @@ class AppLocalizationsUk extends AppLocalizations {
   String get settingsClaimSuccess => 'Успішно! У вас є ще 5 завантажень.';
 
   @override
-  String get settingsClaimError => 'Не вдалося завантажити рекламу. Будь ласка, спробуйте пізніше.';
+  String get settingsClaimError => 'Не вдалося завантажити рекламу. Спробуйте пізніше.';
 
   @override
-  String get settingsPremium => 'Оновити до Преміум';
+  String get settingsPremium => 'Оновити до Premium';
 
   @override
-  String get settingsPremiumDescription => 'Прибрати рекламу та отримати необмежені завантаження.';
+  String get settingsPremiumDescription => 'Видаліть рекламу та отримайте необмежені завантаження.';
 
   @override
   String get settingsRestorePurchase => 'Відновити покупку';
@@ -182,7 +182,7 @@ class AppLocalizationsUk extends AppLocalizations {
   String get settingsRestoreSuccess => 'Покупки успішно відновлено!';
 
   @override
-  String get settingsRestoreError => 'Не вдалося відновити покупки. Не знайдено активної підписки або сталася помилка.';
+  String get settingsRestoreError => 'Не вдалося відновити покупки. Активну підписку не знайдено або сталася помилка.';
 
   @override
   String get settingsGeneralSection => 'Загальні';
@@ -191,13 +191,13 @@ class AppLocalizationsUk extends AppLocalizations {
   String get settingsDownloadsSection => 'Завантаження';
 
   @override
-  String get settingsAccountSection => 'Обліковий запис';
+  String get settingsAccountSection => 'Акаунт';
 
   @override
   String get settingsSupportSection => 'Підтримка та відгуки';
 
   @override
-  String get settingsAbout => 'Про програму';
+  String get settingsAbout => 'Про додаток';
 
   @override
   String get settingsContact => 'Зв\'язатися з нами';
@@ -209,13 +209,13 @@ class AppLocalizationsUk extends AppLocalizations {
   String get settingsShareApp => 'Поділитися цим додатком';
 
   @override
-  String get premiumUser => 'Преміум користувач';
+  String get premiumUser => 'Premium користувач';
 
   @override
-  String get aboutTitle => 'Про Threads Downloader';
+  String get aboutTitle => 'Про TikTok Завантажувач';
 
   @override
-  String get aboutContent => 'Цей додаток допомагає вам завантажувати публічні фотографії, відео та голосові нотатки з дописів Threads.\n\nБудь ласка, поважайте авторські права та конфіденційність. Завантажуйте лише той вміст, який ви маєте дозвіл використовувати.';
+  String get aboutContent => 'Цей додаток допомагає завантажувати публічні відео, фото та аудіо з дописів TikTok.\n\nБудь ласка, поважайте авторські права та приватність. Завантажуйте лише контент, на використання якого у вас є дозвіл.';
 
   @override
   String get contactTitle => 'Зв\'язатися з нами';
@@ -224,7 +224,7 @@ class AppLocalizationsUk extends AppLocalizations {
   String get contactNameHint => 'Ваше ім\'я';
 
   @override
-  String get contactEmailHint => 'Ваша електронна пошта';
+  String get contactEmailHint => 'Ваш email';
 
   @override
   String get contactMessageHint => 'Ваше повідомлення';
@@ -236,34 +236,34 @@ class AppLocalizationsUk extends AppLocalizations {
   String get contactSending => 'Надсилання...';
 
   @override
-  String get contactSuccess => 'Повідомлення успішно надіслано! Ми скоро з вами зв\'яжемося.';
+  String get contactSuccess => 'Повідомлення успішно надіслано! Ми зв\'яжемося з вами незабаром.';
 
   @override
-  String get contactError => 'Не вдалося надіслати повідомлення. Будь ласка, спробуйте пізніше.';
+  String get contactError => 'Не вдалося надіслати повідомлення. Спробуйте пізніше.';
 
   @override
   String get permissionRequiredTitle => 'Потрібен дозвіл';
 
   @override
-  String get permissionStorageDenied => 'Для збереження завантажених файлів потрібен дозвіл на доступ до сховища. Будь ласка, надайте дозвіл у налаштуваннях.';
+  String get permissionStorageDenied => 'Дозвіл на сховище потрібен для збереження завантажених файлів. Надайте дозвіл у налаштуваннях.';
 
   @override
-  String get permissionPhotosDenied => 'Для збереження завантажених файлів потрібен дозвіл на доступ до фотографій (iOS). Будь ласка, надайте дозвіл у налаштуваннях.';
+  String get permissionPhotosDenied => 'Дозвіл на фото потрібен для збереження завантажених файлів (iOS). Надайте дозвіл у налаштуваннях.';
 
   @override
-  String get permissionNotificationDenied => 'Рекомендується дозвіл на сповіщення для відстеження прогресу завантаження.';
+  String get permissionNotificationDenied => 'Дозвіл на сповіщення рекомендується для оновлень прогресу завантаження.';
 
   @override
   String get permissiongoToSettings => 'Перейти до налаштувань';
 
   @override
-  String get ok => 'OK';
+  String get ok => 'ОК';
 
   @override
   String get upgradeNow => 'Оновити зараз';
 
   @override
-  String get chooseYourPlan => 'Виберіть свій план';
+  String get chooseYourPlan => 'Виберіть ваш план';
 
   @override
   String get planWeekly => 'Щотижня';
@@ -272,13 +272,13 @@ class AppLocalizationsUk extends AppLocalizations {
   String get planMonthly => 'Щомісяця';
 
   @override
-  String get planAnnually => 'Щорічно';
+  String get planAnnually => 'Щороку';
 
   @override
   String get planLifetime => 'Довічно';
 
   @override
-  String get oneTimePurchase => 'Одноразова покупка';
+  String get oneTimePurchase => 'Разова покупка';
 
   @override
   String savePercent(String percent) {
@@ -286,39 +286,39 @@ class AppLocalizationsUk extends AppLocalizations {
   }
 
   @override
-  String get bestValue => 'Найкраща ціна';
+  String get bestValue => 'Найкраща цінність';
 
   @override
   String get selectPlanErrorTitle => 'Помилка завантаження планів';
 
   @override
-  String get selectPlanErrorMessage => 'Не вдалося завантажити плани підписки. Будь ласка, перевірте підключення до інтернету та спробуйте знову.';
+  String get selectPlanErrorMessage => 'Не вдалося завантажити плани підписки. Перевірте інтернет-з\'єднання та спробуйте знову.';
 
   @override
-  String get purchaseFailed => 'Помилка покупки';
+  String get purchaseFailed => 'Покупка не вдалася';
 
   @override
-  String get purchaseCancelled => 'Покупку скасовано';
+  String get purchaseCancelled => 'Покупка скасована';
 
   @override
-  String get purchasePending => 'Покупка в очікуванні';
+  String get purchasePending => 'Покупка очікує';
 
   @override
   String get purchaseSuccess => 'Покупка успішна!';
 
   @override
-  String get alreadyPremium => 'Ви вже є Преміум користувачем.';
+  String get alreadyPremium => 'Ви вже Premium користувач.';
 
   @override
-  String get getPremium => 'Отримати Преміум';
+  String get getPremium => 'Отримати Premium';
 
   @override
   String downloadsRemainingMessage(Object currentLimit) {
-    return 'Залишилось завантажень: $currentLimit. Ви можете отримати безкоштовні завантаження, переглядаючи рекламу';
+    return 'Залишилося завантажень: $currentLimit. Ви можете отримати безкоштовні завантаження, переглядаючи рекламу';
   }
 
   @override
-  String get unlockSaveVideoPro => 'Розблокувати преміум-функції';
+  String get unlockSaveVideoPro => 'Розблокувати Premium функції';
 
   @override
   String get noAdsUnlockAllFeatures => 'Без реклами та розблокування всіх функцій';
@@ -327,22 +327,22 @@ class AppLocalizationsUk extends AppLocalizations {
   String get removeAds => 'Видалити всю рекламу';
 
   @override
-  String get threadsDownloads => 'Необмежені HD-завантаження відео, фото та голосових повідомлень з Threads';
+  String get tiktokDownloads => 'Необмежені HD завантаження відео, фото та музики з TikTok';
 
   @override
-  String get instagramDownloads => 'Необмежені HD-завантаження відео, фото, reels, історій та повних профілів з Instagram';
+  String get instagramDownloads => 'Високоякісні завантаження без водяних знаків';
 
   @override
-  String get lifetimePro => 'Довічна Pro версія';
+  String get lifetimePro => 'Довічний Pro';
 
   @override
-  String get yearlyPro => 'Річна Pro версія';
+  String get yearlyPro => 'Річний Pro';
 
   @override
-  String get monthlyPro => 'Місячна Pro версія';
+  String get monthlyPro => 'Місячний Pro';
 
   @override
-  String get weeklyPro => 'Тижнева Pro версія';
+  String get weeklyPro => 'Тижневий Pro';
 
   @override
   String get onlyBuyOnce => 'Купити лише один раз';
@@ -369,85 +369,85 @@ class AppLocalizationsUk extends AppLocalizations {
   String get privacyPolicy => 'Політика конфіденційності';
 
   @override
-  String get loadingPlans => 'Завантаження тарифів...';
+  String get loadingPlans => 'Завантаження планів...';
 
   @override
-  String get failedToLoadPlans => 'Не вдалося завантажити тарифи';
+  String get failedToLoadPlans => 'Не вдалося завантажити плани';
 
   @override
-  String get retry => 'Повторити';
+  String get retry => 'Спробувати знову';
 
   @override
   String freeTrialDays(int days) {
-    return 'Безкоштовна пробна версія на $days днів';
+    return '$days днів безкоштовного пробного періоду';
   }
 
   @override
   String freeTrialWeeks(int weeks) {
-    return 'Безкоштовна пробна версія на $weeks тижнів';
+    return '$weeks тижнів безкоштовного пробного періоду';
   }
 
   @override
   String freeTrialMonths(int months) {
-    return 'Безкоштовна пробна версія на $months місяців';
+    return '$months місяців безкоштовного пробного періоду';
   }
 
   @override
   String get supportedPlatforms => 'Підтримувані платформи';
 
   @override
-  String get supportThreads => 'Завантажити відео, зображення та голосові повідомлення';
+  String get supportTiktok => 'Завантаження відео, зображень, музики';
 
   @override
-  String get supportInstagram => 'Завантажити відео, зображення, Reels, Stories та профілі';
+  String get supportInstagram => 'Високоякісні завантаження без водяних знаків';
 
   @override
-  String get playlistTab => 'Playlist';
+  String get playlistTab => 'Плейлист';
 
   @override
-  String get authorsTab => 'Authors';
+  String get authorsTab => 'Автори';
 
   @override
-  String get createPlaylist => 'Create Playlist';
+  String get createPlaylist => 'Створити плейлист';
 
   @override
-  String get playlistTitle => 'Playlist Title';
+  String get playlistTitle => 'Назва плейлиста';
 
   @override
-  String get playlistDescription => 'Description';
+  String get playlistDescription => 'Опис';
 
   @override
-  String get chooseFiles => 'Choose Files';
+  String get chooseFiles => 'Вибрати файли';
 
   @override
-  String get createPlaylistButton => 'Create Playlist';
+  String get createPlaylistButton => 'Створити плейлист';
 
   @override
-  String get playlistTitleHint => 'Enter playlist title';
+  String get playlistTitleHint => 'Введіть назву плейлиста';
 
   @override
-  String get playlistDescriptionHint => 'Enter playlist description (optional)';
+  String get playlistDescriptionHint => 'Введіть опис плейлиста (необов\'язково)';
 
   @override
-  String get selectFiles => 'Select files to add to playlist';
+  String get selectFiles => 'Виберіть файли для додавання в плейлист';
 
   @override
-  String get noPlaylistsYet => 'No playlists yet';
+  String get noPlaylistsYet => 'Поки немає плейлистів';
 
   @override
-  String get createFirstPlaylist => 'Create your first playlist to organize your downloads';
+  String get createFirstPlaylist => 'Створіть свій перший плейлист для організації завантажень';
 
   @override
-  String get noAuthorsYet => 'No authors yet';
+  String get noAuthorsYet => 'Поки немає авторів';
 
   @override
-  String get downloadSomethingFirst => 'Download some content to see authors here';
+  String get downloadSomethingFirst => 'Спочатку завантажте контент, щоб побачити авторів тут';
 
   @override
   String authorVideos(Object author) {
-    return 'Videos by $author';
+    return 'Відео від $author';
   }
 
   @override
-  String get noVideosFromAuthor => 'No videos from this author yet';
+  String get noVideosFromAuthor => 'Поки немає відео від цього автора';
 }
